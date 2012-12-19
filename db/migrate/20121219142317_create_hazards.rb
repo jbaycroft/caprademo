@@ -15,8 +15,10 @@ class CreateHazards < ActiveRecord::Migration
       t.string :question10
       t.boolean :complete
       t.date :date_completed
+      t.references :task
 
       t.timestamps
     end
+    add_index :hazards, :task_id
   end
 end
