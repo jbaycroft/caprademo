@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 1
+  description: MyText
+  question1: MyString
+  question2: MyString
+  question3: MyString
+  question4: MyString
+  question5: false
+  question6: false
+  question7: false
+  question8: false
+  question9: MyString
+  question10: MyString
+  complete: false
+  date_completed: 2012-12-19
+
+two:
+  type: 1
+  description: MyText
+  question1: MyString
+  question2: MyString
+  question3: MyString
+  question4: MyString
+  question5: false
+  question6: false
+  question7: false
+  question8: false
+  question9: MyString
+  question10: MyString
+  complete: false
+  date_completed: 2012-12-19

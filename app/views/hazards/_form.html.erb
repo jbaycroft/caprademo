@@ -1,0 +1,73 @@
+<%= form_for(@hazard) do |f| %>
+  <% if @hazard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hazard.errors.count, "error") %> prohibited this hazard from being saved:</h2>
+
+      <ul>
+      <% @hazard.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.number_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :question1 %><br />
+    <%= f.text_field :question1 %>
+  </div>
+  <div class="field">
+    <%= f.label :question2 %><br />
+    <%= f.text_field :question2 %>
+  </div>
+  <div class="field">
+    <%= f.label :question3 %><br />
+    <%= f.text_field :question3 %>
+  </div>
+  <div class="field">
+    <%= f.label :question4 %><br />
+    <%= f.text_field :question4 %>
+  </div>
+  <div class="field">
+    <%= f.label :question5 %><br />
+    <%= f.check_box :question5 %>
+  </div>
+  <div class="field">
+    <%= f.label :question6 %><br />
+    <%= f.check_box :question6 %>
+  </div>
+  <div class="field">
+    <%= f.label :question7 %><br />
+    <%= f.check_box :question7 %>
+  </div>
+  <div class="field">
+    <%= f.label :question8 %><br />
+    <%= f.check_box :question8 %>
+  </div>
+  <div class="field">
+    <%= f.label :question9 %><br />
+    <%= f.text_field :question9 %>
+  </div>
+  <div class="field">
+    <%= f.label :question10 %><br />
+    <%= f.text_field :question10 %>
+  </div>
+  <div class="field">
+    <%= f.label :complete %><br />
+    <%= f.check_box :complete %>
+  </div>
+  <div class="field">
+    <%= f.label :date_completed %><br />
+    <%= f.date_select :date_completed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

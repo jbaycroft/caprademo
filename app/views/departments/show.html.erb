@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @department.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @department.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @department.location %>
+</p>
+
+<p>
+  <b>Complete:</b>
+  <%= @department.complete %>
+</p>
+
+<p>
+  <b>Date completed:</b>
+  <%= @department.date_completed %>
+</p>
+
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', departments_path %>
