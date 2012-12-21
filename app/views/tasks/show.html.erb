@@ -1,55 +1,106 @@
-<p id="notice"><%= notice %></p>
+<div class="table">       
+  <table>     
+    <tr>    
+      <th class="top first" colspan="2">  
+        <%= @task.name %>
+      </th> 
+    </tr>   
+    <tr>    
+      <th class="sub first" id="col1">  
+        Column 1
+      </th> 
+      <th class="sub first" id="col2">  
+        Column 2
+      </th> 
+    </tr>   
+    <tr>    
+      <td class="r1 c1">  
+        Description:
+      </td> 
+      <td class="r1 c2">  
+        <%= @task.description %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r2 c1">  
+        Hazard 1:
+      </td> 
+      <td class="r2 c2">  
+        <%= @task.hazard1 %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r3 c1">  
+        Hazard 2:
+      </td> 
+      <td class="r3 c2">  
+        <%= @task.hazard2 %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r4 c1">  
+        Hazard 3:
+      </td> 
+      <td class="r4 c2">  
+        <%= @task.hazard3 %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r5 c1">  
+        Hazard 4:
+      </td> 
+      <td class="r5 c2">  
+        <%= @task.hazard4 %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r6 c1">  
+        Location:
+      </td> 
+      <td class="r6 c2">  
+        <%= @task.location %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r7 c1">  
+        Complete:
+      </td> 
+      <td class="r7 c2">  
+        <%= @task.complete %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r8 c1">  
+        Date Completed:
+      </td> 
+      <td class="r8 c2">  
+        <%= @task.date_completed %>
+      </td> 
+    </tr>   
+  </table>      
+</div>        
+<%= link_to "Edit Task", edit_department_task_path(@department, @task) %>
+<%= link_to "Back to Department", department_path(@department) %>
+<h1>Listing hazards</h1>
 
-<p>
-  <b>Name:</b>
-  <%= @task.name %>
-</p>
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Date completed</th>
+    <th></th>
+    <th></th>
+  </tr>
 
-<p>
-  <b>Description:</b>
-  <%= @task.description %>
-</p>
+<% @task.hazards.each do |hazard| %>
+  <tr>
+    <td><%= link_to "#{hazard.type}",[@department,@task,hazard] %></td>
+    <td><%= hazard.date_completed %></td>
+    <td><%= link_to 'Edit', edit_hazard_path(hazard) %></td>
+    <td><%= link_to 'Destroy', hazard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
 
-<p>
-  <b>Hazard1:</b>
-  <%= @task.hazard1 %>
-</p>
+<br />
 
-<p>
-  <b>Hazard2:</b>
-  <%= @task.hazard2 %>
-</p>
-
-<p>
-  <b>Hazard3:</b>
-  <%= @task.hazard3 %>
-</p>
-
-<p>
-  <b>Hazard4:</b>
-  <%= @task.hazard4 %>
-</p>
-
-<p>
-  <b>Location:</b>
-  <%= @task.location %>
-</p>
-
-<p>
-  <b>Complete:</b>
-  <%= @task.complete %>
-</p>
-
-<p>
-  <b>Date completed:</b>
-  <%= @task.date_completed %>
-</p>
-
-<p>
-  <b>Department:</b>
-  <%= @task.department %>
-</p>
-
-
-<%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Back', tasks_path %>
+<%= link_to 'New Hazard', new_department_task_hazard_path(@department,@task) %>
