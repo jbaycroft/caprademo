@@ -53,7 +53,7 @@ class HazardsController < ApplicationController
 
     respond_to do |format|
       if @hazard.save
-        format.html { redirect_to @task, notice: 'Hazard was successfully created.' }
+        format.html { redirect_to [@department,@task], notice: 'Hazard was successfully created.' }
         format.json { render json: @task, status: :created, location: @hazard }
       else
         format.html { render action: "new" }
