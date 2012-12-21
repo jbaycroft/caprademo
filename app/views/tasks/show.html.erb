@@ -81,9 +81,13 @@
 </div>        
 <%= link_to "Edit Task", edit_department_task_path(@department, @task) %>
 <%= link_to "Back to Department", department_path(@department) %>
-<h1>Listing hazards</h1>
 
 <table>
+  <tr>    
+      <th class="top first" colspan="4">  
+        Hazards
+      </th> 
+    </tr>  
   <tr>
     <th>Type</th>
     <th>Date completed</th>
