@@ -1,11 +1,11 @@
 RiskAssessDemo::Application.routes.draw do
-  resources :hazards
+  root :to => "home#index"
 
-  resources :tasks
-
-  get "home/index"
-
-  resources :departments
+  resources :departments do
+    resources :tasks do
+      resources :hazards 
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

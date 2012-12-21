@@ -1,30 +1,70 @@
-<p id="notice"><%= notice %></p>
+<div class="table">       
+  <table>     
+    <tr>    
+      <th class="top first" colspan="2">  
+        <%= @department.name %>
+      </th> 
+    </tr>    
+    <tr>    
+      <td class="r1 c1">  
+        Description:
+      </td> 
+      <td class="r1 c2">  
+        <%= @department.description %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r2 c1">  
+        Location:
+      </td> 
+      <td class="r2 c2">  
+        <%= @department.location %>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r3 c1">  
+        Complete:
+      </td> 
+      <td class="r3 c2">  
+        <%= @department.complete%>
+      </td> 
+    </tr>   
+    <tr>    
+      <td class="r4 c1">  
+        Date Completed:
+      </td> 
+      <td class="r4 c2">  
+        <%= @department.date_completed %>
+      </td> 
+    </tr>   
+  </table>      
+</div>        
 
-<p>
-  <b>Name:</b>
-  <%= @department.name %>
-</p>
 
-<p>
-  <b>Description:</b>
-  <%= @department.description %>
-</p>
-
-<p>
-  <b>Location:</b>
-  <%= @department.location %>
-</p>
-
-<p>
-  <b>Complete:</b>
-  <%= @department.complete %>
-</p>
-
-<p>
-  <b>Date completed:</b>
-  <%= @department.date_completed %>
-</p>
+<%= link_to 'Edit Department', edit_department_path(@department) %> |
+<%= link_to 'Back to Departments', departments_path %>
 
 
-<%= link_to 'Edit', edit_department_path(@department) %> |
-<%= link_to 'Back', departments_path %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date completed</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @department.tasks.each do |task| %>
+  <tr>
+    <td><%= link_to "#{task.name}", task %></td>
+    <td><%= task.date_completed %></td>
+    <td><%= link_to 'Show', task %></td>
+    <td><%= link_to 'Edit', edit_department_task_path(@department,task) %></td>
+    <td><%= link_to 'Destroy', [@department,task], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task', new_department_task_path(@department) %>
