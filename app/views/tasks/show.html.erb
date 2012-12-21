@@ -93,10 +93,10 @@
 
 <% @task.hazards.each do |hazard| %>
   <tr>
-    <td><%= link_to "#{hazard.type}",[@department,@task,hazard] %></td>
+    <td><%= link_to "#{hazard.haztype}",[@department,@task,hazard] %></td>
     <td><%= hazard.date_completed %></td>
-    <td><%= link_to 'Edit', edit_hazard_path(hazard) %></td>
-    <td><%= link_to 'Destroy', hazard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Edit', edit_department_task_hazard_path(@department,@task,hazard) %></td>
+    <td><%= link_to 'Destroy', [@department,@task,hazard], method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

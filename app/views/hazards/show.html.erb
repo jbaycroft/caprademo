@@ -2,7 +2,7 @@
 
 <p>
   <b>Type:</b>
-  <%= @hazard.type %>
+  <%= @hazard.haztype %>
 </p>
 
 <p>
@@ -76,5 +76,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_hazard_path(@hazard) %> |
-<%= link_to 'Back', hazards_path %>
+<%= link_to 'Edit', edit_department_task_hazard_path(@department,@task,@hazard) %> |
+<%= link_to 'Back', department_task_path(@department,@task) %>

@@ -85,7 +85,7 @@ class HazardsController < ApplicationController
     @hazard.destroy
 
     respond_to do |format|
-      format.html { redirect_to task_url(@task) }
+      format.html { redirect_to department_task_url(@department,@task) }
       format.json { head :no_content }
     end
   end

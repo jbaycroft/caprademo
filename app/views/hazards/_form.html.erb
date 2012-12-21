@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :type %><br />
-    <%= f.select :type, [['-',"-"],['Hazard 1','haz1'],['Hazard 2',"haz2"],['Hazard 3',"haz3"],['Hazard 4',"haz4"]] %>
+    <%= f.label :haztype %><br />
+    <%= f.select :haztype, [['-',"-"],['Hazard 1','haz1'],['Hazard 2',"haz2"],['Hazard 3',"haz3"],['Hazard 4',"haz4"]] %>
   </div>
   <div class="hidden" id="haz1">
     <%= f.label :description %><br />
