@@ -1,8 +1,12 @@
 class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
+  before_filter :get_department
+  def get_department
+    @department=Department.find(params[:department_id])
+  end
   def index
-    @tasks = Task.all
+    @tasks = @department.tasks.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,11 +28,11 @@ class TasksController < ApplicationController
   # GET /tasks/new
   # GET /tasks/new.json
   def new
-    @task = Task.new
+    @task = @department.tasks.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @task }
+      format.json { render json: [@department,@task] }
     end
   end
 
@@ -40,12 +44,12 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    @task = Task.new(params[:task])
+    @task = @department.tasks.new(params[:task])
 
     respond_to do |format|
       if @task.save
-        format.html { redirect_to @task, notice: 'Task was successfully created.' }
-        format.json { render json: @task, status: :created, location: @task }
+        format.html { redirect_to @department, notice: 'Task was successfully created.' }
+        format.json { render json: @department, status: :created, location: @task }
       else
         format.html { render action: "new" }
         format.json { render json: @task.errors, status: :unprocessable_entity }
@@ -72,11 +76,11 @@ class TasksController < ApplicationController
   # DELETE /tasks/1
   # DELETE /tasks/1.json
   def destroy
-    @task = Task.find(params[:id])
+    @task = @department.tasks.find(params[:id])
     @task.destroy
 
     respond_to do |format|
-      format.html { redirect_to tasks_url }
+      format.html { redirect_to department_url(@department) }
       format.json { head :no_content }
     end
   end

@@ -45,20 +45,23 @@
 <%= link_to 'Back to Departments', departments_path %>
 
 
-<table>
+<table class="table">
+  <tr>    
+      <th class="top first" colspan="5">  
+        Task List
+      </th> 
+    </tr>  
   <tr>
     <th>Name</th>
     <th>Date completed</th>
-    <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @department.tasks.each do |task| %>
   <tr>
-    <td><%= link_to "#{task.name}", task %></td>
+    <td><%= link_to "#{task.name}", [@department,task] %></td>
     <td><%= task.date_completed %></td>
-    <td><%= link_to 'Show', task %></td>
     <td><%= link_to 'Edit', edit_department_task_path(@department,task) %></td>
     <td><%= link_to 'Destroy', [@department,task], method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
