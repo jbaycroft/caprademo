@@ -1,43 +1,46 @@
-table,th,td	
-{	
-	font-family: arial;
-	font-size: 16 px;
+table,th,td{	
 	border: 1px solid black;
 	border-collapse: collapse;
-	background: white;
-	padding: 2px;
+	padding: 0.5%;
 	text-align: center;
 	vertical-align: middle;
-}	
-table	
-{	
-	width: 75%;
+}
+.table{
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+}
+table{	
+	width: 90%;
 	border: none;
 	background: white;
+	margin: 0 auto;
 }	
-.top	
-{	
+.top{	
 	font-size: 1.2em;
 	background: rgb(31,73,125);
 	color: white;
 }	
-.sub	
-{	
+.sub{	
 	font-style: italic;
 	background: rgb(198,217,241);
 	color: black;
 }	
-td	
-{	
-	font-size: 0.9em;
+td{	
+	font-size: 1em;
 }	
-.c1	
-{	
-	width: 50%;
+.c1{	
+	width: 25%;
 	text-align: left;
-}	
-.c3	
-{	
-	width: 10%;
+}
+.c2{
+	width: 25%;
 	text-align: left;
-}	
+}
+.c3{	
+	width: 15%;
+	text-align: center;
+}
+.c4,.c5,.c6{
+	width: 11.666667%;
+}

@@ -11,3 +11,74 @@
  *= require_self
  *= require_tree .
  */
+html
+{
+	font-size: 16px;
+	font-family: arial;
+	font-size: 62.5%; /* 1em = 10px */
+	background: white;
+	text-align: center;
+	vertical-align: middle;
+}
+.header{
+	width: 100%;
+}
+header{
+	border: 1px solid black;
+}
+h1{
+	font-size: 150%;
+	font-style: bold;
+	text-transform: uppercase;
+	margin: 0 0 2px 0;
+}
+h2{
+	font-size: 150%;
+	font-style: bold;
+	margin: 0 0 2px 0;
+}
+h3{
+	font-size: 100%;
+	font-style: oblique;
+	margin: 0 0 2px 0;
+}
+.main{
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+}
+.menu{
+	list-style-type: none;
+	font-size: 90%;
+	width: 80%;
+	margin: 2px auto;
+	padding: 0;
+}
+.hlink{
+	float: left;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: rgb(198,217,241);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 1em;
+	padding: 4px 0.5%;
+	width: 20%;
+	margin: 0 2%; /* [100% - (#buttons)*(%width) - (2) *(#buttons)*(%LRpadding)] / [2 * (#buttons)] */
+}
+@media screen and (max-width: 500px){
+	.menu{
+		font-size: 85%;
+	}
+	.hlink{
+		padding: 4px 0.5%;
+		width: 40%;
+		margin: 4px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons)*(%LRpadding)] / [2 * (#buttons)] */
+	}
+}
+.hlink:hover{
+	color: white;
+	background: rgb(31,73,125);
+}

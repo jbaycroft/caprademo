@@ -1,25 +1,50 @@
-<h1>Listing departments</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Location</th>
-    <th>Date completed</th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @departments.each do |department| %>
-  <tr>
-    <td><%= link_to "#{department.name}", department_path(department) %></td>
-    <td><%= department.location %></td>
-    <td><%= department.date_completed %></td>
-    <td><%= link_to 'Edit', edit_department_path(department) %></td>
-    <td><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Department', new_department_path %>
+<div class="table">
+	<table>
+		<tr>
+			<th class="top first" colspan="6">
+				Demo Client Department Listing
+			</th>
+		</tr>
+		<tr>
+			<th class="sub first c1">
+				Department Name:
+			</th>
+			<th class="sub first c2">
+				Department Location:
+			</th>
+			<th class="sub first c3">
+				Date Completed:
+			</th>
+			<th class="sub first c4" colspan="3">
+				Assessment Actions:
+			</th>
+		</tr>
+		<% @departments.each do |department| %>
+		<tr>
+			<td class="r1 c1">
+				<%= department.name %>
+			</td>
+			<td class="r1 c2">
+				<%= department.location %>
+			</td>
+			<td class="r1 c3">
+				<%= department.date_completed %>
+			</td>
+			<td class="r1 c4">
+				<%= link_to 'Edit Dept. Info', edit_department_path(department) %>
+			</td>
+			<td class="r1 c5">
+				<%= link_to "Edit Dept. Tasks", department_path(department) %>
+			</td>
+			<td class="r1 c6">
+				<%= link_to 'Destroy Dept.', department, method: :delete, data: { confirm: 'Are you sure?' } %>
+			</td>
+		</tr>
+		<% end %>
+		<tr>
+			<td class="bottom tlink" colspan="6">
+				<%= link_to 'Create New Department', new_department_path %>
+			</td>
+		</tr>
+	</table>
+</div>
