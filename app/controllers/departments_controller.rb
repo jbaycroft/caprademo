@@ -60,7 +60,7 @@ class DepartmentsController < ApplicationController
 
     respond_to do |format|
       if @department.update_attributes(params[:department])
-        format.html { redirect_to @department, notice: 'Department was successfully updated.' }
+        format.html { redirect_to departments_path, notice: 'Department was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

@@ -29,18 +29,25 @@ table{
 td{	
 	font-size: 1em;
 }	
-.c1{	
+.indexc1{	
 	width: 25%;
 	text-align: left;
 }
-.c2{
+.indexc2{
 	width: 25%;
 	text-align: left;
 }
-.c3{	
+.indexc3{	
 	width: 15%;
 	text-align: center;
 }
-.c4{
+.indexc4{
 	text-align: center;
+}
+.showc1{
+	text-align: left;
+	width: 20%;
+}
+.showc2{
+	text-align: left;
 }

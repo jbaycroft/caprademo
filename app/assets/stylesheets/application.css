@@ -15,7 +15,7 @@ html
 {
 	font-size: 16px;
 	font-family: arial;
-	font-size: 62.5%; /* 1em = 10px */
+	font-size: 75%; /* 1em = 12px */
 	background: white;
 	text-align: center;
 	vertical-align: middle;
@@ -56,7 +56,7 @@ h3{
 	margin: 2px auto;
 	padding: 0;
 }
-.hlink,.tlink,.blink{
+.hlink,.tlink2,.tlink3,.blink{
 	float: left;
 	font-weight: bold;
 	text-decoration: none;
@@ -78,7 +78,17 @@ h3{
 	margin: 2px auto;
 	padding: 0;
 }
-.tlink{
+.tlink2{
+	color: rgb(31,73,125);
+	background: rgb(228,237,248);
+	border: none;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 2px 0.5%;
+	width: 40%;
+	margin: 2px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.tlink3{
 	color: rgb(31,73,125);
 	background: rgb(228,237,248);
 	-moz-border-radius: 2px;
@@ -96,7 +106,7 @@ h3{
 	width: 80%;
 	margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
-.hlink:hover,.tlink:hover,.blink:hover{
+.hlink:hover,.tlink2:hover,.tlink3:hover,.blink:hover{
 	color: white;
 	background: rgb(31,73,125);
 }
@@ -106,9 +116,27 @@ h3{
 		width: 40%;
 		margin: 4px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 	}
-	.tlink{
+	.tlink2{
 		padding: 2px 0.5%;
 		width: 80%;
 		margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 	}
+	.tlink3{
+		padding: 2px 0.5%;
+		width: 80%;
+		margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+	}
+}
+.field{
+	width: 99%;
+}
+.description{
+	width: 99%;
+	height: 30px;
+	min-height: 30px;
+	resize: vertical;
+}
+.button{
+	font-family: arial;
+	font-size: 98%;
 }

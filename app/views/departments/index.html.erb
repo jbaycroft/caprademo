@@ -1,40 +1,40 @@
 <div class="table">
 	<table>
 		<tr>
-			<th class="top first" colspan="4">
+			<th class="top" colspan="4">
 				Demo Client Department Listing
 			</th>
 		</tr>
 		<tr>
-			<th class="sub first c1">
+			<th class="sub indexc1">
 				Department Name:
 			</th>
-			<th class="sub first c2">
+			<th class="sub indexc2">
 				Department Location:
 			</th>
-			<th class="sub first c3">
+			<th class="sub indexc3">
 				Date Complete:
 			</th>
-			<th class="sub first c4">
+			<th class="sub indexc4">
 				Department Actions:
 			</th>
 		</tr>
 		<% @departments.each do |department| %>
 		<tr>
-			<td class="c1">
+			<td class="indexc1">
 				<%= department.name %>
 			</td>
-			<td class="c2">
+			<td class="indexc2">
 				<%= department.location %>
 			</td>
-			<td class="c3">
+			<td class="indexc3">
 				<%= department.date_completed %>
 			</td>
-			<td class="c4">
+			<td class="indexc4">
 				<ul class="action">
-					<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"tlink" %></li>
-					<li><%= link_to 'Edit Tasks', department_path(department), :class=>"tlink" %></li>
-					<li><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"tlink" %></li>
+					<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"tlink3" %></li>
+					<li><%= link_to 'Edit Tasks', department_path(department), :class=>"tlink3" %></li>
+					<li><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"tlink3" %></li>
 				</ul>
 			</td>
 		</tr>

@@ -11,27 +11,67 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :location %><br />
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
-    <%= f.label :complete %><br />
-    <%= f.check_box :complete %>
-  </div>
-  <div class="field">
-    <%= f.label :date_completed %><br />
-    <%= f.date_select :date_completed %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+	<div class="table">
+		<table>
+			<tr>
+				<th class="top" colspan="2">
+					Department Description
+				</th>
+			</tr>
+			<tr>
+				<td class="showc1">
+					Department Name:
+				</td>
+				<td class="showc2">
+					<%= f.text_field :name, :class=>"field" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="showc1">
+					Department Description:
+				</td>
+				<td class="showc2">
+					<%= f.text_area :description, :class=>"description" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="showc1">
+					Department Location:
+				</td>
+				<td class="showc2">
+					<%= f.text_field :location, :class=>"field" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="showc1">
+					Assessment Complete:
+				</td>
+				<td class="showc2">
+					<%= f.check_box :complete %>
+					<%= f.label :complete, " (Select Check Box if Department Assessment is Complete)"%>
+				</td>
+			</tr>
+			<tr>
+				<td class="showc1">
+					Date Completed:
+				</td>
+				<td class="showc2">
+					<%= f.date_select :date_completed %>
+					<%= f.label :date_completed, " (Select Date on which Assessment was Completed)" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="showc1">
+					Department Actions:
+				</td>
+				<td class="indexc4">
+					<ul class="action">
+						<li><%= f.submit 'Update Department', :class=>"tlink2 button" %></li>
+						<li><%= link_to 'Back to Department List', departments_path, :class=>"tlink2" %></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
+
 <% end %>
