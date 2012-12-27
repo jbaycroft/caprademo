@@ -20,11 +20,13 @@ html
 	text-align: center;
 	vertical-align: middle;
 }
+@media screen and (max-width: 800px){
+	html{
+		font-size: 55%;
+	}
+}
 .header{
 	width: 100%;
-}
-header{
-	border: 1px solid black;
 }
 h1{
 	font-size: 150%;
@@ -54,31 +56,59 @@ h3{
 	margin: 2px auto;
 	padding: 0;
 }
-.hlink{
+.hlink,.tlink,.blink{
 	float: left;
-	color: black;
 	font-weight: bold;
 	text-decoration: none;
+}
+.hlink{
+	color: black;
 	text-transform: uppercase;
 	background: rgb(198,217,241);
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	font-size: 1em;
 	padding: 4px 0.5%;
 	width: 20%;
-	margin: 0 2%; /* [100% - (#buttons)*(%width) - (2) *(#buttons)*(%LRpadding)] / [2 * (#buttons)] */
+	margin: 0 2%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.action{
+	list-style-type: none;
+	font-size: 90%;
+	width: 100%;
+	margin: 2px auto;
+	padding: 0;
+}
+.tlink{
+	color: rgb(31,73,125);
+	background: rgb(228,237,248);
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 2px 0.5%;
+	width: 30%;
+	margin: 2px 1.16666%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.blink{
+	color: rgb(31,73,125);
+	background: rgb(228,237,248);
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 2px 0.5%;
+	width: 80%;
+	margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.hlink:hover,.tlink:hover,.blink:hover{
+	color: white;
+	background: rgb(31,73,125);
 }
 @media screen and (max-width: 500px){
-	.menu{
-		font-size: 85%;
-	}
 	.hlink{
 		padding: 4px 0.5%;
 		width: 40%;
-		margin: 4px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons)*(%LRpadding)] / [2 * (#buttons)] */
+		margin: 4px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 	}
-}
-.hlink:hover{
-	color: white;
-	background: rgb(31,73,125);
+	.tlink{
+		padding: 2px 0.5%;
+		width: 80%;
+		margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+	}
 }

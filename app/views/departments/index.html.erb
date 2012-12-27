@@ -1,7 +1,7 @@
 <div class="table">
 	<table>
 		<tr>
-			<th class="top first" colspan="6">
+			<th class="top first" colspan="4">
 				Demo Client Department Listing
 			</th>
 		</tr>
@@ -13,37 +13,35 @@
 				Department Location:
 			</th>
 			<th class="sub first c3">
-				Date Completed:
+				Date Complete:
 			</th>
-			<th class="sub first c4" colspan="3">
-				Assessment Actions:
+			<th class="sub first c4">
+				Department Actions:
 			</th>
 		</tr>
 		<% @departments.each do |department| %>
 		<tr>
-			<td class="r1 c1">
+			<td class="c1">
 				<%= department.name %>
 			</td>
-			<td class="r1 c2">
+			<td class="c2">
 				<%= department.location %>
 			</td>
-			<td class="r1 c3">
+			<td class="c3">
 				<%= department.date_completed %>
 			</td>
-			<td class="r1 c4">
-				<%= link_to 'Edit Dept. Info', edit_department_path(department) %>
-			</td>
-			<td class="r1 c5">
-				<%= link_to "Edit Dept. Tasks", department_path(department) %>
-			</td>
-			<td class="r1 c6">
-				<%= link_to 'Destroy Dept.', department, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<td class="c4">
+				<ul class="action">
+					<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"tlink" %></li>
+					<li><%= link_to 'Edit Tasks', department_path(department), :class=>"tlink" %></li>
+					<li><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"tlink" %></li>
+				</ul>
 			</td>
 		</tr>
 		<% end %>
 		<tr>
-			<td class="bottom tlink" colspan="6">
-				<%= link_to 'Create New Department', new_department_path %>
+			<td class="bottom" colspan="4">
+				<%= link_to 'Create New Department', new_department_path, :class=>"blink" %>
 			</td>
 		</tr>
 	</table>

@@ -23,8 +23,8 @@ table{
 }	
 .sub{	
 	font-style: italic;
-	background: rgb(198,217,241);
-	color: black;
+	background: rgb(84,141,212);
+	color: white;
 }	
 td{	
 	font-size: 1em;
@@ -41,6 +41,6 @@ td{
 	width: 15%;
 	text-align: center;
 }
-.c4,.c5,.c6{
-	width: 11.666667%;
+.c4{
+	text-align: center;
 }
