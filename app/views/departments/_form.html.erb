@@ -19,55 +19,55 @@
 				</th>
 			</tr>
 			<tr>
-				<td class="showc1">
+				<td class="tleft w20">
 					Department Name:
 				</td>
-				<td class="showc2">
-					<%= f.text_field :name, :class=>"field" %>
+				<td class="tleft">
+					<%= f.text_field :name, :class=>"field w99" %>
 				</td>
 			</tr>
 			<tr>
-				<td class="showc1">
+				<td class="tleft">
 					Department Description:
 				</td>
-				<td class="showc2">
-					<%= f.text_area :description, :class=>"description" %>
+				<td class="tleft">
+					<%= f.text_area :description, :class=>"area w99" %>
 				</td>
 			</tr>
 			<tr>
-				<td class="showc1">
+				<td class="tleft">
 					Department Location:
 				</td>
-				<td class="showc2">
-					<%= f.text_field :location, :class=>"field" %>
+				<td class="tleft">
+					<%= f.text_field :location, :class=>"field w99" %>
 				</td>
 			</tr>
 			<tr>
-				<td class="showc1">
+				<td class="tleft">
 					Assessment Complete:
 				</td>
-				<td class="showc2">
+				<td class="tleft">
 					<%= f.check_box :complete %>
 					<%= f.label :complete, " (Select Check Box if Department Assessment is Complete)"%>
 				</td>
 			</tr>
 			<tr>
-				<td class="showc1">
+				<td class="tleft">
 					Date Completed:
 				</td>
-				<td class="showc2">
+				<td class="tleft">
 					<%= f.date_select :date_completed %>
 					<%= f.label :date_completed, " (Select Date on which Assessment was Completed)" %>
 				</td>
 			</tr>
 			<tr>
-				<td class="showc1">
+				<td class="tleft">
 					Department Actions:
 				</td>
-				<td class="indexc4">
-					<ul class="action">
-						<li><%= f.submit 'Update Department', :class=>"tlink2 button" %></li>
-						<li><%= link_to 'Back to Department List', departments_path, :class=>"tlink2" %></li>
+				<td class="tcenter">
+					<ul class="menu w100">
+						<li><%= f.submit 'Update Department', :class=>"link2" %></li>
+						<li><%= link_to 'Back to Department List', departments_path, :class=>"link2" %></li>
 					</ul>
 				</td>
 			</tr>

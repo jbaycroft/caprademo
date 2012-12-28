@@ -6,53 +6,53 @@
 			</th>
 		</tr>
 		<tr>
-			<th class="showc1 sub">
+			<th class="sub tleft w20">
 				Department Name:
 			</th>
-			<th class="showc2 sub">
+			<th class="sub tleft">
 				<%= @department.name %>
 			</th>
 		</tr>
 		<tr>
-			<td class="showc1">
+			<td class="tleft">
 				Department Description:
 			</td>
-			<td class="showc2">
+			<td class="tleft">
 				<%= @department.description %>
 			</td>
 		</tr>
 		<tr>
-			<td class="showc1">
+			<td class="tleft">
 				Department Location:
 			</td>
-			<td class="showc2">
+			<td class="tleft">
 				<%= @department.location %>
 			</td>
 		</tr>
 		<tr>
-			<td class="showc1">
+			<td class="tleft">
 				Assessment Complete:
 			</td>
-			<td class="showc2">
+			<td class="tleft">
 				<%= @department.complete ? 'Yes' : 'No' %>
 			</td>
 		</tr>
 		<tr>
-			<td class="showc1">
+			<td class="tleft">
 				Date Completed:
 			</td>
-			<td class="showc2">
+			<td class="tleft">
 				<%= @department.date_completed %>
 			</td>
 		</tr>
 		<tr>
-			<td class="showc1">
+			<td class="tleft">
 				Department Actions:
 			</td>
-			<td class="indexc4">
-				<ul class="action">
-					<li><%= link_to 'Edit Department Info', edit_department_path(@department), :class=>"tlink2" %></li>
-					<li><%= link_to 'Back to Department List', departments_path, :class=>"tlink2" %></li>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li><%= link_to 'Edit Department Info', edit_department_path(@department), :class=>"link2" %></li>
+					<li><%= link_to 'Back to Department List', departments_path, :class=>"link2" %></li>
 				</ul>
 			</td>
 		</tr>
@@ -67,42 +67,42 @@
 			</th>
 		</tr>
 		<tr>
-			<th class="sub indexc1">
+			<th class="sub tleft w25">
 				Task Name:
 			</th>
-			<th class="sub indexc2">
+			<th class="sub tleft w25">
 				Task Location:
 			</th>
-			<th class="sub indexc3">
+			<th class="sub tcenter w20">
 				Date Complete:
 			</th>
-			<th class="sub indexc4">
+			<th class="sub tcenter">
 				Task Actions:
 			</th>
 		</tr>
 		<% @department.tasks.each do |task| %>
 		<tr>
-			<td class="indexc1">
+			<td class="tleft">
 				<%= task.name %>
 			</td>
-			<td class="indexc2">
+			<td class="tleft">
 				<%= task.location %>
 			</td>
-			<td class="indexc3">
+			<td class="tcenter">
 				<%= task.date_completed %>
 			</td>
-			<td class="indexc4">
-				<ul class="action">
-					<li><%= link_to 'Edit Task Info', edit_department_task_path(@department,task), :class=>"tlink3" %></li>
-					<li><%= link_to 'Edit Hazards', department_task_path(@department,task), :class=>"tlink3" %></li>
-					<li><%= link_to 'Destroy', [@department,task], method: :delete, data: { confirm: 'Are you sure?' }, :class=>"tlink3" %></li>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li><%= link_to 'Edit Info', edit_department_task_path(@department,task), :class=>"link3" %></li>
+					<li><%= link_to 'Edit Hazards', department_task_path(@department,task), :class=>"link3" %></li>
+					<li><%= link_to 'Destroy', [@department,task], method: :delete, data: { confirm: 'Are you sure?' }, :class=>"link3" %></li>
 				</ul>
 			</td>
 		</tr>
 		<% end %>
 		<tr>
-			<td class="bottom" colspan="4">
-				<%= link_to 'Create New Task', new_department_task_path(@department), :class=>"blink" %>
+			<td class="tcenter" colspan="4">
+				<%= link_to 'Create New Task', new_department_task_path(@department), :class=>"link1" %>
 			</td>
 		</tr>
 	</table>

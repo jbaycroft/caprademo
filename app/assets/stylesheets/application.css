@@ -11,6 +11,13 @@
  *= require_self
  *= require_tree .
  */
+
+/*
+--------------------------------------------------
+HTML CSS
+Set general HTML sytle rules
+Include adaptive screen size changes
+*/
 html
 {
 	font-size: 16px;
@@ -18,125 +25,220 @@ html
 	font-size: 75%; /* 1em = 12px */
 	background: white;
 	text-align: center;
-	vertical-align: middle;
 }
 @media screen and (max-width: 800px){
 	html{
 		font-size: 55%;
 	}
 }
+/*
+--------------------------------------------------
+HEADER CSS
+Set header width to full screen width
+*/
 .header{
 	width: 100%;
 }
-h1{
-	font-size: 150%;
-	font-style: bold;
-	text-transform: uppercase;
-	margin: 0 0 2px 0;
+/*
+Set style rules for header (i.e. h1, h2, h3) text
+*/
+h1,h2,h3{
+	margin: 0.5em 0;
 }
-h2{
+h1,h2{
 	font-size: 150%;
 	font-style: bold;
-	margin: 0 0 2px 0;
+}
+h1{
+	text-transform: uppercase;
 }
 h3{
-	font-size: 100%;
+	font-size: 110%;
 	font-style: oblique;
-	margin: 0 0 2px 0;
 }
-.main{
-	float: left;
+/*
+TEXT ALIGN CSS
+--------------------------------------------------
+Set style rules for element text align classes
+*/
+.tleft{
+	text-align: left;
+}
+.tcenter{
+	text-align: center;
+}
+.tright{
+	text-align: right;
+}
+/*
+BLOCK WIDTH CSS
+--------------------------------------------------
+Set style rules for element width classes
+*/
+.w100{
 	width: 100%;
-	margin: 0 auto;
 }
+.w99{
+	width: 99%;
+}
+.w95{
+	width: 95%;
+}
+.w90{
+	width: 90%;
+}
+.w80{
+	width: 80%;
+}
+.w75{
+	width: 75%;
+}
+.w70{
+	width: 70%;
+}
+.w60{
+	width: 60%;
+}
+.w50{
+	width: 50%;
+}
+.w40{
+	width: 40%;
+}
+.w30{
+	width: 30%;
+}
+.w25{
+	width: 25%;
+}
+.w20{
+	width: 20%;
+}
+.w15{
+	width: 15%;
+}
+/*
+MENU CSS
+--------------------------------------------------
+Set style rules for link / button list menus
+*/
 .menu{
 	list-style-type: none;
 	font-size: 90%;
-	width: 80%;
 	margin: 2px auto;
 	padding: 0;
 }
-.hlink,.tlink2,.tlink3,.blink{
+/*
+LINK / BUTTON CSS
+--------------------------------------------------
+Set general style rules for links / buttons
+*/
+.link1,.link2,.link3,.link4{
 	float: left;
+	font-family: arial;
 	font-weight: bold;
+	font-size: 100%;
 	text-decoration: none;
-}
-.hlink{
-	color: black;
-	text-transform: uppercase;
-	background: rgb(198,217,241);
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding: 4px 0.5%;
-	width: 20%;
-	margin: 0 2%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
-}
-.action{
-	list-style-type: none;
-	font-size: 90%;
-	width: 100%;
-	margin: 2px auto;
-	padding: 0;
-}
-.tlink2{
+	border: none;
 	color: rgb(31,73,125);
 	background: rgb(228,237,248);
-	border: none;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	padding: 2px 0.5%;
-	width: 40%;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+/*
+Set width and margin rules to center links / buttons
+based on the number of items in list menu
+*/
+.link1{
+	padding: 0.5%;
+	width: 90%;
 	margin: 2px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
-.tlink3{
-	color: rgb(31,73,125);
-	background: rgb(228,237,248);
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	padding: 2px 0.5%;
+.link2{
+	padding: 0.5%;
+	width: 45%;
+	margin: 2px 2.0%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.link3{
+	padding: 0.5%;
 	width: 30%;
 	margin: 2px 1.16666%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
-.blink{
-	color: rgb(31,73,125);
-	background: rgb(228,237,248);
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	padding: 2px 0.5%;
-	width: 80%;
-	margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+.link4{
+	padding: 0.5%;
+	width: 22.5%;
+	margin: 2px 0.75%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
-.hlink:hover,.tlink2:hover,.tlink3:hover,.blink:hover{
+/*
+Set link / button hover rules
+*/
+.link1:hover,.link2:hover,.link3:hover,.link4:hover{
 	color: white;
 	background: rgb(31,73,125);
+	cursor: pointer;
 }
-@media screen and (max-width: 500px){
-	.hlink{
-		padding: 4px 0.5%;
-		width: 40%;
-		margin: 4px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
-	}
-	.tlink2{
+/*
+Set alternate link / button layout rules
+*/
+@media screen and (max-width: 520px){
+	.link2{
 		padding: 2px 0.5%;
-		width: 80%;
-		margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+		width: 90%;
+		margin: 2px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */	
 	}
-	.tlink3{
+	.link3{
 		padding: 2px 0.5%;
-		width: 80%;
-		margin: 2px 9.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+		width: 90%;
+		margin: 2px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */	
+	}
+	.link4{
+		padding: 2px 0.5%;
+		width: 45%;
+		margin: 2px 2.0%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 	}
 }
+/*
+TABLE CSS
+--------------------------------------------------
+Set general style rules for tables
+*/
+table,th,td{	
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 0.5%;
+	text-align: center;
+	vertical-align: center;
+}
+.table{
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+}
+table{
+	width: 90%;
+	border: none;
+	margin: 0 auto;
+}
+.top{
+	font-size: 1.2em;
+	background: rgb(31,73,125);
+	color: white;
+}
+.sub{
+	font-size: 1.1em;
+	font-style: italic;
+	background: rgb(84,141,212);
+	color: white;
+}
+/*
+TEXT FIELD / AREA CSS
+--------------------------------------------------
+Set general style rules for text fields / areas
+*/
 .field{
-	width: 99%;
 }
-.description{
-	width: 99%;
+.area{
 	height: 30px;
 	min-height: 30px;
 	resize: vertical;
-}
-.button{
-	font-family: arial;
-	font-size: 98%;
 }
