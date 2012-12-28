@@ -1,4 +1,6 @@
+<!-- the entire index table is contained in div w/ class="table" -->
 <div class="table">
+	<!-- first subtable contains the main header and the column headers -->
 	<table>
 		<tr>
 			<th class="top" colspan="4">
@@ -20,24 +22,31 @@
 			</th>
 		</tr>
 	</table>
-		<%= div_for(@departments) do |department| %>
-				<div class="tleft">
-						<%= department.name %>
-				</div>
-				<div class="tleft">
+	<!-- div_for creates new subtable for each department created -->
+	<%= div_for(@departments) do |department| %>
+		<!-- each department subtable contains department information and action buttons -->
+		<table>
+			<tr>
+				<td class="tleft w25">
+					<%= department.name %>
+				</td>
+				<td class="tleft w25">
 					<%= department.location %>
-				</div>
-				<div class="tcenter">
+				</td>
+				<td class="tcenter w20">
 					<%= department.date_completed %>
-				</div>
-				<div class="tcenter">
+				</td>
+				<td class="tcenter">
 					<ul class="menu w100">
 						<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"link3" %></li>
 						<li><%= link_to 'Edit Tasks', department_path(department), :class=>"link3" %></li>
 						<li><%= link_to 'Destroy', department, method: :delete, remote: true, data: { confirm: 'Are you sure?' }, :class=>"link3" %></li>
 					</ul>
-				</div>
-		<% end %>
+				</td>
+			</tr>
+		</table>
+	<% end %>
+	<!-- last subtable contains the button to create new departments -->
 	<table>
 		<tr>
 			<td class="tcenter" colspan="4">

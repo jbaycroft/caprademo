@@ -26,7 +26,7 @@ html
 	background: white;
 	text-align: center;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 450px){
 	html{
 		font-size: 55%;
 	}
@@ -184,7 +184,7 @@ Set link / button hover and active rules
 /*
 Set alternate link / button layout rules
 */
-@media screen and (max-width: 520px){
+@media screen and (max-width: 800px){
 	.link2{
 		padding: 2px 0.5%;
 		width: 90%;
