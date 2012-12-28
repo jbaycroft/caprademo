@@ -6,42 +6,42 @@
 			</th>
 		</tr>
 		<tr>
-			<th class="sub indexc1">
+			<th class="sub tleft w25">
 				Department Name:
 			</th>
-			<th class="sub indexc2">
+			<th class="sub tleft w25">
 				Department Location:
 			</th>
-			<th class="sub indexc3">
+			<th class="sub tcenter w20">
 				Date Complete:
 			</th>
-			<th class="sub indexc4">
+			<th class="sub tcenter">
 				Department Actions:
 			</th>
 		</tr>
 		<% @departments.each do |department| %>
 		<tr>
-			<td class="indexc1">
+			<td class="tleft">
 				<%= department.name %>
 			</td>
-			<td class="indexc2">
+			<td class="tleft">
 				<%= department.location %>
 			</td>
-			<td class="indexc3">
+			<td class="tcenter">
 				<%= department.date_completed %>
 			</td>
-			<td class="indexc4">
-				<ul class="action">
-					<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"tlink3" %></li>
-					<li><%= link_to 'Edit Tasks', department_path(department), :class=>"tlink3" %></li>
-					<li><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"tlink3" %></li>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"link3" %></li>
+					<li><%= link_to 'Edit Tasks', department_path(department), :class=>"link3" %></li>
+					<li><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"link3" %></li>
 				</ul>
 			</td>
 		</tr>
 		<% end %>
 		<tr>
-			<td class="bottom" colspan="4">
-				<%= link_to 'Create New Department', new_department_path, :class=>"blink" %>
+			<td class="tcenter" colspan="4">
+				<%= link_to 'Create New Department', new_department_path, :class=>"link1" %>
 			</td>
 		</tr>
 	</table>
