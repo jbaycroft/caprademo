@@ -47,7 +47,10 @@
     <%= f.label :date_completed %><br />
     <%= f.date_select :date_completed %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="save">
+    <%= f.submit "Save as Draft" %>
+  </div>
+  <div class="complete">
+    <%= f.submit "Save as complete" %>
   </div>
 <% end %>

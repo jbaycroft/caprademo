@@ -19,26 +19,26 @@
 				Department Actions:
 			</th>
 		</tr>
-		<% @departments.each do |department| %>
-		<tr>
-			<td class="indexc1">
-				<%= department.name %>
-			</td>
-			<td class="indexc2">
-				<%= department.location %>
-			</td>
-			<td class="indexc3">
-				<%= department.date_completed %>
-			</td>
-			<td class="indexc4">
-				<ul class="action">
-					<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"tlink3" %></li>
-					<li><%= link_to 'Edit Tasks', department_path(department), :class=>"tlink3" %></li>
-					<li><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"tlink3" %></li>
-				</ul>
-			</td>
-		</tr>
+	</table>
+		<%= div_for(@departments) do |department| %>
+				<div class="indexc1">
+						<%= department.name %>
+				</div>
+				<div class="indexc2">
+					<%= department.location %>
+				</div>
+				<div class="indexc3">
+					<%= department.date_completed %>
+				</div>
+				<div class="indexc4">
+					<ul class="action">
+						<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"tlink3" %></li>
+						<li><%= link_to 'Edit Tasks', department_path(department), :class=>"tlink3" %></li>
+						<li><%= link_to 'Destroy', department, method: :delete, remote: true, data: { confirm: 'Are you sure?' }, :class=>"tlink3" %></li>
+					</ul>
+				</div>
 		<% end %>
+	<table>
 		<tr>
 			<td class="bottom" colspan="4">
 				<%= link_to 'Create New Department', new_department_path, :class=>"blink" %>
