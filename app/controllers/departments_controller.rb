@@ -76,8 +76,7 @@ class DepartmentsController < ApplicationController
     @department.destroy
 
     respond_to do |format|
-      format.html { redirect_to departments_url }
-      format.json { head :no_content }
+      format.js
     end
   end
 end

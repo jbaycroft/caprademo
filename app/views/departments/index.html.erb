@@ -19,26 +19,26 @@
 				Department Actions:
 			</th>
 		</tr>
-		<% @departments.each do |department| %>
-		<tr>
-			<td class="tleft">
-				<%= department.name %>
-			</td>
-			<td class="tleft">
-				<%= department.location %>
-			</td>
-			<td class="tcenter">
-				<%= department.date_completed %>
-			</td>
-			<td class="tcenter">
-				<ul class="menu w100">
-					<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"link3" %></li>
-					<li><%= link_to 'Edit Tasks', department_path(department), :class=>"link3" %></li>
-					<li><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"link3" %></li>
-				</ul>
-			</td>
-		</tr>
+	</table>
+		<%= div_for(@departments) do |department| %>
+				<div class="tleft">
+						<%= department.name %>
+				</div>
+				<div class="tleft">
+					<%= department.location %>
+				</div>
+				<div class="tcenter">
+					<%= department.date_completed %>
+				</div>
+				<div class="tcenter">
+					<ul class="menu w100">
+						<li><%= link_to 'Edit Info', edit_department_path(department), :class=>"link3" %></li>
+						<li><%= link_to 'Edit Tasks', department_path(department), :class=>"link3" %></li>
+						<li><%= link_to 'Destroy', department, method: :delete, remote: true, data: { confirm: 'Are you sure?' }, :class=>"link3" %></li>
+					</ul>
+				</div>
 		<% end %>
+	<table>
 		<tr>
 			<td class="tcenter" colspan="4">
 				<%= link_to 'Create New Department', new_department_path, :class=>"link1" %>
