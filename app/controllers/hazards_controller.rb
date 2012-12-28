@@ -69,7 +69,7 @@ class HazardsController < ApplicationController
 
     respond_to do |format|
       if @hazard.update_attributes(params[:hazard])
-        format.html { redirect_to @task, notice: 'Hazard was successfully updated.' }
+        format.html { redirect_to [@department,@task], notice: 'Hazard was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -85,8 +85,7 @@ class HazardsController < ApplicationController
     @hazard.destroy
 
     respond_to do |format|
-      format.html { redirect_to department_task_url(@department,@task) }
-      format.json { head :no_content }
+      format.js
     end
   end
 end
