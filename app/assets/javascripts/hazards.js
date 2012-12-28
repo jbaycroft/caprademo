@@ -38,5 +38,5 @@ $(document).ready(function() {
             $$.ha3.hide('slow');
             $$.ha4.hide('slow');
         }
-    });
+    }).trigger('change');//call the handler immediately, with initially selected options;
 });
