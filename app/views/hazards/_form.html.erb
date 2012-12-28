@@ -63,11 +63,14 @@
     <%= f.label :complete %><br />
     <%= f.check_box :complete %>
   </div>
-  <div class="hidden" id="haz4">
+  <div class="hidden" id="complete">
     <%= f.label :date_completed %><br />
     <%= f.date_select :date_completed %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="complete">
+    <%= f.submit "Save as Complete"%>
+  </div>
+  <div class="save">
+    <%= f.submit "Save as Draft"%>
   </div>
 <% end %>

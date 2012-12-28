@@ -39,4 +39,7 @@ $(document).ready(function() {
             $$.ha4.hide('slow');
         }
     }).trigger('change');//call the handler immediately, with initially selected options;
+    $('div.complete').bind('click', function() {
+        $('input#hazard_complete').prop("checked",true);
+    });
 });
