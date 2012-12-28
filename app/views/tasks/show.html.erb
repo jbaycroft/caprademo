@@ -94,16 +94,21 @@
     <th></th>
     <th></th>
   </tr>
-
-<% @task.hazards.each do |hazard| %>
-  <tr>
-    <td><%= link_to "#{hazard.haztype}",[@department,@task,hazard] %></td>
-    <td><%= hazard.date_completed %></td>
-    <td><%= link_to 'Edit', edit_department_task_hazard_path(@department,@task,hazard) %></td>
-    <td><%= link_to 'Destroy', [@department,@task,hazard], method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
 </table>
+<%= div_for(@task.hazards) do |hazard| %>
+    <div>
+      <%= link_to "#{hazard.haztype}",[@department,@task,hazard] %>
+    </div>
+    <div>
+      <%= hazard.date_completed %>
+    </div>
+    <div>
+      <%= link_to 'Edit', edit_department_task_hazard_path(@department,@task,hazard) %>
+    </div>
+    <div>
+      <%= link_to 'Destroy', [@department,@task,hazard], method: :delete, remote: true, data: { confirm: 'Are you sure?' } %>
+    </div>
+<% end %>
 
 <br />
 
