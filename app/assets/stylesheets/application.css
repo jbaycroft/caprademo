@@ -124,8 +124,7 @@ Set style rules for link / button list menus
 */
 .menu{
 	list-style-type: none;
-	font-size: 90%;
-	margin: 2px auto;
+	margin: 0 auto;
 	padding: 0;
 }
 /*
@@ -152,27 +151,32 @@ based on the number of items in list menu
 .link1{
 	padding: 0.5%;
 	width: 90%;
-	margin: 2px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+	margin: 0 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
 .link2{
 	padding: 0.5%;
 	width: 45%;
-	margin: 2px 2.0%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+	margin: 0 2.0%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
 .link3{
 	padding: 0.5%;
 	width: 30%;
-	margin: 2px 1.16666%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+	margin: 0 1.16666%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
 .link4{
 	padding: 0.5%;
 	width: 22.5%;
-	margin: 2px 0.75%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+	margin: 0 0.75%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
 }
 /*
-Set link / button hover rules
+Set link / button hover and active rules
 */
 .link1:hover,.link2:hover,.link3:hover,.link4:hover{
+	color: white;
+	background: rgb(31,73,125);
+	cursor: pointer;
+}
+.link1:active,.link2:active,.link3:active,.link4:active{
 	color: white;
 	background: rgb(31,73,125);
 	cursor: pointer;
@@ -236,6 +240,7 @@ TEXT FIELD / AREA CSS
 Set general style rules for text fields / areas
 */
 .field{
+	height: 15px;
 }
 .area{
 	height: 30px;
