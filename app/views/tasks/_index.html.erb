@@ -1,0 +1,57 @@
+<!-- the entire task index table is contained in div w/ class="table" -->
+<div class="table">
+	<!-- first subtable contains the main header and the column headers -->
+	<table>
+		<tr>
+			<th class="top" colspan="4">
+				Tasks Performed in <%= @department.name %> Department
+			</th>
+		</tr>
+		<tr>
+			<th class="sub tleft w25">
+				Task Name:
+			</th>
+			<th class="sub tleft w25">
+				Task Location:
+			</th>
+			<th class="sub tcenter w20">
+				Date Complete:
+			</th>
+			<th class="sub tcenter">
+				Task Actions:
+			</th>
+		</tr>
+	</table>
+	<!-- div_for creates new subtable for each task created -->
+	<%= div_for(@department.tasks) do |task| %>
+		<!-- each task subtable contains task information and action buttons -->
+		<table>
+			<tr>
+				<td class="tleft w25">
+					<%= task.name %>
+				</td>
+				<td class="tleft w25">
+					<%= task.location %>
+				</td>
+				<td class="tcenter w20">
+					<%= task.date_completed %>
+				</td>
+				<td class="tcenter">
+					<ul class="menu w100">
+						<li><%= link_to 'Edit Info', edit_department_task_path(@department,task), :class=>"link3" %></li>
+						<li><%= link_to 'Edit Hazards', department_task_path(@department,task), :class=>"link3" %></li>
+						<li><%= link_to 'Destroy', [@department,task], method: :delete, remote: true, data: { confirm: 'Are you sure?' }, :class=>"link3" %></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	<% end %>
+	<!-- last subtable contains the button to create new tasks -->
+	<table>
+		<tr>
+			<td class="tcenter" colspan="4">
+				<%= link_to 'Create New Task', new_department_task_path(@department), :class=>"link1" %>
+			</td>
+		</tr>
+	</table>
+</div>

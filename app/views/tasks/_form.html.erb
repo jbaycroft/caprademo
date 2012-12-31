@@ -11,46 +11,87 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :hazard1 %><br />
-    <%= f.check_box :hazard1 %>
-  </div>
-  <div class="field">
-    <%= f.label :hazard2 %><br />
-    <%= f.check_box :hazard2 %>
-  </div>
-  <div class="field">
-    <%= f.label :hazard3 %><br />
-    <%= f.check_box :hazard3 %>
-  </div>
-  <div class="field">
-    <%= f.label :hazard4 %><br />
-    <%= f.check_box :hazard4 %>
-  </div>
-  <div class="field">
-    <%= f.label :location %><br />
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
-    <%= f.label :complete %><br />
-    <%= f.check_box :complete %>
-  </div>
-  <div class="field">
-    <%= f.label :date_completed %><br />
-    <%= f.date_select :date_completed %>
-  </div>
-  <div class="save">
-    <%= f.submit "Save as Draft" %>
-  </div>
-  <div class="complete">
-    <%= f.submit "Save as complete" %>
-  </div>
+  <!-- task description form table contains editable fields for:
+		- Task Name
+		- Task Description
+		- Task Location
+		- Hazards Associated with Task
+		- Assessment Completed
+		- Date Completed -->
+	<div class="table">
+		<table>
+			<tr>
+				<th class="top" colspan="2">
+					Task Description
+				</th>
+			</tr>
+			<tr>
+				<td class="tleft w20">
+					Task Name:
+				</td>
+				<td class="tleft">
+					<%= f.text_field :name, :class=>"field w99" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Task Description:
+				</td>
+				<td class="tleft">
+					<%= f.text_area :description, :class=>"area w99" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Task Location:
+				</td>
+				<td class="tleft">
+					<%= f.text_field :location, :class=>"field w99" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Hazards Associated </br> with this Task:
+				</td>
+				<td class="tcenter">
+					<ul class="menu w100">
+						<li class="checkbox4"><%= f.label :hazard1, 'Hazard Type 1', :class=>"label" %></br><%= f.check_box :hazard1, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :hazard2, 'Hazard Type 2', :class=>"label" %></br><%= f.check_box :hazard2, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :hazard3, 'Hazard Type 3', :class=>"label" %></br><%= f.check_box :hazard3, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :hazard4, 'Hazard Type 4', :class=>"label" %></br><%= f.check_box :hazard4, :class=>"box" %></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Assessment Complete:
+				</td>
+				<td class="tleft">
+					<%= f.check_box :complete %>
+					<%= f.label :complete, " (Select Check Box if Department Assessment is Complete)"%>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Date Completed:
+				</td>
+				<td class="tleft">
+					<%= f.date_select :date_completed %>
+					<%= f.label :date_completed, " (Select Date on which Assessment was Completed)" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Task Actions:
+				</td>
+				<!-- task description table contains task information (above) and action buttons -->
+				<td class="tcenter">
+					<ul class="menu w100">
+						<li><%= f.submit 'Save Task Info', :class=>"link2" %></li>
+						<li><%= link_to 'Back to Task List', department_path(@department), :class=>"link2" %></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</div>
 <% end %>

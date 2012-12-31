@@ -1,115 +1,96 @@
-<div class="table">       
-  <table>     
-    <tr>    
-      <th class="top first" colspan="2">  
-        <%= @task.name %>
-      </th> 
-    </tr>   
-    <tr>    
-      <th class="sub first" id="col1">  
-        Column 1
-      </th> 
-      <th class="sub first" id="col2">  
-        Column 2
-      </th> 
-    </tr>   
-    <tr>    
-      <td class="r1 c1">  
-        Description:
-      </td> 
-      <td class="r1 c2">  
-        <%= @task.description %>
-      </td> 
-    </tr>   
-    <tr>    
-      <td class="r2 c1">  
-        Hazard 1:
-      </td> 
-      <td class="r2 c2">  
-        <%= @task.hazard1 %>
-      </td> 
-    </tr>   
-    <tr>    
-      <td class="r3 c1">  
-        Hazard 2:
-      </td> 
-      <td class="r3 c2">  
-        <%= @task.hazard2 %>
-      </td> 
-    </tr>   
-    <tr>    
-      <td class="r4 c1">  
-        Hazard 3:
-      </td> 
-      <td class="r4 c2">  
-        <%= @task.hazard3 %>
-      </td> 
-    </tr>   
-    <tr>    
-      <td class="r5 c1">  
-        Hazard 4:
-      </td> 
-      <td class="r5 c2">  
-        <%= @task.hazard4 %>
-      </td> 
-    </tr>   
-    <tr>    
-      <td class="r6 c1">  
-        Location:
-      </td> 
-      <td class="r6 c2">  
-        <%= @task.location %>
-      </td> 
-    </tr>   
-    <tr>    
-      <td class="r7 c1">  
-        Complete:
-      </td> 
-      <td class="r7 c2">  
-        <%= @task.complete %>
-      </td> 
-    </tr>   
-    <tr>    
-      <td class="r8 c1">  
-        Date Completed:
-      </td> 
-      <td class="r8 c2">  
-        <%= @task.date_completed %>
-      </td> 
-    </tr>   
-  </table>      
-</div>        
-<%= link_to "Edit Task", edit_department_task_path(@department, @task) %>
-<%= link_to "Back to Department", department_path(@department) %>
+<!-- the entire task description table is contained in div w/ class="table" -->
+<div class="table">
+	<table>
+		<tr>
+			<th class="top" colspan="2">
+				<%= @task.name %> Task Description
+			</th>
+		</tr>
+		<tr>
+			<th class="sub tleft w20">
+				Task Name:
+			</th>
+			<th class="sub tleft">
+				<%= @task.name %>
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Task Description:
+			</td>
+			<td class="tleft">
+				<%= @task.description %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Task Location:
+			</td>
+			<td class="tleft">
+				<%= @task.location %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Hazards Associated </br> with this Task:
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox4">
+						<div class="label">Hazard Type 1</div>
+						<div class="yesno"><%= @task.hazard1 ? 'Yes' : 'No' %></div>
+						<!-- THIS MAY BE A POSSIBLE ROUTE 
+						CREATE A LINK THAT GENERATES THE PROPER FORM FIELDS BELOW
+						HIDE AND SHOW THE LINK BASED ON THE BOOLEAN RESULT -->
+						<div id="showyes"><%= link_to 'Fill Out From', department_path(@department), :class=>"link1" %></div>
+					</li>
+					<li class="checkbox4">
+						<div class="label">Hazard Type 2</div>
+						<div class="yesno"><%= @task.hazard2 ? 'Yes' : 'No' %></div>
+					</li>
+					<li class="checkbox4">
+						<div class="label">Hazard Type 3</div>
+						<div class="yesno"><%= @task.hazard3 ? 'Yes' : 'No' %></div>
+					</li>
+					<li class="checkbox4">
+						<div class="label">Hazard Type 4</div>
+						<div class="yesno"><%= @task.hazard4 ? 'Yes' : 'No' %></div>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Assessment Complete:
+			</td>
+			<td class="tleft">
+				<%= @task.complete ? 'Yes' : 'No' %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Date Completed:
+			</td>
+			<td class="tleft">
+				<%= @task.date_completed %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Task Actions:
+			</td>
+			<!-- task description table contains task information (above) and action buttons -->
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li><%= link_to 'Edit Task Info', edit_department_task_path(@department,@task), :class=>"link2" %></li>
+					<li><%= link_to 'Back to Task List', department_path(@department), :class=>"link2" %></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+</div>
 
-<table>
-  <tr>    
-      <th class="top first" colspan="4">  
-        Hazards
-      </th> 
-    </tr>  
-  <tr>
-    <th>Type</th>
-    <th>Date completed</th>
-    <th></th>
-    <th></th>
-  </tr>
-</table>
-<%= div_for(@task.hazards) do |hazard| %>
-    <div>
-      <%= link_to "#{hazard.haztype}",[@department,@task,hazard] %>
-    </div>
-    <div>
-      <%= hazard.date_completed %>
-    </div>
-    <div>
-      <%= link_to 'Edit', edit_department_task_hazard_path(@department,@task,hazard) %>
-    </div>
-    <div>
-      <%= link_to 'Destroy', [@department,@task,hazard], method: :delete, remote: true, data: { confirm: 'Are you sure?' } %>
-    </div>
-<% end %>
+<h1>Insert Smart Drop-Down List Here</h1>
+<h2>Select which hazard form appears below</h2>
 
-<br />
 
-<%= link_to 'New Hazard', new_department_task_hazard_path(@department,@task) %>

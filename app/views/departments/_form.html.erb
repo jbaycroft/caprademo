@@ -10,7 +10,12 @@
       </ul>
     </div>
   <% end %>
-
+	<!-- department description form table contains editable fields for:
+		- Department Name
+		- Department Description
+		- Department Location
+		- Assessment Completed
+		- Date Completed -->
 	<div class="table">
 		<table>
 			<tr>
@@ -64,6 +69,7 @@
 				<td class="tleft">
 					Department Actions:
 				</td>
+				<!-- department description table contains department information (above) and action buttons -->
 				<td class="tcenter">
 					<ul class="menu w100">
 						<li><%= f.submit 'Save Department Info', :class=>"link2" %></li>

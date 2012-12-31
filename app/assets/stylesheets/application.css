@@ -128,6 +128,81 @@ Set style rules for link / button list menus
 	padding: 0;
 }
 /*
+CHECKBOX CSS
+--------------------------------------------------
+Set general style rules for checkbox inputs
+*/
+.checkbox1,.checkbox2,.checkbox3,.checkbox4{
+	float: left;
+	font-family: arial;
+	font-weight: normal;
+	font-size: 100%;
+	text-decoration: none;
+	outline: 1px solid black;
+	color: black;
+	background: white;
+}
+/*
+Set width and margin rules to center checkboxes
+based on the number of items in the list
+*/
+.checkbox1{
+	padding: 0.5%;
+	width: 90%;
+	margin: 0 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.checkbox2{
+	padding: 0.5%;
+	width: 45%;
+	margin: 0 2.0%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.checkbox3{
+	padding: 0.5%;
+	width: 30%;
+	margin: 0 1.16666%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+.checkbox4{
+	padding: 0.5%;
+	width: 22.5%;
+	margin: 0 0.75%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+}
+/*
+Set checkbox part formatting
+*/
+.label{
+	text-decoration: underline;
+}
+.yesno{
+	text-decoration: none;
+	font-weight: bold;
+}
+/*
+Set checkbox hover rules
+*/
+.box:hover{
+	cursor: pointer;
+}
+/*
+Set alternate checkbox layout rules
+*/
+@media screen and (max-width: 800px){
+	.checkbox2{
+		padding: 2px 0.5%;
+		width: 90%;
+		margin: 4px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */	
+	}
+	.checkbox3{
+		padding: 2px 0.5%;
+		width: 90%;
+		margin: 4px 4.5%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */	
+	}
+	.checkbox4{
+		padding: 2px 0.5%;
+		width: 45%;
+		margin: 4px 2.0%; /* [100% - (#buttons/#rows)*(%width) - (2) *(#buttons/#rows)*(%LRpadding)] / [2 * (#buttons/#rows)] */
+	}
+}
+/*
 LINK / BUTTON CSS
 --------------------------------------------------
 Set general style rules for links / buttons
