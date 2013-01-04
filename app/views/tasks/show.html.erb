@@ -36,25 +36,28 @@
 			</td>
 			<td class="tcenter">
 				<ul class="menu w100">
-					<li class="checkbox4">
+					<li class="checkbox4 one hidden" id="yes_no">
+						<div class="hidden" id="index">1</div>
 						<div class="label">Hazard Type 1</div>
-						<div class="yesno"><%= @task.hazard1 ? 'Yes' : 'No' %></div>
-						<!-- THIS MAY BE A POSSIBLE ROUTE 
-						CREATE A LINK THAT GENERATES THE PROPER FORM FIELDS BELOW
-						HIDE AND SHOW THE LINK BASED ON THE BOOLEAN RESULT -->
-						<div id="showyes"><%= link_to 'Fill Out From', department_path(@department), :class=>"link1" %></div>
+						<div class="hidden" id="value"><%= @task.hazard1 ? '1' : '0' %></div>
+						<div class="hidden" id="comma">,</div>
 					</li>
-					<li class="checkbox4">
+					<li class="checkbox4 two hidden" id="yes_no">
+						<div class="hidden" id="index">2</div>
 						<div class="label">Hazard Type 2</div>
-						<div class="yesno"><%= @task.hazard2 ? 'Yes' : 'No' %></div>
+						<div class="hidden" id="value"><%= @task.hazard2 ? '1' : '0' %></div>
+						<div class="hidden" id="comma">,</div>
 					</li>
-					<li class="checkbox4">
+					<li class="checkbox4 three hidden" id="yes_no">
+						<div class="hidden" id="index">3</div>
 						<div class="label">Hazard Type 3</div>
-						<div class="yesno"><%= @task.hazard3 ? 'Yes' : 'No' %></div>
+						<div class="hidden" id="value"><%= @task.hazard3 ? '1' : '0' %></div>
+						<div class="hidden" id="comma">,</div>
 					</li>
-					<li class="checkbox4">
+					<li class="checkbox4 four hidden" id="yes_no">
+						<div class="hidden" id="index">4</div>
 						<div class="label">Hazard Type 4</div>
-						<div class="yesno"><%= @task.hazard4 ? 'Yes' : 'No' %></div>
+						<div class="hidden" id="value"><%= @task.hazard4 ? '1' : '0' %></div>
 					</li>
 				</ul>
 			</td>
@@ -90,7 +93,7 @@
 	</table>
 </div>
 
-<h1>Insert Smart Drop-Down List Here</h1>
-<h2>Select which hazard form appears below</h2>
+<!-- show the list of all hazards associated with this department -->
+<%= render 'hazards/index' %>
 
 
