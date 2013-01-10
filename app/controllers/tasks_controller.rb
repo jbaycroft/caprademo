@@ -2,6 +2,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   before_filter :get_department
+  before_filter :logged_in?
   def get_department
     @department=Department.find(params[:department_id])
   end
