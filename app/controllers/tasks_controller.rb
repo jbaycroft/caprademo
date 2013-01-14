@@ -30,7 +30,6 @@ class TasksController < ApplicationController
   # GET /tasks/new.json
   def new
     @task = @department.tasks.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: [@department,@task] }
@@ -46,7 +45,7 @@ class TasksController < ApplicationController
   # POST /tasks.json
   def create
     @task = @department.tasks.new(params[:task])
-
+    @task.hazards.build
     respond_to do |format|
       if @task.save
         format.html { redirect_to [@department,@task], notice: 'Task was successfully created.' }

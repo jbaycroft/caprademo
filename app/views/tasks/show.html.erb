@@ -92,8 +92,17 @@
 		</tr>
 	</table>
 </div>
-
+<!-- show the form for completing hazards within this task -->
+<%= form_for([@department,@task]) do |f| %>
+	<%= f.fields_for :hazards do |builder| %>
+		<%= render "hazard_fields", :f => builder%>
+	<% end %>
+	  <div class="complete">
+    <%= f.submit "Save as Complete"%>
+  </div>
+  <div class="save">
+    <%= f.submit "Save as Draft"%>
+  </div>
+<% end %>
 <!-- show the list of all hazards associated with this department -->
 <%= render 'hazards/index' %>
-
-

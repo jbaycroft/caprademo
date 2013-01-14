@@ -1,0 +1,56 @@
+ <div class="select">
+    <%= f.label :haztype %><br />
+    <%= f.select :haztype, [['-',"-"],['Hazard 1','haz1'],['Hazard 2',"haz2"],['Hazard 3',"haz3"],['Hazard 4',"haz4"]] %>
+  </div>
+  <div class="hidden" id="haz1">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="hidden" id="haz1">
+    <%= f.label :question1 %><br />
+    <%= f.text_field :question1 %>
+  </div>
+  <div class="hidden" id="haz1">
+    <%= f.label :question2 %><br />
+    <%= f.text_field :question2 %>
+  </div>
+  <div class="hidden" id="haz2">
+    <%= f.label :question3 %><br />
+    <%= f.text_field :question3 %>
+  </div>
+  <div class="hidden" id="haz2">
+    <%= f.label :question4, "File Upload"%>
+    <%= f.file_field :question4 %>
+  </div>
+  <div class="hidden" id="haz2">
+    <%= f.label :question5 %><br />
+    <%= f.check_box :question5 %>
+  </div>
+  <div class="hidden" id="haz2">
+    <%= f.label :question6 %><br />
+    <%= f.check_box :question6 %>
+  </div>
+  <div class="hidden" id="haz3">
+    <%= f.label :question7 %><br />
+    <%= f.check_box :question7 %>
+  </div>
+  <div class="hidden" id="haz3">
+    <%= f.label :question8 %><br />
+    <%= f.check_box :question8 %>
+  </div>
+  <div class="hidden" id="haz3">
+    <%= f.label :question9 %><br />
+    <%= f.text_field :question9 %>
+  </div>
+  <div class="hidden" id="haz4">
+    <%= f.label :question10 %><br />
+    <%= f.text_field :question10 %>
+  </div>
+  <div class="hidden" id="haz4">
+    <%= f.label :complete %><br />
+    <%= f.check_box :complete %>
+  </div>
+  <div class="hidden" id="complete">
+    <%= f.label :date_completed %><br />
+    <%= f.date_select :date_completed %>
+  </div>
