@@ -25,3 +25,12 @@ $(document).ready(function(){
 		}
 	}
 });
+jQuery(function($){
+	function changeTab(e) {
+		e.preventDefault();
+		$('li div.active').removeClass("active");
+		$(this).addClass("active");
+	}
+	$("li div").click(changeTab);
+
+})

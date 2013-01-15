@@ -322,3 +322,6 @@ Set general style rules for text fields / areas
 	min-height: 30px;
 	resize: vertical;
 }
+.active{
+	border: 10px solid black;
+}
