@@ -12,25 +12,25 @@ $(document).ready(function(){
 	for (var i = 0; i < result.length; i++) {
 		var t = result[i];
 		if (t == 1) {
-			$('tr.one').removeClass('hidden');
+			$('li.one').removeClass('hidden');
 		}
 		if (t == 2) {
-			$('tr.two').removeClass('hidden');
+			$('li.two').removeClass('hidden');
 		}
 		if (t == 3) {
-			$('tr.three').removeClass('hidden');
+			$('li.three').removeClass('hidden');
 		}
 		if (t == 4) {
-			$('tr.four').removeClass('hidden');
+			$('li.four').removeClass('hidden');
 		}
 	}
 });
 jQuery(function($){
 	function changeTab(e) {
 		e.preventDefault();
-		$('li div.active').removeClass("active");
+		$('li.checkbox1 div.active').removeClass("active");
 		$(this).addClass("active");
 	}
-	$("li div").click(changeTab);
+	$("li.checkbox1 div").click(changeTab);
 
 })

@@ -59,7 +59,38 @@
 			</td>
 		</tr>
 	</table>
-	<table>
+	<!--<ul class="tabs">
+		<% if @task.hazard1 == true %>
+				<ul class="menu w25">
+					<div class="checkbox1" id="yes_no">
+						<div class="label">Hazard Type 1</div>
+					</div>
+				</ul>
+		<% end %>
+		<% if @task.hazard2 == true %>
+				<ul class="menu w25">
+					<div class="checkbox1" id="yes_no">
+						<div class="label">Hazard Type 2</div>
+					</div>
+				</ul>
+		<% end %>
+		<% if @task.hazard3 == true %>
+				<ul class="menu w25">
+					<li class="checkbox1" id="yes_no">
+						<div class="label">Hazard Type 3</div>
+					</div>
+				</ul>
+		<% end %>
+		<% if @task.hazard4 == true %>
+				<ul class="menu w25">
+					<li class="checkbox1" id="yes_no">
+						<div class="label">Hazard Type 4</div>
+					</div>
+				</ul>
+		<% end %>
+	</ul>-->
+
+<table>
 		<tr>
 			<th class="sub tleft w20">
 				
@@ -68,76 +99,52 @@
 				
 			</th>
 		</tr>
-		<tr class="one hidden">
+		<tr>
 			<td class="tcenter">
 				<ul class="menu w100">
-					<div class="checkbox1" id="yes_no">
+					<li class="checkbox1 one hidden" id="yes_no">
 						<div class="hidden" id="index">1</div>
 						<div class="label">Hazard Type 1</div>
 						<div class="hidden" id="value"><%= @task.hazard1 ? '1' : '0' %></div>
 						<div class="hidden" id="comma">,</div>
-					</div>
-				</ul>
-			</td>
-			<td>
-				HERE
-			</td>
-		</tr>
-		<tr class="two hidden">
-			<td class="tcenter">
-				<ul class="menu w100">
-					<div class="checkbox1" id="yes_no">
+					</li>
+					<li class="checkbox1 two hidden" id="yes_no">
 						<div class="hidden" id="index">2</div>
 						<div class="label">Hazard Type 2</div>
 						<div class="hidden" id="value"><%= @task.hazard2 ? '1' : '0' %></div>
 						<div class="hidden" id="comma">,</div>
-					</div>
-				</ul>
-			</td>
-			<td>
-				HERE
-			</td>
-		</tr>
-		<tr class="three hidden">
-			<td class="tcenter">
-				<ul class="menu w100">
-					<li class="checkbox1" id="yes_no">
+					</li>
+					<li class="checkbox1 three hidden" id="yes_no">
 						<div class="hidden" id="index">3</div>
 						<div class="label">Hazard Type 3</div>
 						<div class="hidden" id="value"><%= @task.hazard3 ? '1' : '0' %></div>
 						<div class="hidden" id="comma">,</div>
-					</div>
-				</ul>
-			</td>
-			<td>
-				HERE
-			</td>
-		</tr>
-		<tr class="four hidden">
-			<td class="tcenter">
-				<ul class="menu w100">
-					<li class="checkbox1" id="yes_no">
+					</li>
+					<li class="checkbox1 four hidden" id="yes_no">
 						<div class="hidden" id="index">4</div>
 						<div class="label">Hazard Type 4</div>
 						<div class="hidden" id="value"><%= @task.hazard4 ? '1' : '0' %></div>
-					</div>
+					</li>
 				</ul>
+			</td>
+			<td>
+				<%= form_for([@department,@task]) do |f| %>
+					<%= f.fields_for :hazards do |builder| %>
+						<%= render "hazard_fields", :f => builder%>
+					<% end %>
+					  <div class="complete">
+				    <%= f.submit "Save as Complete"%>
+				  </div>
+				  <div class="save">
+				    <%= f.submit "Save as Draft"%>
+				  </div>
+				<% end %>
 			</td>
 		</tr>
 	</table>
-</div>
+</div> 
 <!-- show the form for completing hazards within this task -->
-<%= form_for([@department,@task]) do |f| %>
-	<%= f.fields_for :hazards do |builder| %>
-		<%= render "hazard_fields", :f => builder%>
-	<% end %>
-	  <div class="complete">
-    <%= f.submit "Save as Complete"%>
-  </div>
-  <div class="save">
-    <%= f.submit "Save as Draft"%>
-  </div>
-<% end %>
+
 <!-- show the list of all hazards associated with this department -->
 <%= render 'hazards/index' %>
 
