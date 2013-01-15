@@ -32,38 +32,6 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Hazards Associated </br> with this Task:
-			</td>
-			<td class="tcenter">
-				<ul class="menu w100">
-					<li class="checkbox4 one hidden" id="yes_no">
-						<div class="hidden" id="index">1</div>
-						<div class="label">Hazard Type 1</div>
-						<div class="hidden" id="value"><%= @task.hazard1 ? '1' : '0' %></div>
-						<div class="hidden" id="comma">,</div>
-					</li>
-					<li class="checkbox4 two hidden" id="yes_no">
-						<div class="hidden" id="index">2</div>
-						<div class="label">Hazard Type 2</div>
-						<div class="hidden" id="value"><%= @task.hazard2 ? '1' : '0' %></div>
-						<div class="hidden" id="comma">,</div>
-					</li>
-					<li class="checkbox4 three hidden" id="yes_no">
-						<div class="hidden" id="index">3</div>
-						<div class="label">Hazard Type 3</div>
-						<div class="hidden" id="value"><%= @task.hazard3 ? '1' : '0' %></div>
-						<div class="hidden" id="comma">,</div>
-					</li>
-					<li class="checkbox4 four hidden" id="yes_no">
-						<div class="hidden" id="index">4</div>
-						<div class="label">Hazard Type 4</div>
-						<div class="hidden" id="value"><%= @task.hazard4 ? '1' : '0' %></div>
-					</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td class="tleft">
 				Assessment Complete:
 			</td>
 			<td class="tleft">
@@ -91,6 +59,72 @@
 			</td>
 		</tr>
 	</table>
+	<table>
+		<tr>
+			<th class="sub tleft w20">
+				
+			</th>
+			<th class="sub tleft">
+				
+			</th>
+		</tr>
+		<tr class="one hidden">
+			<td class="tcenter">
+				<ul class="menu w100">
+					<div class="checkbox1" id="yes_no">
+						<div class="hidden" id="index">1</div>
+						<div class="label">Hazard Type 1</div>
+						<div class="hidden" id="value"><%= @task.hazard1 ? '1' : '0' %></div>
+						<div class="hidden" id="comma">,</div>
+					</div>
+				</ul>
+			</td>
+			<td>
+				HERE
+			</td>
+		</tr>
+		<tr class="two hidden">
+			<td class="tcenter">
+				<ul class="menu w100">
+					<div class="checkbox1" id="yes_no">
+						<div class="hidden" id="index">2</div>
+						<div class="label">Hazard Type 2</div>
+						<div class="hidden" id="value"><%= @task.hazard2 ? '1' : '0' %></div>
+						<div class="hidden" id="comma">,</div>
+					</div>
+				</ul>
+			</td>
+			<td>
+				HERE
+			</td>
+		</tr>
+		<tr class="three hidden">
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1" id="yes_no">
+						<div class="hidden" id="index">3</div>
+						<div class="label">Hazard Type 3</div>
+						<div class="hidden" id="value"><%= @task.hazard3 ? '1' : '0' %></div>
+						<div class="hidden" id="comma">,</div>
+					</div>
+				</ul>
+			</td>
+			<td>
+				HERE
+			</td>
+		</tr>
+		<tr class="four hidden">
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1" id="yes_no">
+						<div class="hidden" id="index">4</div>
+						<div class="label">Hazard Type 4</div>
+						<div class="hidden" id="value"><%= @task.hazard4 ? '1' : '0' %></div>
+					</div>
+				</ul>
+			</td>
+		</tr>
+	</table>
 </div>
 <!-- show the form for completing hazards within this task -->
 <%= form_for([@department,@task]) do |f| %>
@@ -106,3 +140,4 @@
 <% end %>
 <!-- show the list of all hazards associated with this department -->
 <%= render 'hazards/index' %>
+
