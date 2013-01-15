@@ -2,7 +2,7 @@
 $(document).ready(function() {
     //Define hash of variables to be used in select change function
     var $$ = {
-        'haztype': $('select#hazard_haztype'),
+        'haztype': $('select#task_hazards_attributes_0_haztype'),
         'ha1': $('div#haz1'),
         'ha2': $('div#haz2'),
         'ha3': $('div#haz3'),

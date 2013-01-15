@@ -61,7 +61,6 @@ class TasksController < ApplicationController
   # PUT /tasks/1.json
   def update
     @task = @department.tasks.find(params[:id])
-
     respond_to do |format|
       if @task.update_attributes(params[:task])
         format.html { redirect_to [@department,@task], notice: 'Task was successfully updated.' }

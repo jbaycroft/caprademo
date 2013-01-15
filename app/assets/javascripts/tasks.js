@@ -33,4 +33,4 @@ jQuery(function($){
 	}
 	$("li.checkbox1 div").click(changeTab);
 
-})
+});
