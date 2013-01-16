@@ -1,7 +1,4 @@
- <div class="select">
-    <%= f.label :haztype %><br />
-    <%= f.select :haztype, [['-',"-"],['Hazard 1','haz1'],['Hazard 2',"haz2"],['Hazard 3',"haz3"],['Hazard 4',"haz4"]] %>
-  </div>
+  <!-- Hazard Type 1 Form -->
   <div class="hidden" id="haz1">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
@@ -14,6 +11,7 @@
     <%= f.label :question2 %><br />
     <%= f.text_field :question2 %>
   </div>
+  <!-- Hazard Type 2 Form -->
   <div class="hidden" id="haz2">
     <%= f.label :question3 %><br />
     <%= f.text_field :question3 %>
@@ -30,6 +28,7 @@
     <%= f.label :question6 %><br />
     <%= f.check_box :question6 %>
   </div>
+  <!-- Hazard Type 3 Form -->
   <div class="hidden" id="haz3">
     <%= f.label :question7 %><br />
     <%= f.check_box :question7 %>
@@ -42,6 +41,7 @@
     <%= f.label :question9 %><br />
     <%= f.text_field :question9 %>
   </div>
+  <!-- Hazard Type 4 Form -->
   <div class="hidden" id="haz4">
     <%= f.label :question10 %><br />
     <%= f.text_field :question10 %>
