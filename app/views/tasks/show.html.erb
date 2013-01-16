@@ -59,92 +59,64 @@
 			</td>
 		</tr>
 	</table>
-	<!--<ul class="tabs">
-		<% if @task.hazard1 == true %>
-				<ul class="menu w25">
-					<div class="checkbox1" id="yes_no">
-						<div class="label">Hazard Type 1</div>
-					</div>
-				</ul>
-		<% end %>
-		<% if @task.hazard2 == true %>
-				<ul class="menu w25">
-					<div class="checkbox1" id="yes_no">
-						<div class="label">Hazard Type 2</div>
-					</div>
-				</ul>
-		<% end %>
-		<% if @task.hazard3 == true %>
-				<ul class="menu w25">
-					<li class="checkbox1" id="yes_no">
-						<div class="label">Hazard Type 3</div>
-					</div>
-				</ul>
-		<% end %>
-		<% if @task.hazard4 == true %>
-				<ul class="menu w25">
-					<li class="checkbox1" id="yes_no">
-						<div class="label">Hazard Type 4</div>
-					</div>
-				</ul>
-		<% end %>
-	</ul>-->
-
-<table>
+	<table>
 		<tr>
-			<th class="sub tleft w20">
-				
-			</th>
-			<th class="sub tleft">
-				
+			<th class="sub tleft w20" colspan="2">
+				<!-- blank row to distinguish task description from hazards descriptions -->
 			</th>
 		</tr>
+		<!-- hazard list - linked via task javascript to populate based on items checked in task form -->
 		<tr>
-			<td class="tcenter">
+			<td class="tcenter w20">
 				<ul class="menu w100">
-					<li class="checkbox1 one hidden" id="yes_no">
+					<li class="checkbox1 one hidden yes_no">
 						<div class="hidden" id="index">1</div>
 						<div class="label" id="haz1">Hazard Type 1</div>
 						<div class="hidden" id="value"><%= @task.hazard1 ? '1' : '0' %></div>
 						<div class="hidden" id="comma">,</div>
 					</li>
-					<li class="checkbox1 two hidden" id="yes_no">
+					<li class="checkbox1 two hidden yes_no">
 						<div class="hidden" id="index">2</div>
 						<div class="label" id="haz2">Hazard Type 2</div>
 						<div class="hidden" id="value"><%= @task.hazard2 ? '1' : '0' %></div>
 						<div class="hidden" id="comma">,</div>
 					</li>
-					<li class="checkbox1 three hidden" id="yes_no">
+					<li class="checkbox1 three hidden yes_no">
 						<div class="hidden" id="index">3</div>
 						<div class="label" id="haz3">Hazard Type 3</div>
 						<div class="hidden" id="value"><%= @task.hazard3 ? '1' : '0' %></div>
 						<div class="hidden" id="comma">,</div>
 					</li>
-					<li class="checkbox1 four hidden" id="yes_no">
+					<li class="checkbox1 four hidden yes_no">
 						<div class="hidden" id="index">4</div>
 						<div class="label" id="haz4">Hazard Type 4</div>
 						<div class="hidden" id="value"><%= @task.hazard4 ? '1' : '0' %></div>
+						<!-- NOTE: no comma div in last checkbox in hazard list -->
 					</li>
 				</ul>
 			</td>
+			<!-- hazard form generator - linked to task javascript to populate based on active checkbox selected -->
 			<td>
 				<%= form_for([@department,@task]) do |f| %>
-					<%= f.fields_for :hazards do |builder| %>
-						<%= render "hazard_fields", :f => builder%>
-					<% end %>
-					  <div class="complete">
-				    <%= f.submit "Save as Complete"%>
-				  </div>
-				  <div class="save">
-				    <%= f.submit "Save as Draft"%>
-				  </div>
+				<table class="form">
+					<tr>
+						<td class="tcenter">
+							<%= f.fields_for :hazards do |builder| %>
+								<%= render "hazard_fields", :f => builder%>
+							<% end %>
+						</td>
+					</tr>
+					<tr>
+						<td class="tcenter">
+							<ul class="menu w100">
+								<li><%= f.submit 'Save as Complete', :class=>"link2" %></li>
+								<li><%= f.submit 'Save as Draft', :class =>"link2" %></li>
+							</ul>
+						</td>
+					</tr>
 				<% end %>
+			</table>
 			</td>
-		</tr>
 	</table>
-</div> 
-<!-- show the form for completing hazards within this task -->
-
-<!-- show the list of all hazards associated with this department -->
-<%= render 'hazards/index' %>
+</div>
 

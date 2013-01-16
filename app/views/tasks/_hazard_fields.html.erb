@@ -1,56 +1,139 @@
-  <!-- Hazard Type 1 Form -->
-  <div class="hidden" id="haz1">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="hidden" id="haz1">
-    <%= f.label :question1 %><br />
-    <%= f.text_field :question1 %>
-  </div>
-  <div class="hidden" id="haz1">
-    <%= f.label :question2 %><br />
-    <%= f.text_field :question2 %>
-  </div>
-  <!-- Hazard Type 2 Form -->
-  <div class="hidden" id="haz2">
-    <%= f.label :question3 %><br />
-    <%= f.text_field :question3 %>
-  </div>
-  <div class="hidden" id="haz2">
-    <%= f.label :question4, "File Upload"%>
-    <%= f.file_field :question4 %>
-  </div>
-  <div class="hidden" id="haz2">
-    <%= f.label :question5 %><br />
-    <%= f.check_box :question5 %>
-  </div>
-  <div class="hidden" id="haz2">
-    <%= f.label :question6 %><br />
-    <%= f.check_box :question6 %>
-  </div>
-  <!-- Hazard Type 3 Form -->
-  <div class="hidden" id="haz3">
-    <%= f.label :question7 %><br />
-    <%= f.check_box :question7 %>
-  </div>
-  <div class="hidden" id="haz3">
-    <%= f.label :question8 %><br />
-    <%= f.check_box :question8 %>
-  </div>
-  <div class="hidden" id="haz3">
-    <%= f.label :question9 %><br />
-    <%= f.text_field :question9 %>
-  </div>
-  <!-- Hazard Type 4 Form -->
-  <div class="hidden" id="haz4">
-    <%= f.label :question10 %><br />
-    <%= f.text_field :question10 %>
-  </div>
-  <div class="hidden" id="haz4">
-    <%= f.label :complete %><br />
-    <%= f.check_box :complete %>
-  </div>
-  <div class="hidden" id="complete">
-    <%= f.label :date_completed %><br />
-    <%= f.date_select :date_completed %>
-  </div>
+<!-- Hazard Type 1 Form -->
+<div class="hidden haz1">
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Hazard Type 1
+		</th>
+		<tr>
+			<td class="tleft w25">
+				Description:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :description, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+  <table class="w100">
+  	<tr>
+			<td class="tleft w50">
+				Question #1:
+			</td>
+			<td class="tleft">
+				<%= f.text_field :question1, :class=>"field w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Question #2:
+			</td>
+			<td class="tleft">
+				<%= f.text_field :question2, :class=>"field w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- Hazard Type 2 Form -->
+<div class="hidden haz2">
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Hazard Type 2
+		</th>
+		<tr>
+			<td class="tleft w25">
+				Question #3:
+			</td>
+			<td class="tleft">
+				<%= f.text_field :question3, :class=>"field w99" %>
+			</td>
+  	<tr>
+			<td class="tleft">
+				Question #4:
+			</td>
+			<td class="tleft">
+				<%= f.file_field :question4, :class=>"w99" %>
+			</td>
+		</tr>
+	</table>
+	<table class="w100">
+		<tr>
+	  	<td class="tleft w50">
+				Question #5:
+			</td>
+			<td class="tleft">
+				<%= f.check_box :question5 %>
+				<%= f.label :question5, " (Select Check Box if YES)"%>				
+			</td>
+	 	</tr>
+	  <tr>
+	  	<td class="tleft">
+				Question #6:
+			</td>
+			<td class="tleft">
+				<%= f.check_box :question6 %>
+				<%= f.label :question6, " (Select Check Box if YES)"%>
+			</td>
+	 	</tr>
+	</table>
+</div>
+
+<!-- Hazard Type 3 Form -->
+<div class="hidden haz3">
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Hazard Type 3
+		</th>
+  	<tr>
+  		<td class="tleft w50">
+				Question #7:
+			</td>
+			<td class="tleft">
+				<%= f.check_box :question7 %>
+				<%= f.label :question7, " (Select Check Box if YES)"%>
+			</td>
+  	</tr>
+  	<tr>
+  		<td class="tleft">
+				Question #8:
+			</td>
+			<td class="tleft">
+				<%= f.check_box :question8 %>
+				<%= f.label :question8, " (Select Check Box if YES)"%>
+			</td>
+  	</tr>
+  	<tr>
+			<td class="tleft">
+				Question #9:
+			</td>
+			<td class="tleft">
+				<%= f.text_field :question9, :class=>"field w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- Hazard Type 4 Form -->
+<div class="hidden haz4">
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Hazard Type 4
+		</th>
+  	<tr>
+			<td class="tleft">
+				Question #10:
+			</td>
+			<td class="tleft">
+				<%= f.text_field :question10, :class=>"field w99" %>
+			</td>
+		</tr>
+  	<tr>
+  		<td class="tleft">
+				Complete?:
+			</td>
+			<td class="tleft">
+				<%= f.check_box :complete %>
+				<%= f.label :complete, " (Select Check Box if YES)"%>
+			</td>
+  	</tr>
+	</table>
+</div>
