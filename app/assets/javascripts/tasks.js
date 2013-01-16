@@ -69,7 +69,7 @@ jQuery(function($){
         }
 	}
 	$("li.yes_no div").click(changeTab);
-	$('div.complete').bind('click', function() {
-        $('input#hazard_complete').prop("checked",true);
+	$('li.complete').bind('click', function() {
+        $('input#task_complete').prop("checked",true);
     });
 });

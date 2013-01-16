@@ -98,6 +98,9 @@
 			<!-- hazard form generator - linked to task javascript to populate based on active checkbox selected -->
 			<td>
 				<%= form_for([@department,@task]) do |f| %>
+				<div class="hidden">
+					<%= f.check_box :complete %>
+				</div>
 				<table class="form">
 					<tr>
 						<td class="tcenter">
@@ -109,7 +112,7 @@
 					<tr>
 						<td class="tcenter">
 							<ul class="menu w100">
-								<li><%= f.submit 'Save as Complete', :class=>"link2" %></li>
+								<li class="complete"><%= f.submit 'Save as Complete', :class=>"link2" %></li>
 								<li><%= f.submit 'Save as Draft', :class =>"link2" %></li>
 							</ul>
 						</td>
