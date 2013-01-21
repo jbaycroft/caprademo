@@ -2,7 +2,7 @@ class CreateHazards < ActiveRecord::Migration
   def change
     create_table :hazards do |t|
 #Access Fields
-      t.  :access_change_yes_no
+      t.text  :access_change_yes_no
       t.text  :access_change_comment
       t.text  :access_description_hazard
       t.text  :access_description_control
