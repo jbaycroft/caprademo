@@ -2,29 +2,29 @@ class CreateHazards < ActiveRecord::Migration
   def change
     create_table :hazards do |t|
 #Access Fields
-      t.string  :access_change_yes_no
+      t.  :access_change_yes_no
       t.text  :access_change_comment
       t.text  :access_description_hazard
       t.text  :access_description_control
-      t.string  :access_question_1_yes_no
+      t.text  :access_question_1_yes_no
       t.integer :access_question_1_severity
-      t.string  :access_question_2_yes_no
+      t.text  :access_question_2_yes_no
       t.integer :access_question_2_severity
-      t.string  :access_question_3_yes_no
+      t.text  :access_question_3_yes_no
       t.integer :access_question_3_severity
-      t.string  :access_question_4_yes_no
+      t.text  :access_question_4_yes_no
       t.integer :access_question_4_severity
-      t.string  :access_question_5_yes_no
+      t.text  :access_question_5_yes_no
       t.integer :access_question_5_severity
-      t.string  :access_question_6_yes_no
+      t.text  :access_question_6_yes_no
       t.integer :access_question_6_severity
-      t.string  :access_question_7_yes_no
+      t.text  :access_question_7_yes_no
       t.integer :access_question_7_severity
-      t.string  :access_question_8_yes_no
+      t.text  :access_question_8_yes_no
       t.integer :access_question_8_severity
-      t.string  :access_question_9_yes_no
+      t.text  :access_question_9_yes_no
       t.integer :access_question_9_severity
-      t.string  :access_question_10_yes_no
+      t.text  :access_question_10_yes_no
       t.integer :access_question_10_severity
       t.integer :access_frequency_often
       t.integer :access_frequency_time
@@ -33,15 +33,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :access_risk_mastery
       t.integer :access_risk_total
       t.text  :access_risk_comment
-      t.string  :access_control_eliminate_yes_no
+      t.text  :access_control_eliminate_yes_no
       t.text  :access_control_eliminate_comment
-      t.string  :access_control_substitute_yes_no
+      t.text  :access_control_substitute_yes_no
       t.text  :access_control_substitute_comment
-      t.string  :access_control_engineer_yes_no
+      t.text  :access_control_engineer_yes_no
       t.text  :access_control_engineer_comment
-      t.string  :access_control_admin_yes_no
+      t.text  :access_control_admin_yes_no
       t.text  :access_control_admin_comment
-      t.string  :access_control_ppe_yes_no
+      t.text  :access_control_ppe_yes_no
       t.text  :access_control_ppe_comment
       t.integer :access_new_risk_severity
       t.integer :access_new_frequency_often
@@ -100,29 +100,29 @@ class CreateHazards < ActiveRecord::Migration
       t.text :access_amt8
       t.text :access_amt9
 #Biohaz fields
-      t.string  :biohaz_change_yes_no
+      t.text  :biohaz_change_yes_no
       t.text  :biohaz_change_comment
       t.text  :biohaz_description_hazard
       t.text  :biohaz_description_control
-      t.string  :biohaz_question_1_yes_no
+      t.text  :biohaz_question_1_yes_no
       t.integer :biohaz_question_1_severity
-      t.string  :biohaz_question_2_yes_no
+      t.text  :biohaz_question_2_yes_no
       t.integer :biohaz_question_2_severity
-      t.string  :biohaz_question_3_yes_no
+      t.text  :biohaz_question_3_yes_no
       t.integer :biohaz_question_3_severity
-      t.string  :biohaz_question_4_yes_no
+      t.text  :biohaz_question_4_yes_no
       t.integer :biohaz_question_4_severity
-      t.string  :biohaz_question_5_yes_no
+      t.text  :biohaz_question_5_yes_no
       t.integer :biohaz_question_5_severity
-      t.string  :biohaz_question_6_yes_no
+      t.text  :biohaz_question_6_yes_no
       t.integer :biohaz_question_6_severity
-      t.string  :biohaz_question_7_yes_no
+      t.text  :biohaz_question_7_yes_no
       t.integer :biohaz_question_7_severity
-      t.string  :biohaz_question_8_yes_no
+      t.text  :biohaz_question_8_yes_no
       t.integer :biohaz_question_8_severity
-      t.string  :biohaz_question_9_yes_no
+      t.text  :biohaz_question_9_yes_no
       t.integer :biohaz_question_9_severity
-      t.string  :biohaz_question_10_yes_no
+      t.text  :biohaz_question_10_yes_no
       t.integer :biohaz_question_10_severity
       t.integer :biohaz_frequency_often
       t.integer :biohaz_frequency_time
@@ -131,15 +131,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :biohaz_risk_mastery
       t.integer :biohaz_risk_total
       t.text  :biohaz_risk_comment
-      t.string  :biohaz_control_eliminate_yes_no
+      t.text  :biohaz_control_eliminate_yes_no
       t.text  :biohaz_control_eliminate_comment
-      t.string  :biohaz_control_substitute_yes_no
+      t.text  :biohaz_control_substitute_yes_no
       t.text  :biohaz_control_substitute_comment
-      t.string  :biohaz_control_engineer_yes_no
+      t.text  :biohaz_control_engineer_yes_no
       t.text  :biohaz_control_engineer_comment
-      t.string  :biohaz_control_admin_yes_no
+      t.text  :biohaz_control_admin_yes_no
       t.text  :biohaz_control_admin_comment
-      t.string  :biohaz_control_ppe_yes_no
+      t.text  :biohaz_control_ppe_yes_no
       t.text  :biohaz_control_ppe_comment
       t.integer :biohaz_new_frequency_often
       t.integer :biohaz_new_frequency_time
@@ -149,29 +149,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :biohaz_new_risk_total
       t.text  :biohaz_new_risk_comment
 #Coworker fields        
-      t.string  :cowrk_change_yes_no
+      t.text  :cowrk_change_yes_no
       t.text  :cowrk_change_comment
       t.text  :cowrk_description_hazard
       t.text  :cowrk_description_control
-      t.string  :cowrk_question_1_yes_no
+      t.text  :cowrk_question_1_yes_no
       t.integer :cowrk_question_1_severity
-      t.string  :cowrk_question_2_yes_no
+      t.text  :cowrk_question_2_yes_no
       t.integer :cowrk_question_2_severity
-      t.string  :cowrk_question_3_yes_no
+      t.text  :cowrk_question_3_yes_no
       t.integer :cowrk_question_3_severity
-      t.string  :cowrk_question_4_yes_no
+      t.text  :cowrk_question_4_yes_no
       t.integer :cowrk_question_4_severity
-      t.string  :cowrk_question_5_yes_no
+      t.text  :cowrk_question_5_yes_no
       t.integer :cowrk_question_5_severity
-      t.string  :cowrk_question_6_yes_no
+      t.text  :cowrk_question_6_yes_no
       t.integer :cowrk_question_6_severity
-      t.string  :cowrk_question_7_yes_no
+      t.text  :cowrk_question_7_yes_no
       t.integer :cowrk_question_7_severity
-      t.string  :cowrk_question_8_yes_no
+      t.text  :cowrk_question_8_yes_no
       t.integer :cowrk_question_8_severity
-      t.string  :cowrk_question_9_yes_no
+      t.text  :cowrk_question_9_yes_no
       t.integer :cowrk_question_9_severity
-      t.string  :cowrk_question_10_yes_no
+      t.text  :cowrk_question_10_yes_no
       t.integer :cowrk_question_10_severity
       t.integer :cowrk_frequency_often
       t.integer :cowrk_frequency_time
@@ -180,15 +180,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :cowrk_risk_mastery
       t.integer :cowrk_risk_total
       t.text  :cowrk_risk_comment
-      t.string  :cowrk_control_eliminate_yes_no
+      t.text  :cowrk_control_eliminate_yes_no
       t.text  :cowrk_control_eliminate_comment
-      t.string  :cowrk_control_substitute_yes_no
+      t.text  :cowrk_control_substitute_yes_no
       t.text  :cowrk_control_substitute_comment
-      t.string  :cowrk_control_engineer_yes_no
+      t.text  :cowrk_control_engineer_yes_no
       t.text  :cowrk_control_engineer_comment
-      t.string  :cowrk_control_admin_yes_no
+      t.text  :cowrk_control_admin_yes_no
       t.text  :cowrk_control_admin_comment
-      t.string  :cowrk_control_ppe_yes_no
+      t.text  :cowrk_control_ppe_yes_no
       t.text  :cowrk_control_ppe_comment
       t.integer :cowrk_new_frequency_often
       t.integer :cowrk_new_frequency_time
@@ -198,29 +198,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :cowrk_new_risk_total
       t.text  :cowrk_new_risk_comment
 #Cut fields        
-      t.string  :cut_change_yes_no
+      t.text  :cut_change_yes_no
       t.text  :cut_change_comment
       t.text  :cut_description_hazard
       t.text  :cut_description_control
-      t.string  :cut_question_1_yes_no
+      t.text  :cut_question_1_yes_no
       t.integer :cut_question_1_severity
-      t.string  :cut_question_2_yes_no
+      t.text  :cut_question_2_yes_no
       t.integer :cut_question_2_severity
-      t.string  :cut_question_3_yes_no
+      t.text  :cut_question_3_yes_no
       t.integer :cut_question_3_severity
-      t.string  :cut_question_4_yes_no
+      t.text  :cut_question_4_yes_no
       t.integer :cut_question_4_severity
-      t.string  :cut_question_5_yes_no
+      t.text  :cut_question_5_yes_no
       t.integer :cut_question_5_severity
-      t.string  :cut_question_6_yes_no
+      t.text  :cut_question_6_yes_no
       t.integer :cut_question_6_severity
-      t.string  :cut_question_7_yes_no
+      t.text  :cut_question_7_yes_no
       t.integer :cut_question_7_severity
-      t.string  :cut_question_8_yes_no
+      t.text  :cut_question_8_yes_no
       t.integer :cut_question_8_severity
-      t.string  :cut_question_9_yes_no
+      t.text  :cut_question_9_yes_no
       t.integer :cut_question_9_severity
-      t.string  :cut_question_10_yes_no
+      t.text  :cut_question_10_yes_no
       t.integer :cut_question_10_severity
       t.integer :cut_frequency_often
       t.integer :cut_frequency_time
@@ -229,15 +229,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :cut_risk_mastery
       t.integer :cut_risk_total
       t.text  :cut_risk_comment
-      t.string  :cut_control_eliminate_yes_no
+      t.text  :cut_control_eliminate_yes_no
       t.text  :cut_control_eliminate_comment
-      t.string  :cut_control_substitute_yes_no
+      t.text  :cut_control_substitute_yes_no
       t.text  :cut_control_substitute_comment
-      t.string  :cut_control_engineer_yes_no
+      t.text  :cut_control_engineer_yes_no
       t.text  :cut_control_engineer_comment
-      t.string  :cut_control_admin_yes_no
+      t.text  :cut_control_admin_yes_no
       t.text  :cut_control_admin_comment
-      t.string  :cut_control_ppe_yes_no
+      t.text  :cut_control_ppe_yes_no
       t.text  :cut_control_ppe_comment
       t.integer :cut_new_frequency_often
       t.integer :cut_new_frequency_time
@@ -247,29 +247,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :cut_new_risk_total
       t.text  :cut_new_risk_comment
 #Ergonomics fields        
-      t.string  :ergo_change_yes_no
+      t.text  :ergo_change_yes_no
       t.text  :ergo_change_comment
       t.text  :ergo_description_hazard
       t.text  :ergo_description_control
-      t.string  :ergo_question_1_yes_no
+      t.text  :ergo_question_1_yes_no
       t.integer :ergo_question_1_severity
-      t.string  :ergo_question_2_yes_no
+      t.text  :ergo_question_2_yes_no
       t.integer :ergo_question_2_severity
-      t.string  :ergo_question_3_yes_no
+      t.text  :ergo_question_3_yes_no
       t.integer :ergo_question_3_severity
-      t.string  :ergo_question_4_yes_no
+      t.text  :ergo_question_4_yes_no
       t.integer :ergo_question_4_severity
-      t.string  :ergo_question_5_yes_no
+      t.text  :ergo_question_5_yes_no
       t.integer :ergo_question_5_severity
-      t.string  :ergo_question_6_yes_no
+      t.text  :ergo_question_6_yes_no
       t.integer :ergo_question_6_severity
-      t.string  :ergo_question_7_yes_no
+      t.text  :ergo_question_7_yes_no
       t.integer :ergo_question_7_severity
-      t.string  :ergo_question_8_yes_no
+      t.text  :ergo_question_8_yes_no
       t.integer :ergo_question_8_severity
-      t.string  :ergo_question_9_yes_no
+      t.text  :ergo_question_9_yes_no
       t.integer :ergo_question_9_severity
-      t.string  :ergo_question_10_yes_no
+      t.text  :ergo_question_10_yes_no
       t.integer :ergo_question_10_severity
       t.integer :ergo_frequency_often
       t.integer :ergo_frequency_time
@@ -278,15 +278,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :ergo_risk_mastery
       t.integer :ergo_risk_total
       t.text  :ergo_risk_comment
-      t.string  :ergo_control_eliminate_yes_no
+      t.text  :ergo_control_eliminate_yes_no
       t.text  :ergo_control_eliminate_comment
-      t.string  :ergo_control_substitute_yes_no
+      t.text  :ergo_control_substitute_yes_no
       t.text  :ergo_control_substitute_comment
-      t.string  :ergo_control_engineer_yes_no
+      t.text  :ergo_control_engineer_yes_no
       t.text  :ergo_control_engineer_comment
-      t.string  :ergo_control_admin_yes_no
+      t.text  :ergo_control_admin_yes_no
       t.text  :ergo_control_admin_comment
-      t.string  :ergo_control_ppe_yes_no
+      t.text  :ergo_control_ppe_yes_no
       t.text  :ergo_control_ppe_comment
       t.integer :ergo_new_frequency_often
       t.integer :ergo_new_frequency_time
@@ -295,39 +295,39 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :ergo_new_risk_mastery
       t.integer :ergo_new_risk_total
       t.text  :ergo_new_risk_comment
-      t.string :ergo_describe1
-      t.string :ergo_describe2
-      t.string :ergo_describe3
-      t.string :ergo_weightdur1
-      t.string :ergo_weightdur2
-      t.string :ergo_weightdur3
-      t.string :ergo_prevdur1
-      t.string :ergo_prevdur2
-      t.string :ergo_prevdur3
+      t.text :ergo_describe1
+      t.text :ergo_describe2
+      t.text :ergo_describe3
+      t.text :ergo_weightdur1
+      t.text :ergo_weightdur2
+      t.text :ergo_weightdur3
+      t.text :ergo_prevdur1
+      t.text :ergo_prevdur2
+      t.text :ergo_prevdur3
 #Falls Fields       
-      t.string  :fall_change_yes_no
+      t.text  :fall_change_yes_no
       t.text  :fall_change_comment
       t.text  :fall_description_hazard
       t.text  :fall_description_control
-      t.string  :fall_question_1_yes_no
+      t.text  :fall_question_1_yes_no
       t.integer :fall_question_1_severity
-      t.string  :fall_question_2_yes_no
+      t.text  :fall_question_2_yes_no
       t.integer :fall_question_2_severity
-      t.string  :fall_question_3_yes_no
+      t.text  :fall_question_3_yes_no
       t.integer :fall_question_3_severity
-      t.string  :fall_question_4_yes_no
+      t.text  :fall_question_4_yes_no
       t.integer :fall_question_4_severity
-      t.string  :fall_question_5_yes_no
+      t.text  :fall_question_5_yes_no
       t.integer :fall_question_5_severity
-      t.string  :fall_question_6_yes_no
+      t.text  :fall_question_6_yes_no
       t.integer :fall_question_6_severity
-      t.string  :fall_question_7_yes_no
+      t.text  :fall_question_7_yes_no
       t.integer :fall_question_7_severity
-      t.string  :fall_question_8_yes_no
+      t.text  :fall_question_8_yes_no
       t.integer :fall_question_8_severity
-      t.string  :fall_question_9_yes_no
+      t.text  :fall_question_9_yes_no
       t.integer :fall_question_9_severity
-      t.string  :fall_question_10_yes_no
+      t.text  :fall_question_10_yes_no
       t.integer :fall_question_10_severity
       t.integer :fall_frequency_often
       t.integer :fall_frequency_time
@@ -336,15 +336,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :fall_risk_mastery
       t.integer :fall_risk_total
       t.text  :fall_risk_comment
-      t.string  :fall_control_eliminate_yes_no
+      t.text  :fall_control_eliminate_yes_no
       t.text  :fall_control_eliminate_comment
-      t.string  :fall_control_substitute_yes_no
+      t.text  :fall_control_substitute_yes_no
       t.text  :fall_control_substitute_comment
-      t.string  :fall_control_engineer_yes_no
+      t.text  :fall_control_engineer_yes_no
       t.text  :fall_control_engineer_comment
-      t.string  :fall_control_admin_yes_no
+      t.text  :fall_control_admin_yes_no
       t.text  :fall_control_admin_comment
-      t.string  :fall_control_ppe_yes_no
+      t.text  :fall_control_ppe_yes_no
       t.text  :fall_control_ppe_comment
       t.integer :fall_new_frequency_often
       t.integer :fall_new_frequency_time
@@ -354,29 +354,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :fall_new_risk_total
       t.text  :fall_new_risk_comment
 #Fire Fields        
-      t.string  :fire_change_yes_no
+      t.text  :fire_change_yes_no
       t.text  :fire_change_comment
       t.text  :fire_description_hazard
       t.text  :fire_description_control
-      t.string  :fire_question_1_yes_no
+      t.text  :fire_question_1_yes_no
       t.integer :fire_question_1_severity
-      t.string  :fire_question_2_yes_no
+      t.text  :fire_question_2_yes_no
       t.integer :fire_question_2_severity
-      t.string  :fire_question_3_yes_no
+      t.text  :fire_question_3_yes_no
       t.integer :fire_question_3_severity
-      t.string  :fire_question_4_yes_no
+      t.text  :fire_question_4_yes_no
       t.integer :fire_question_4_severity
-      t.string  :fire_question_5_yes_no
+      t.text  :fire_question_5_yes_no
       t.integer :fire_question_5_severity
-      t.string  :fire_question_6_yes_no
+      t.text  :fire_question_6_yes_no
       t.integer :fire_question_6_severity
-      t.string  :fire_question_7_yes_no
+      t.text  :fire_question_7_yes_no
       t.integer :fire_question_7_severity
-      t.string  :fire_question_8_yes_no
+      t.text  :fire_question_8_yes_no
       t.integer :fire_question_8_severity
-      t.string  :fire_question_9_yes_no
+      t.text  :fire_question_9_yes_no
       t.integer :fire_question_9_severity
-      t.string  :fire_question_10_yes_no
+      t.text  :fire_question_10_yes_no
       t.integer :fire_question_10_severity
       t.integer :fire_frequency_often
       t.integer :fire_frequency_time
@@ -385,15 +385,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :fire_risk_mastery
       t.integer :fire_risk_total
       t.text  :fire_risk_comment
-      t.string  :fire_control_eliminate_yes_no
+      t.text  :fire_control_eliminate_yes_no
       t.text  :fire_control_eliminate_comment
-      t.string  :fire_control_substitute_yes_no
+      t.text  :fire_control_substitute_yes_no
       t.text  :fire_control_substitute_comment
-      t.string  :fire_control_engineer_yes_no
+      t.text  :fire_control_engineer_yes_no
       t.text  :fire_control_engineer_comment
-      t.string  :fire_control_admin_yes_no
+      t.text  :fire_control_admin_yes_no
       t.text  :fire_control_admin_comment
-      t.string  :fire_control_ppe_yes_no
+      t.text  :fire_control_ppe_yes_no
       t.text  :fire_control_ppe_comment
       t.integer :fire_new_frequency_often
       t.integer :fire_new_frequency_time
@@ -406,38 +406,38 @@ class CreateHazards < ActiveRecord::Migration
       t.boolean :fire_flamm
       t.boolean :fire_explosive
       t.boolean :fire_combustible
-      t.string :fire_produse1
-      t.string :fire_produse2
-      t.string :fire_produse3
-      t.string :fire_produse4
-      t.string :fire_amt1
-      t.string :fire_amt2
-      t.string :fire_amt3
-      t.string :fire_amt4
+      t.text :fire_produse1
+      t.text :fire_produse2
+      t.text :fire_produse3
+      t.text :fire_produse4
+      t.text :fire_amt1
+      t.text :fire_amt2
+      t.text :fire_amt3
+      t.text :fire_amt4
 #Hazardous Atmosphere Fields        
-      t.string  :hazatm_change_yes_no
+      t.text  :hazatm_change_yes_no
       t.text  :hazatm_change_comment
       t.text  :hazatm_description_hazard
       t.text  :hazatm_description_control
-      t.string  :hazatm_question_1_yes_no
+      t.text  :hazatm_question_1_yes_no
       t.integer :hazatm_question_1_severity
-      t.string  :hazatm_question_2_yes_no
+      t.text  :hazatm_question_2_yes_no
       t.integer :hazatm_question_2_severity
-      t.string  :hazatm_question_3_yes_no
+      t.text  :hazatm_question_3_yes_no
       t.integer :hazatm_question_3_severity
-      t.string  :hazatm_question_4_yes_no
+      t.text  :hazatm_question_4_yes_no
       t.integer :hazatm_question_4_severity
-      t.string  :hazatm_question_5_yes_no
+      t.text  :hazatm_question_5_yes_no
       t.integer :hazatm_question_5_severity
-      t.string  :hazatm_question_6_yes_no
+      t.text  :hazatm_question_6_yes_no
       t.integer :hazatm_question_6_severity
-      t.string  :hazatm_question_7_yes_no
+      t.text  :hazatm_question_7_yes_no
       t.integer :hazatm_question_7_severity
-      t.string  :hazatm_question_8_yes_no
+      t.text  :hazatm_question_8_yes_no
       t.integer :hazatm_question_8_severity
-      t.string  :hazatm_question_9_yes_no
+      t.text  :hazatm_question_9_yes_no
       t.integer :hazatm_question_9_severity
-      t.string  :hazatm_question_10_yes_no
+      t.text  :hazatm_question_10_yes_no
       t.integer :hazatm_question_10_severity
       t.integer :hazatm_frequency_often
       t.integer :hazatm_frequency_time
@@ -446,15 +446,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :hazatm_risk_mastery
       t.integer :hazatm_risk_total
       t.text  :hazatm_risk_comment
-      t.string  :hazatm_control_eliminate_yes_no
+      t.text  :hazatm_control_eliminate_yes_no
       t.text  :hazatm_control_eliminate_comment
-      t.string  :hazatm_control_substitute_yes_no
+      t.text  :hazatm_control_substitute_yes_no
       t.text  :hazatm_control_substitute_comment
-      t.string  :hazatm_control_engineer_yes_no
+      t.text  :hazatm_control_engineer_yes_no
       t.text  :hazatm_control_engineer_comment
-      t.string  :hazatm_control_admin_yes_no
+      t.text  :hazatm_control_admin_yes_no
       t.text  :hazatm_control_admin_comment
-      t.string  :hazatm_control_ppe_yes_no
+      t.text  :hazatm_control_ppe_yes_no
       t.text  :hazatm_control_ppe_comment
       t.integer :hazatm_new_frequency_often
       t.integer :hazatm_new_frequency_time
@@ -464,29 +464,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :hazatm_new_risk_total
       t.text  :hazatm_new_risk_comment
 #Hazardous Energy Fields       
-      t.string  :hazengy_change_yes_no
+      t.text  :hazengy_change_yes_no
       t.text  :hazengy_change_comment
       t.text  :hazengy_description_hazard
       t.text  :hazengy_description_control
-      t.string  :hazengy_question_1_yes_no
+      t.text  :hazengy_question_1_yes_no
       t.integer :hazengy_question_1_severity
-      t.string  :hazengy_question_2_yes_no
+      t.text  :hazengy_question_2_yes_no
       t.integer :hazengy_question_2_severity
-      t.string  :hazengy_question_3_yes_no
+      t.text  :hazengy_question_3_yes_no
       t.integer :hazengy_question_3_severity
-      t.string  :hazengy_question_4_yes_no
+      t.text  :hazengy_question_4_yes_no
       t.integer :hazengy_question_4_severity
-      t.string  :hazengy_question_5_yes_no
+      t.text  :hazengy_question_5_yes_no
       t.integer :hazengy_question_5_severity
-      t.string  :hazengy_question_6_yes_no
+      t.text  :hazengy_question_6_yes_no
       t.integer :hazengy_question_6_severity
-      t.string  :hazengy_question_7_yes_no
+      t.text  :hazengy_question_7_yes_no
       t.integer :hazengy_question_7_severity
-      t.string  :hazengy_question_8_yes_no
+      t.text  :hazengy_question_8_yes_no
       t.integer :hazengy_question_8_severity
-      t.string  :hazengy_question_9_yes_no
+      t.text  :hazengy_question_9_yes_no
       t.integer :hazengy_question_9_severity
-      t.string  :hazengy_question_10_yes_no
+      t.text  :hazengy_question_10_yes_no
       t.integer :hazengy_question_10_severity
       t.integer :hazengy_frequency_often
       t.integer :hazengy_frequency_time
@@ -495,15 +495,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :hazengy_risk_mastery
       t.integer :hazengy_risk_total
       t.text  :hazengy_risk_comment
-      t.string  :hazengy_control_eliminate_yes_no
+      t.text  :hazengy_control_eliminate_yes_no
       t.text  :hazengy_control_eliminate_comment
-      t.string  :hazengy_control_substitute_yes_no
+      t.text  :hazengy_control_substitute_yes_no
       t.text  :hazengy_control_substitute_comment
-      t.string  :hazengy_control_engineer_yes_no
+      t.text  :hazengy_control_engineer_yes_no
       t.text  :hazengy_control_engineer_comment
-      t.string  :hazengy_control_admin_yes_no
+      t.text  :hazengy_control_admin_yes_no
       t.text  :hazengy_control_admin_comment
-      t.string  :hazengy_control_ppe_yes_no
+      t.text  :hazengy_control_ppe_yes_no
       t.text  :hazengy_control_ppe_comment
       t.integer :hazengy_new_frequency_often
       t.integer :hazengy_new_frequency_time
@@ -513,29 +513,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :hazengy_new_risk_total
       t.text  :hazengy_new_risk_comment
 #Hazardous Materials Fields        
-      t.string  :hazmat_change_yes_no
+      t.text  :hazmat_change_yes_no
       t.text  :hazmat_change_comment
       t.text  :hazmat_description_hazard
       t.text  :hazmat_description_control
-      t.string  :hazmat_question_1_yes_no
+      t.text  :hazmat_question_1_yes_no
       t.integer :hazmat_question_1_severity
-      t.string  :hazmat_question_2_yes_no
+      t.text  :hazmat_question_2_yes_no
       t.integer :hazmat_question_2_severity
-      t.string  :hazmat_question_3_yes_no
+      t.text  :hazmat_question_3_yes_no
       t.integer :hazmat_question_3_severity
-      t.string  :hazmat_question_4_yes_no
+      t.text  :hazmat_question_4_yes_no
       t.integer :hazmat_question_4_severity
-      t.string  :hazmat_question_5_yes_no
+      t.text  :hazmat_question_5_yes_no
       t.integer :hazmat_question_5_severity
-      t.string  :hazmat_question_6_yes_no
+      t.text  :hazmat_question_6_yes_no
       t.integer :hazmat_question_6_severity
-      t.string  :hazmat_question_7_yes_no
+      t.text  :hazmat_question_7_yes_no
       t.integer :hazmat_question_7_severity
-      t.string  :hazmat_question_8_yes_no
+      t.text  :hazmat_question_8_yes_no
       t.integer :hazmat_question_8_severity
-      t.string  :hazmat_question_9_yes_no
+      t.text  :hazmat_question_9_yes_no
       t.integer :hazmat_question_9_severity
-      t.string  :hazmat_question_10_yes_no
+      t.text  :hazmat_question_10_yes_no
       t.integer :hazmat_question_10_severity
       t.integer :hazmat_frequency_often
       t.integer :hazmat_frequency_time
@@ -544,15 +544,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :hazmat_risk_mastery
       t.integer :hazmat_risk_total
       t.text  :hazmat_risk_comment
-      t.string  :hazmat_control_eliminate_yes_no
+      t.text  :hazmat_control_eliminate_yes_no
       t.text  :hazmat_control_eliminate_comment
-      t.string  :hazmat_control_substitute_yes_no
+      t.text  :hazmat_control_substitute_yes_no
       t.text  :hazmat_control_substitute_comment
-      t.string  :hazmat_control_engineer_yes_no
+      t.text  :hazmat_control_engineer_yes_no
       t.text  :hazmat_control_engineer_comment
-      t.string  :hazmat_control_admin_yes_no
+      t.text  :hazmat_control_admin_yes_no
       t.text  :hazmat_control_admin_comment
-      t.string  :hazmat_control_ppe_yes_no
+      t.text  :hazmat_control_ppe_yes_no
       t.text  :hazmat_control_ppe_comment
       t.integer :hazmat_new_frequency_often
       t.integer :hazmat_new_frequency_time
@@ -562,29 +562,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :hazmat_new_risk_total
       t.text  :hazmat_new_risk_comment
 #Lasers fields        
-      t.string  :laz_change_yes_no
+      t.text  :laz_change_yes_no
       t.text  :laz_change_comment
       t.text  :laz_description_hazard
       t.text  :laz_description_control
-      t.string  :laz_question_1_yes_no
+      t.text  :laz_question_1_yes_no
       t.integer :laz_question_1_severity
-      t.string  :laz_question_2_yes_no
+      t.text  :laz_question_2_yes_no
       t.integer :laz_question_2_severity
-      t.string  :laz_question_3_yes_no
+      t.text  :laz_question_3_yes_no
       t.integer :laz_question_3_severity
-      t.string  :laz_question_4_yes_no
+      t.text  :laz_question_4_yes_no
       t.integer :laz_question_4_severity
-      t.string  :laz_question_5_yes_no
+      t.text  :laz_question_5_yes_no
       t.integer :laz_question_5_severity
-      t.string  :laz_question_6_yes_no
+      t.text  :laz_question_6_yes_no
       t.integer :laz_question_6_severity
-      t.string  :laz_question_7_yes_no
+      t.text  :laz_question_7_yes_no
       t.integer :laz_question_7_severity
-      t.string  :laz_question_8_yes_no
+      t.text  :laz_question_8_yes_no
       t.integer :laz_question_8_severity
-      t.string  :laz_question_9_yes_no
+      t.text  :laz_question_9_yes_no
       t.integer :laz_question_9_severity
-      t.string  :laz_question_10_yes_no
+      t.text  :laz_question_10_yes_no
       t.integer :laz_question_10_severity
       t.integer :laz_frequency_often
       t.integer :laz_frequency_time
@@ -593,15 +593,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :laz_risk_mastery
       t.integer :laz_risk_total
       t.text  :laz_risk_comment
-      t.string  :laz_control_eliminate_yes_no
+      t.text  :laz_control_eliminate_yes_no
       t.text  :laz_control_eliminate_comment
-      t.string  :laz_control_substitute_yes_no
+      t.text  :laz_control_substitute_yes_no
       t.text  :laz_control_substitute_comment
-      t.string  :laz_control_engineer_yes_no
+      t.text  :laz_control_engineer_yes_no
       t.text  :laz_control_engineer_comment
-      t.string  :laz_control_admin_yes_no
+      t.text  :laz_control_admin_yes_no
       t.text  :laz_control_admin_comment
-      t.string  :laz_control_ppe_yes_no
+      t.text  :laz_control_ppe_yes_no
       t.text  :laz_control_ppe_comment
       t.integer :laz_new_frequency_often
       t.integer :laz_new_frequency_time
@@ -611,29 +611,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :laz_new_risk_total
       t.text  :laz_new_risk_comment
 #Loneworker fields        
-      t.string  :lonewrk_change_yes_no
+      t.text  :lonewrk_change_yes_no
       t.text  :lonewrk_change_comment
       t.text  :lonewrk_description_hazard
       t.text  :lonewrk_description_control
-      t.string  :lonewrk_question_1_yes_no
+      t.text  :lonewrk_question_1_yes_no
       t.integer :lonewrk_question_1_severity
-      t.string  :lonewrk_question_2_yes_no
+      t.text  :lonewrk_question_2_yes_no
       t.integer :lonewrk_question_2_severity
-      t.string  :lonewrk_question_3_yes_no
+      t.text  :lonewrk_question_3_yes_no
       t.integer :lonewrk_question_3_severity
-      t.string  :lonewrk_question_4_yes_no
+      t.text  :lonewrk_question_4_yes_no
       t.integer :lonewrk_question_4_severity
-      t.string  :lonewrk_question_5_yes_no
+      t.text  :lonewrk_question_5_yes_no
       t.integer :lonewrk_question_5_severity
-      t.string  :lonewrk_question_6_yes_no
+      t.text  :lonewrk_question_6_yes_no
       t.integer :lonewrk_question_6_severity
-      t.string  :lonewrk_question_7_yes_no
+      t.text  :lonewrk_question_7_yes_no
       t.integer :lonewrk_question_7_severity
-      t.string  :lonewrk_question_8_yes_no
+      t.text  :lonewrk_question_8_yes_no
       t.integer :lonewrk_question_8_severity
-      t.string  :lonewrk_question_9_yes_no
+      t.text  :lonewrk_question_9_yes_no
       t.integer :lonewrk_question_9_severity
-      t.string  :lonewrk_question_10_yes_no
+      t.text  :lonewrk_question_10_yes_no
       t.integer :lonewrk_question_10_severity
       t.integer :lonewrk_frequency_often
       t.integer :lonewrk_frequency_time
@@ -642,15 +642,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :lonewrk_risk_mastery
       t.integer :lonewrk_risk_total
       t.text  :lonewrk_risk_comment
-      t.string  :lonewrk_control_eliminate_yes_no
+      t.text  :lonewrk_control_eliminate_yes_no
       t.text  :lonewrk_control_eliminate_comment
-      t.string  :lonewrk_control_substitute_yes_no
+      t.text  :lonewrk_control_substitute_yes_no
       t.text  :lonewrk_control_substitute_comment
-      t.string  :lonewrk_control_engineer_yes_no
+      t.text  :lonewrk_control_engineer_yes_no
       t.text  :lonewrk_control_engineer_comment
-      t.string  :lonewrk_control_admin_yes_no
+      t.text  :lonewrk_control_admin_yes_no
       t.text  :lonewrk_control_admin_comment
-      t.string  :lonewrk_control_ppe_yes_no
+      t.text  :lonewrk_control_ppe_yes_no
       t.text  :lonewrk_control_ppe_comment
       t.integer :lonewrk_new_frequency_often
       t.integer :lonewrk_new_frequency_time
@@ -660,29 +660,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :lonewrk_new_risk_total
       t.text  :lonewrk_new_risk_comment
 #Magnetism Fields        
-      t.string  :mag_change_yes_no
+      t.text  :mag_change_yes_no
       t.text  :mag_change_comment
       t.text  :mag_description_hazard
       t.text  :mag_description_control
-      t.string  :mag_question_1_yes_no
+      t.text  :mag_question_1_yes_no
       t.integer :mag_question_1_severity
-      t.string  :mag_question_2_yes_no
+      t.text  :mag_question_2_yes_no
       t.integer :mag_question_2_severity
-      t.string  :mag_question_3_yes_no
+      t.text  :mag_question_3_yes_no
       t.integer :mag_question_3_severity
-      t.string  :mag_question_4_yes_no
+      t.text  :mag_question_4_yes_no
       t.integer :mag_question_4_severity
-      t.string  :mag_question_5_yes_no
+      t.text  :mag_question_5_yes_no
       t.integer :mag_question_5_severity
-      t.string  :mag_question_6_yes_no
+      t.text  :mag_question_6_yes_no
       t.integer :mag_question_6_severity
-      t.string  :mag_question_7_yes_no
+      t.text  :mag_question_7_yes_no
       t.integer :mag_question_7_severity
-      t.string  :mag_question_8_yes_no
+      t.text  :mag_question_8_yes_no
       t.integer :mag_question_8_severity
-      t.string  :mag_question_9_yes_no
+      t.text  :mag_question_9_yes_no
       t.integer :mag_question_9_severity
-      t.string  :mag_question_10_yes_no
+      t.text  :mag_question_10_yes_no
       t.integer :mag_question_10_severity
       t.integer :mag_frequency_often
       t.integer :mag_frequency_time
@@ -691,15 +691,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :mag_risk_mastery
       t.integer :mag_risk_total
       t.text  :mag_risk_comment
-      t.string  :mag_control_eliminate_yes_no
+      t.text  :mag_control_eliminate_yes_no
       t.text  :mag_control_eliminate_comment
-      t.string  :mag_control_substitute_yes_no
+      t.text  :mag_control_substitute_yes_no
       t.text  :mag_control_substitute_comment
-      t.string  :mag_control_engineer_yes_no
+      t.text  :mag_control_engineer_yes_no
       t.text  :mag_control_engineer_comment
-      t.string  :mag_control_admin_yes_no
+      t.text  :mag_control_admin_yes_no
       t.text  :mag_control_admin_comment
-      t.string  :mag_control_ppe_yes_no
+      t.text  :mag_control_ppe_yes_no
       t.text  :mag_control_ppe_comment
       t.integer :mag_new_frequency_often
       t.integer :mag_new_frequency_time
@@ -709,29 +709,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :mag_new_risk_total
       t.text  :mag_new_risk_comment
 #Mechanical Handling Fields        
-      t.string  :mechand_change_yes_no
+      t.text  :mechand_change_yes_no
       t.text  :mechand_change_comment
       t.text  :mechand_description_hazard
       t.text  :mechand_description_control
-      t.string  :mechand_question_1_yes_no
+      t.text  :mechand_question_1_yes_no
       t.integer :mechand_question_1_severity
-      t.string  :mechand_question_2_yes_no
+      t.text  :mechand_question_2_yes_no
       t.integer :mechand_question_2_severity
-      t.string  :mechand_question_3_yes_no
+      t.text  :mechand_question_3_yes_no
       t.integer :mechand_question_3_severity
-      t.string  :mechand_question_4_yes_no
+      t.text  :mechand_question_4_yes_no
       t.integer :mechand_question_4_severity
-      t.string  :mechand_question_5_yes_no
+      t.text  :mechand_question_5_yes_no
       t.integer :mechand_question_5_severity
-      t.string  :mechand_question_6_yes_no
+      t.text  :mechand_question_6_yes_no
       t.integer :mechand_question_6_severity
-      t.string  :mechand_question_7_yes_no
+      t.text  :mechand_question_7_yes_no
       t.integer :mechand_question_7_severity
-      t.string  :mechand_question_8_yes_no
+      t.text  :mechand_question_8_yes_no
       t.integer :mechand_question_8_severity
-      t.string  :mechand_question_9_yes_no
+      t.text  :mechand_question_9_yes_no
       t.integer :mechand_question_9_severity
-      t.string  :mechand_question_10_yes_no
+      t.text  :mechand_question_10_yes_no
       t.integer :mechand_question_10_severity
       t.integer :mechand_frequency_often
       t.integer :mechand_frequency_time
@@ -740,15 +740,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :mechand_risk_mastery
       t.integer :mechand_risk_total
       t.text  :mechand_risk_comment
-      t.string  :mechand_control_eliminate_yes_no
+      t.text  :mechand_control_eliminate_yes_no
       t.text  :mechand_control_eliminate_comment
-      t.string  :mechand_control_substitute_yes_no
+      t.text  :mechand_control_substitute_yes_no
       t.text  :mechand_control_substitute_comment
-      t.string  :mechand_control_engineer_yes_no
+      t.text  :mechand_control_engineer_yes_no
       t.text  :mechand_control_engineer_comment
-      t.string  :mechand_control_admin_yes_no
+      t.text  :mechand_control_admin_yes_no
       t.text  :mechand_control_admin_comment
-      t.string  :mechand_control_ppe_yes_no
+      t.text  :mechand_control_ppe_yes_no
       t.text  :mechand_control_ppe_comment
       t.integer :mechand_new_frequency_often
       t.integer :mechand_new_frequency_time
@@ -758,29 +758,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :mechand_new_risk_total
       t.text  :mechand_new_risk_comment
 #Noises Fields        
-      t.string  :noise_change_yes_no
+      t.text  :noise_change_yes_no
       t.text  :noise_change_comment
       t.text  :noise_description_hazard
       t.text  :noise_description_control
-      t.string  :noise_question_1_yes_no
+      t.text  :noise_question_1_yes_no
       t.integer :noise_question_1_severity
-      t.string  :noise_question_2_yes_no
+      t.text  :noise_question_2_yes_no
       t.integer :noise_question_2_severity
-      t.string  :noise_question_3_yes_no
+      t.text  :noise_question_3_yes_no
       t.integer :noise_question_3_severity
-      t.string  :noise_question_4_yes_no
+      t.text  :noise_question_4_yes_no
       t.integer :noise_question_4_severity
-      t.string  :noise_question_5_yes_no
+      t.text  :noise_question_5_yes_no
       t.integer :noise_question_5_severity
-      t.string  :noise_question_6_yes_no
+      t.text  :noise_question_6_yes_no
       t.integer :noise_question_6_severity
-      t.string  :noise_question_7_yes_no
+      t.text  :noise_question_7_yes_no
       t.integer :noise_question_7_severity
-      t.string  :noise_question_8_yes_no
+      t.text  :noise_question_8_yes_no
       t.integer :noise_question_8_severity
-      t.string  :noise_question_9_yes_no
+      t.text  :noise_question_9_yes_no
       t.integer :noise_question_9_severity
-      t.string  :noise_question_10_yes_no
+      t.text  :noise_question_10_yes_no
       t.integer :noise_question_10_severity
       t.integer :noise_frequency_often
       t.integer :noise_frequency_time
@@ -789,15 +789,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :noise_risk_mastery
       t.integer :noise_risk_total
       t.text  :noise_risk_comment
-      t.string  :noise_control_eliminate_yes_no
+      t.text  :noise_control_eliminate_yes_no
       t.text  :noise_control_eliminate_comment
-      t.string  :noise_control_substitute_yes_no
+      t.text  :noise_control_substitute_yes_no
       t.text  :noise_control_substitute_comment
-      t.string  :noise_control_engineer_yes_no
+      t.text  :noise_control_engineer_yes_no
       t.text  :noise_control_engineer_comment
-      t.string  :noise_control_admin_yes_no
+      t.text  :noise_control_admin_yes_no
       t.text  :noise_control_admin_comment
-      t.string  :noise_control_ppe_yes_no
+      t.text  :noise_control_ppe_yes_no
       t.text  :noise_control_ppe_comment
       t.integer :noise_new_frequency_often
       t.integer :noise_new_frequency_time
@@ -807,29 +807,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :noise_new_risk_total
       t.text  :noise_new_risk_comment
 #Overheads fields       
-      t.string  :ovrhead_change_yes_no
+      t.text  :ovrhead_change_yes_no
       t.text  :ovrhead_change_comment
       t.text  :ovrhead_description_hazard
       t.text  :ovrhead_description_control
-      t.string  :ovrhead_question_1_yes_no
+      t.text  :ovrhead_question_1_yes_no
       t.integer :ovrhead_question_1_severity
-      t.string  :ovrhead_question_2_yes_no
+      t.text  :ovrhead_question_2_yes_no
       t.integer :ovrhead_question_2_severity
-      t.string  :ovrhead_question_3_yes_no
+      t.text  :ovrhead_question_3_yes_no
       t.integer :ovrhead_question_3_severity
-      t.string  :ovrhead_question_4_yes_no
+      t.text  :ovrhead_question_4_yes_no
       t.integer :ovrhead_question_4_severity
-      t.string  :ovrhead_question_5_yes_no
+      t.text  :ovrhead_question_5_yes_no
       t.integer :ovrhead_question_5_severity
-      t.string  :ovrhead_question_6_yes_no
+      t.text  :ovrhead_question_6_yes_no
       t.integer :ovrhead_question_6_severity
-      t.string  :ovrhead_question_7_yes_no
+      t.text  :ovrhead_question_7_yes_no
       t.integer :ovrhead_question_7_severity
-      t.string  :ovrhead_question_8_yes_no
+      t.text  :ovrhead_question_8_yes_no
       t.integer :ovrhead_question_8_severity
-      t.string  :ovrhead_question_9_yes_no
+      t.text  :ovrhead_question_9_yes_no
       t.integer :ovrhead_question_9_severity
-      t.string  :ovrhead_question_10_yes_no
+      t.text  :ovrhead_question_10_yes_no
       t.integer :ovrhead_question_10_severity
       t.integer :ovrhead_frequency_often
       t.integer :ovrhead_frequency_time
@@ -838,15 +838,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :ovrhead_risk_mastery
       t.integer :ovrhead_risk_total
       t.text  :ovrhead_risk_comment
-      t.string  :ovrhead_control_eliminate_yes_no
+      t.text  :ovrhead_control_eliminate_yes_no
       t.text  :ovrhead_control_eliminate_comment
-      t.string  :ovrhead_control_substitute_yes_no
+      t.text  :ovrhead_control_substitute_yes_no
       t.text  :ovrhead_control_substitute_comment
-      t.string  :ovrhead_control_engineer_yes_no
+      t.text  :ovrhead_control_engineer_yes_no
       t.text  :ovrhead_control_engineer_comment
-      t.string  :ovrhead_control_admin_yes_no
+      t.text  :ovrhead_control_admin_yes_no
       t.text  :ovrhead_control_admin_comment
-      t.string  :ovrhead_control_ppe_yes_no
+      t.text  :ovrhead_control_ppe_yes_no
       t.text  :ovrhead_control_ppe_comment
       t.integer :ovrhead_new_frequency_often
       t.integer :ovrhead_new_frequency_time
@@ -856,29 +856,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :ovrhead_new_risk_total
       t.text  :ovrhead_new_risk_comment
 #Radiation Fields        
-      t.string  :rad_change_yes_no
+      t.text  :rad_change_yes_no
       t.text  :rad_change_comment
       t.text  :rad_description_hazard
       t.text  :rad_description_control
-      t.string  :rad_question_1_yes_no
+      t.text  :rad_question_1_yes_no
       t.integer :rad_question_1_severity
-      t.string  :rad_question_2_yes_no
+      t.text  :rad_question_2_yes_no
       t.integer :rad_question_2_severity
-      t.string  :rad_question_3_yes_no
+      t.text  :rad_question_3_yes_no
       t.integer :rad_question_3_severity
-      t.string  :rad_question_4_yes_no
+      t.text  :rad_question_4_yes_no
       t.integer :rad_question_4_severity
-      t.string  :rad_question_5_yes_no
+      t.text  :rad_question_5_yes_no
       t.integer :rad_question_5_severity
-      t.string  :rad_question_6_yes_no
+      t.text  :rad_question_6_yes_no
       t.integer :rad_question_6_severity
-      t.string  :rad_question_7_yes_no
+      t.text  :rad_question_7_yes_no
       t.integer :rad_question_7_severity
-      t.string  :rad_question_8_yes_no
+      t.text  :rad_question_8_yes_no
       t.integer :rad_question_8_severity
-      t.string  :rad_question_9_yes_no
+      t.text  :rad_question_9_yes_no
       t.integer :rad_question_9_severity
-      t.string  :rad_question_10_yes_no
+      t.text  :rad_question_10_yes_no
       t.integer :rad_question_10_severity
       t.integer :rad_frequency_often
       t.integer :rad_frequency_time
@@ -887,15 +887,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :rad_risk_mastery
       t.integer :rad_risk_total
       t.text  :rad_risk_comment
-      t.string  :rad_control_eliminate_yes_no
+      t.text  :rad_control_eliminate_yes_no
       t.text  :rad_control_eliminate_comment
-      t.string  :rad_control_substitute_yes_no
+      t.text  :rad_control_substitute_yes_no
       t.text  :rad_control_substitute_comment
-      t.string  :rad_control_engineer_yes_no
+      t.text  :rad_control_engineer_yes_no
       t.text  :rad_control_engineer_comment
-      t.string  :rad_control_admin_yes_no
+      t.text  :rad_control_admin_yes_no
       t.text  :rad_control_admin_comment
-      t.string  :rad_control_ppe_yes_no
+      t.text  :rad_control_ppe_yes_no
       t.text  :rad_control_ppe_comment
       t.integer :rad_new_frequency_often
       t.integer :rad_new_frequency_time
@@ -905,29 +905,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :rad_new_risk_total
       t.text  :rad_new_risk_comment
 #Road Fields        
-      t.string  :road_change_yes_no
+      t.text  :road_change_yes_no
       t.text  :road_change_comment
       t.text  :road_description_hazard
       t.text  :road_description_control
-      t.string  :road_question_1_yes_no
+      t.text  :road_question_1_yes_no
       t.integer :road_question_1_severity
-      t.string  :road_question_2_yes_no
+      t.text  :road_question_2_yes_no
       t.integer :road_question_2_severity
-      t.string  :road_question_3_yes_no
+      t.text  :road_question_3_yes_no
       t.integer :road_question_3_severity
-      t.string  :road_question_4_yes_no
+      t.text  :road_question_4_yes_no
       t.integer :road_question_4_severity
-      t.string  :road_question_5_yes_no
+      t.text  :road_question_5_yes_no
       t.integer :road_question_5_severity
-      t.string  :road_question_6_yes_no
+      t.text  :road_question_6_yes_no
       t.integer :road_question_6_severity
-      t.string  :road_question_7_yes_no
+      t.text  :road_question_7_yes_no
       t.integer :road_question_7_severity
-      t.string  :road_question_8_yes_no
+      t.text  :road_question_8_yes_no
       t.integer :road_question_8_severity
-      t.string  :road_question_9_yes_no
+      t.text  :road_question_9_yes_no
       t.integer :road_question_9_severity
-      t.string  :road_question_10_yes_no
+      t.text  :road_question_10_yes_no
       t.integer :road_question_10_severity
       t.integer :road_frequency_often
       t.integer :road_frequency_time
@@ -936,15 +936,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :road_risk_mastery
       t.integer :road_risk_total
       t.text  :road_risk_comment
-      t.string  :road_control_eliminate_yes_no
+      t.text  :road_control_eliminate_yes_no
       t.text  :road_control_eliminate_comment
-      t.string  :road_control_substitute_yes_no
+      t.text  :road_control_substitute_yes_no
       t.text  :road_control_substitute_comment
-      t.string  :road_control_engineer_yes_no
+      t.text  :road_control_engineer_yes_no
       t.text  :road_control_engineer_comment
-      t.string  :road_control_admin_yes_no
+      t.text  :road_control_admin_yes_no
       t.text  :road_control_admin_comment
-      t.string  :road_control_ppe_yes_no
+      t.text  :road_control_ppe_yes_no
       t.text  :road_control_ppe_comment
       t.integer :road_new_frequency_often
       t.integer :road_new_frequency_time
@@ -954,29 +954,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :road_new_risk_total
       t.text  :road_new_risk_comment
 #Temperature Fields        
-      t.string  :temp_change_yes_no
+      t.text  :temp_change_yes_no
       t.text  :temp_change_comment
       t.text  :temp_description_hazard
       t.text  :temp_description_control
-      t.string  :temp_question_1_yes_no
+      t.text  :temp_question_1_yes_no
       t.integer :temp_question_1_severity
-      t.string  :temp_question_2_yes_no
+      t.text  :temp_question_2_yes_no
       t.integer :temp_question_2_severity
-      t.string  :temp_question_3_yes_no
+      t.text  :temp_question_3_yes_no
       t.integer :temp_question_3_severity
-      t.string  :temp_question_4_yes_no
+      t.text  :temp_question_4_yes_no
       t.integer :temp_question_4_severity
-      t.string  :temp_question_5_yes_no
+      t.text  :temp_question_5_yes_no
       t.integer :temp_question_5_severity
-      t.string  :temp_question_6_yes_no
+      t.text  :temp_question_6_yes_no
       t.integer :temp_question_6_severity
-      t.string  :temp_question_7_yes_no
+      t.text  :temp_question_7_yes_no
       t.integer :temp_question_7_severity
-      t.string  :temp_question_8_yes_no
+      t.text  :temp_question_8_yes_no
       t.integer :temp_question_8_severity
-      t.string  :temp_question_9_yes_no
+      t.text  :temp_question_9_yes_no
       t.integer :temp_question_9_severity
-      t.string  :temp_question_10_yes_no
+      t.text  :temp_question_10_yes_no
       t.integer :temp_question_10_severity
       t.integer :temp_frequency_often
       t.integer :temp_frequency_time
@@ -985,15 +985,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :temp_risk_mastery
       t.integer :temp_risk_total
       t.text  :temp_risk_comment
-      t.string  :temp_control_eliminate_yes_no
+      t.text  :temp_control_eliminate_yes_no
       t.text  :temp_control_eliminate_comment
-      t.string  :temp_control_substitute_yes_no
+      t.text  :temp_control_substitute_yes_no
       t.text  :temp_control_substitute_comment
-      t.string  :temp_control_engineer_yes_no
+      t.text  :temp_control_engineer_yes_no
       t.text  :temp_control_engineer_comment
-      t.string  :temp_control_admin_yes_no
+      t.text  :temp_control_admin_yes_no
       t.text  :temp_control_admin_comment
-      t.string  :temp_control_ppe_yes_no
+      t.text  :temp_control_ppe_yes_no
       t.text  :temp_control_ppe_comment
       t.integer :temp_new_frequency_often
       t.integer :temp_new_frequency_time
@@ -1003,29 +1003,29 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :temp_new_risk_total
       t.text  :temp_new_risk_comment
 #Tool Fields
-      t.string  :tool_change_yes_no
+      t.text  :tool_change_yes_no
       t.text  :tool_change_comment
       t.text  :tool_description_hazard
       t.text  :tool_description_control
-      t.string  :tool_question_1_yes_no
+      t.text  :tool_question_1_yes_no
       t.integer :tool_question_1_severity
-      t.string  :tool_question_2_yes_no
+      t.text  :tool_question_2_yes_no
       t.integer :tool_question_2_severity
-      t.string  :tool_question_3_yes_no
+      t.text  :tool_question_3_yes_no
       t.integer :tool_question_3_severity
-      t.string  :tool_question_4_yes_no
+      t.text  :tool_question_4_yes_no
       t.integer :tool_question_4_severity
-      t.string  :tool_question_5_yes_no
+      t.text  :tool_question_5_yes_no
       t.integer :tool_question_5_severity
-      t.string  :tool_question_6_yes_no
+      t.text  :tool_question_6_yes_no
       t.integer :tool_question_6_severity
-      t.string  :tool_question_7_yes_no
+      t.text  :tool_question_7_yes_no
       t.integer :tool_question_7_severity
-      t.string  :tool_question_8_yes_no
+      t.text  :tool_question_8_yes_no
       t.integer :tool_question_8_severity
-      t.string  :tool_question_9_yes_no
+      t.text  :tool_question_9_yes_no
       t.integer :tool_question_9_severity
-      t.string  :tool_question_10_yes_no
+      t.text  :tool_question_10_yes_no
       t.integer :tool_question_10_severity
       t.integer :tool_frequency_often
       t.integer :tool_frequency_time
@@ -1034,15 +1034,15 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :tool_risk_mastery
       t.integer :tool_risk_total
       t.text  :tool_risk_comment
-      t.string  :tool_control_eliminate_yes_no
+      t.text  :tool_control_eliminate_yes_no
       t.text  :tool_control_eliminate_comment
-      t.string  :tool_control_substitute_yes_no
+      t.text  :tool_control_substitute_yes_no
       t.text  :tool_control_substitute_comment
-      t.string  :tool_control_engineer_yes_no
+      t.text  :tool_control_engineer_yes_no
       t.text  :tool_control_engineer_comment
-      t.string  :tool_control_admin_yes_no
+      t.text  :tool_control_admin_yes_no
       t.text  :tool_control_admin_comment
-      t.string  :tool_control_ppe_yes_no
+      t.text  :tool_control_ppe_yes_no
       t.text  :tool_control_ppe_comment
       t.integer :tool_new_frequency_often
       t.integer :tool_new_frequency_time
