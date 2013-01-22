@@ -8,16 +8,16 @@
 #  database: db/development.sqlite3
 #  pool: 5
 #  timeout: 5000
-development:
-  adapter: mysql2
-  encoding: utf8
-  database: aveciarisk
-  pool: 5
-  username: root
-  password:
-  socket: /tmp/mysql.sock
-  port: 3306
-  host: 127.0.0.1
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  database: aveciarisk
+#  pool: 5
+#  username: root
+#  password:
+#  socket: /tmp/mysql.sock
+#  port: 3306
+#  host: 127.0.0.1
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
@@ -32,12 +32,12 @@ development:
 #  database: db/production.sqlite3
 #  pool: 5
 #  timeout: 5000
-#production:
-#  adapter: pg
-#  host: ec2-54-243-180-155.compute-1.amazonaws.com
-#  database: d22pcgv4ptkhrn
-#  username: omuvakzjpihfkk
-#  password: 9f_TYI1Mcc8meh_Sp3NyvnEPAa
-#  pool: 5
-#  port: 5432
-#  timeout: 5000
+production:
+  adapter: pg
+  host: ec2-54-243-228-214.compute-1.amazonaws.com
+  database: desspanaf361gk
+  username: scjlcocuializq
+  password: f6xxpuuiuLVtxTpZ_oaRf7ahSk
+  pool: 5
+  port: 5432
+  timeout: 5000
