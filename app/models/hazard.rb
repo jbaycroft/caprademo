@@ -1,7 +1,6 @@
 class Hazard < ActiveRecord::Base
   belongs_to :task
 
-  mount_uploader :question4, StorageUploader 
   attr_accessible :access_change_yes_no,
 					:access_change_comment,
 					:access_description_hazard,
