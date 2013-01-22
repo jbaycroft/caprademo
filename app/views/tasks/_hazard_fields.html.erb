@@ -5,35 +5,37 @@
 				<th class="sub" colspan="2">Risk Assessment Change:</th>		
 			</tr>			
 			<tr>			
-				<td>Did Access and Egress Risk Change Since Last Assessment was Performed?</td>		
-				<td><%= f.radio_button :access_change_yes_no, 'No' %><%= f.label :access_change_yes_no_No, 'No' %></td>		
-				<td><%= f.radio_button :access_change_yes_no, 'Yes' %><%= f.label :access_change_yes_no_Yes, 'Yes' %></td>		
+				<td class="w50">
+					Did Access and Egress Risk Change Since Last Assessment was Performed?
+				</td>		
+				<td>
+					<%= f.radio_button :access_change_yes_no, 'No' %>
+					<%= f.label :access_change_yes_no_No, 'No' %>
+					<%= f.radio_button :access_change_yes_no, 'Yes' %>
+					<%= f.label :access_change_yes_no_Yes, 'Yes' %>
+				</td>		
 			</tr>			
-		</table>				
-	</div>					
-	<div class="hidden haz1">					
+		</table>									
 		<table class="w100">				
 			<tr>			
-				<th>Description of Change:</th>		
+				<th class="w25">
+					Description of Change:
+				</th>					
+				<td>
+					<%= f.text_area :access_change_comment, :class=>"area w99" %>
+				</td>		
 			</tr>			
-			<tr>			
-				<td><%= f.text_area :access_change_comment %></td>		
-			</tr>			
-		</table>				
-	</div>					
-	<div class="hidden haz1">					
+		</table>									
 		<table class="w100">							
 			<tr>			
 				<th class="sub">Description of Hazards:</th>		
 				<th class="sub">Description of Control Measures:</th>		
 			</tr>			
 			<tr>			
-				<td><%= f.text_area :access_description_hazard %></td>		
-				<td><%= f.text_area :access_description_control %></td>		
+				<td><%= f.text_area :access_description_hazard, :class=>"area w99" %></td>		
+				<td><%= f.text_area :access_description_control, :class=>"area w99" %></td>		
 			</tr>			
-		</table>				
-	</div>					
-	<div class="hidden haz1">					
+		</table>									
 		<table class="w100">							
 			<tr>			
 				<th colspan="4">Risk Questionnaire:</th>		
@@ -62,9 +64,7 @@
 				<td><%= f.radio_button :access_question_3_yes_no, 'Yes' %></td>		
 				<td><%= f.select :access_question_3_severity, [['-',0], ['Minor (1)',1], ['Serious (3)',3], ['Major (6)',6], ['Grave (10)',10]] %></td>		
 			</tr>			
-		</table>				
-	</div>					
-	<div class="hidden haz1">					
+		</table>									
 		<table class="w100">							
 			<tr>			
 				<th>How Often Does Risk Exist?:</th>		
@@ -74,9 +74,7 @@
 				<td><%= f.select :access_frequency_often, [['-',1001],['Never - Cannot be Exposed(0)',0],['Rare (1) - once per month or less',1], ['Seldom (2) - Once a week to several times a month',2], ['Regular (3) - Every week to several times a week',3], ['Common (4) - Every day to several times a day',4]] %></td>		
 				<td><%= f.select :access_frequency_time, [['-',1001], ['Never - Cannot be Exposed(0)',0],['Short (1) - Less than fifteen minutes per occurrence',1], ['Medium (2) - Fifteen minutes to two hours per occurrence',2], ['Long (3) - Two hours to four hours per occurrence',3], ['Extended (4) - Greater than four hours per occurrence',4]] %></td>		
 			</tr>			
-		</table>				
-	</div>					
-	<div class="hidden haz1">					
+		</table>								
 		<table class="w100">						
 			<tr>			
 				<th>Severity:</th>		
@@ -104,11 +102,9 @@
 					['No Control - No personal protection and preventive measures (10)',10]
 					] %></td>		
 				<td><span id= "access_risk_total" ></span></td>		
-				<td><%= f.text_area :access_risk_comment, :size => "35x1" %></td>		
+				<td><%= f.text_area :access_risk_comment, :class=>"area w99"%></td>		
 			</tr>			
-		</table>				
-	</div>					
-	<div class="hidden haz1">					
+		</table>								
 		<table class="w100">				
 			<tr>			
 				<th>New Control Type:</th>		
@@ -146,9 +142,7 @@
 				<td><%= f.radio_button :access_control_ppe_yes_no, 'No' %></td>		
 				<td><%= f.text_area :access_control_ppe_comment %></td>		
 			</tr>			
-		</table>				
-	</div>
-	<div class="hidden haz1">					
+		</table>									
 		<table class="w100">				
 			<tr>			
 				<th>How Often Does Risk Exist?:</th>		
@@ -158,9 +152,7 @@
 				<td><%= f.select :access_new_frequency_often, [['-',1001],['Never - Cannot be Exposed(0)',0],['Rare (1) - once per month or less',1], ['Seldom (2) - Once a week to several times a month',2], ['Regular (3) - Every week to several times a week',3], ['Common (4) - Every day to several times a day',4]] %></td>		
 				<td><%= f.select :access_new_frequency_time, [['-',1001], ['Never - Cannot be Exposed(0)',0],['Short (1) - Less than fifteen minutes per occurrence',1], ['Medium (2) - Fifteen minutes to two hours per occurrence',2], ['Long (3) - Two hours to four hours per occurrence',3], ['Extended (4) - Greater than four hours per occurrence',4]] %></td>		
 			</tr>			
-		</table>				
-	</div>					
-	<div class="hidden haz1">					
+		</table>									
 		<table class="w100">							
 			<tr>			
 				<th>New</br>Severity:</th>		
