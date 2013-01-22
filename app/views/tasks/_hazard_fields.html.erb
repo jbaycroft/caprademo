@@ -1,4 +1,27 @@
 <!-- Access / Egress Hazard Form -->
+<h1><%= @hazard.access_risk_total %></h1>
+<table><tr>			
+				<td><%= f.select :access_risk_severity, [
+					['-',1001],
+					['None - No injury or environmental impact is possible (0)',0], 
+					['Minor - Little to no effect on people, property, or the environment (1)',1], 
+					['Serious - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine (3)',3], 
+					['Major - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine (6)',6], 
+					['Grave - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action (10)',10]
+					], :class=>"w20" %></td>		
+				<td><span id= "access_risk_frequency" ></span></td>		
+				<td><%= f.select :access_risk_mastery, [
+					['-',1001],
+					['Removed - Hazard has been eliminated or substituted and no longer exists (0)',0], 
+					['Controlled - Controls are in place and cannot be bypassed and all other preventive measures implemented (1)',1], 
+					['Partially Controlled - Individual controls are in place but some controls require additional training and/or enforcement (3)',3], 
+					['Slightly Controlled - Individual controls in place but some controls can be easily bypassed (6)',6], 
+					['No Control - No personal protection and preventive measures (10)',10]
+					], :class=>"w20" %></td>		
+				<td><span id= "access_risk_total" ></span></td>		
+				<td><%= f.text_area :access_risk_comment %></td>		
+			</tr></table>
+
 <div class="hidden haz1">
 	<table class="w100">
 		<th class="sub" colspan="2">

@@ -963,8 +963,8 @@ class Hazard < ActiveRecord::Base
 					:tool_new_risk_comment
 before_save :calculate_risk
 before_save :calculate_risk_new
-#before_save :calculate_frequency
-#before_save :calculate_new_frequency
+before_save :calculate_frequency
+before_save :calculate_new_frequency
   def calculate_risk
     self.access_risk_total = [self.access_risk_severity,self.access_risk_frequency,self.access_risk_mastery].compact.inject(:*)
 	self.biohaz_risk_total = [self.biohaz_risk_severity,self.biohaz_risk_frequency,self.biohaz_risk_mastery].compact.inject(:*)
@@ -1295,7 +1295,7 @@ before_save :calculate_risk_new
   end
   #Calculation frequency for new ratings
   def calculate_new_frequency
-    #Access Frequency Calculations
+    #ACCESS FREQUENCY CALCULATIONS
     if self.access_new_frequency_often * self.access_new_frequency_time == 0
       self.access_new_risk_frequency = 0
     elsif self.access_new_frequency_often * self.access_new_frequency_time <= 2
@@ -1309,7 +1309,7 @@ before_save :calculate_risk_new
     else
       self.access_new_risk_frequency = 1001
     end
-    #Biohaz Frequency Calculation
+    #BIOHAZ FREQUENCY CALCULATION
     if self.biohaz_new_frequency_often * self.biohaz_new_frequency_time == 0
       self.biohaz_new_risk_frequency = 0
     elsif self.biohaz_new_frequency_often * self.biohaz_new_frequency_time <= 2
@@ -1323,7 +1323,7 @@ before_save :calculate_risk_new
     else
       self.biohaz_new_risk_frequency = 1001
     end
-    #Cowrk Frequency Calculation
+    #COWRK FREQUENCY CALCULATION
     if self.cowrk_new_frequency_often * self.cowrk_new_frequency_time == 0
       self.cowrk_new_risk_frequency = 0
     elsif self.cowrk_new_frequency_often * self.cowrk_new_frequency_time <= 2
@@ -1337,7 +1337,7 @@ before_save :calculate_risk_new
     else
       self.cowrk_new_risk_frequency = 1001
     end
-    #Cut Frequency Calculation
+    #CUT FREQUENCY CALCULATION
     if self.cut_new_frequency_often * self.cut_new_frequency_time == 0
       self.cut_new_risk_frequency = 0
     elsif self.cut_new_frequency_often * self.cut_new_frequency_time <= 2
@@ -1351,7 +1351,7 @@ before_save :calculate_risk_new
     else
       self.cut_new_risk_frequency = 1001
     end
-    #Ergo Frequency Calculation
+    #ERGO FREQUENCY CALCULATION
     if self.ergo_new_frequency_often * self.ergo_new_frequency_time == 0
       self.ergo_new_risk_frequency = 0
     elsif self.ergo_new_frequency_often * self.ergo_new_frequency_time <= 2
@@ -1365,7 +1365,7 @@ before_save :calculate_risk_new
     else
       self.ergo_new_risk_frequency = 1001
     end
-    #Fall Frequency Calculation
+    #FALL FREQUENCY CALCULATION
     if self.fall_new_frequency_often * self.fall_new_frequency_time == 0
       self.fall_new_risk_frequency = 0
     elsif self.fall_new_frequency_often * self.fall_new_frequency_time <= 2
@@ -1379,7 +1379,7 @@ before_save :calculate_risk_new
     else
       self.fall_new_risk_frequency = 1001
     end
-    #Fire Frequency Calculation
+    #FIRE FREQUENCY CALCULATION
     if self.fire_new_frequency_often * self.fire_new_frequency_time == 0
       self.fire_new_risk_frequency = 0
     elsif self.fire_new_frequency_often * self.fire_new_frequency_time <= 2
@@ -1393,7 +1393,7 @@ before_save :calculate_risk_new
     else
       self.fire_new_risk_frequency = 1001
     end
-    #hazatm frequency calculation
+    #HAZATM FREQUENCY CALCULATION
     if self.hazatm_new_frequency_often * self.hazatm_new_frequency_time == 0
       self.hazatm_new_risk_frequency = 0
     elsif self.hazatm_new_frequency_often * self.hazatm_new_frequency_time <= 2
@@ -1407,7 +1407,7 @@ before_save :calculate_risk_new
     else
       self.hazatm_new_risk_frequency = 1001
     end
-    #hazengy frequency calculation
+    #HAZENGY FREQUENCY CALCULATION
     if self.hazengy_new_frequency_often * self.hazengy_new_frequency_time == 0
       self.hazengy_new_risk_frequency = 0
     elsif self.hazengy_new_frequency_often * self.hazengy_new_frequency_time <= 2
@@ -1421,7 +1421,7 @@ before_save :calculate_risk_new
     else
       self.hazengy_new_risk_frequency = 1001
     end
-    #hazmat frequency calculation
+    #HAZMAT FREQUENCY CALCULATION
     if self.hazmat_new_frequency_often * self.hazmat_new_frequency_time == 0
       self.hazmat_new_risk_frequency = 0
     elsif self.hazmat_new_frequency_often * self.hazmat_new_frequency_time <= 2
@@ -1435,7 +1435,7 @@ before_save :calculate_risk_new
     else
       self.hazmat_new_risk_frequency = 1001
     end
-    #laz frequency calculation
+    #LAZ FREQUENCY CALCULATION
     if self.laz_new_frequency_often * self.laz_new_frequency_time == 0
       self.laz_new_risk_frequency = 0
     elsif self.laz_new_frequency_often * self.laz_new_frequency_time <= 2
@@ -1449,7 +1449,7 @@ before_save :calculate_risk_new
     else
       self.laz_new_risk_frequency = 1001
     end
-    #lonewrk frequency calculation
+    #LONEWRK FREQUENCY CALCULATION
     if self.lonewrk_new_frequency_often * self.lonewrk_new_frequency_time == 0
       self.lonewrk_new_risk_frequency = 0
     elsif self.lonewrk_new_frequency_often * self.lonewrk_new_frequency_time <= 2
@@ -1463,7 +1463,7 @@ before_save :calculate_risk_new
     else
       self.lonewrk_new_risk_frequency = 1001
     end
-    #mag frequency calculation
+    #MAG FREQUENCY CALCULATION
     if self.mag_new_frequency_often * self.mag_new_frequency_time == 0
       self.mag_new_risk_frequency = 0
     elsif self.mag_new_frequency_often * self.mag_new_frequency_time <= 2
@@ -1477,7 +1477,7 @@ before_save :calculate_risk_new
     else
       self.mag_new_risk_frequency = 1001
     end
-    #mechand frequency calculation
+    #MECHAND FREQUENCY CALCULATION
     if self.mechand_new_frequency_often * self.mechand_new_frequency_time == 0
       self.mechand_new_risk_frequency = 0
     elsif self.mechand_new_frequency_often * self.mechand_new_frequency_time <= 2
@@ -1491,7 +1491,7 @@ before_save :calculate_risk_new
     else
       self.mechand_new_risk_frequency = 1001
     end
-    #noise frequency calculation
+    #NOISE FREQUENCY CALCULATION
     if self.noise_new_frequency_often * self.noise_new_frequency_time == 0
       self.noise_new_risk_frequency = 0
     elsif self.noise_new_frequency_often * self.noise_new_frequency_time <= 2
@@ -1505,7 +1505,7 @@ before_save :calculate_risk_new
     else
       self.noise_new_risk_frequency = 1001
     end
-    #ovrhead frequency calculation
+    #OVRHEAD FREQUENCY CALCULATION
     if self.ovrhead_new_frequency_often * self.ovrhead_new_frequency_time == 0
       self.ovrhead_new_risk_frequency = 0
     elsif self.ovrhead_new_frequency_often * self.ovrhead_new_frequency_time <= 2
@@ -1519,7 +1519,7 @@ before_save :calculate_risk_new
     else
       self.ovrhead_new_risk_frequency = 1001
     end
-    #rad frequency calculation
+    #RAD FREQUENCY CALCULATION
     if self.rad_new_frequency_often * self.rad_new_frequency_time == 0
       self.rad_new_risk_frequency = 0
     elsif self.rad_new_frequency_often * self.rad_new_frequency_time <= 2
@@ -1533,7 +1533,7 @@ before_save :calculate_risk_new
     else
       self.rad_new_risk_frequency = 1001
     end
-    #road frequency calculation
+    #ROAD FREQUENCY CALCULATION
     if self.road_new_frequency_often * self.road_new_frequency_time == 0
       self.road_new_risk_frequency = 0
     elsif self.road_new_frequency_often * self.road_new_frequency_time <= 2
@@ -1547,7 +1547,7 @@ before_save :calculate_risk_new
     else
       self.road_new_risk_frequency = 1001
     end
-    #temp frequency calculation
+    #TEMP FREQUENCY CALCULATION
     if self.temp_new_frequency_often * self.temp_new_frequency_time == 0
       self.temp_new_risk_frequency = 0
     elsif self.temp_new_frequency_often * self.temp_new_frequency_time <= 2
