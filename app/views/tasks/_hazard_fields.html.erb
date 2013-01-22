@@ -17,7 +17,7 @@
 				<th>Description of Change:</th>		
 			</tr>			
 			<tr>			
-				<td><%= f.text_area :access_change_comment, :size => "94x5" %></td>		
+				<td><%= f.text_area :access_change_comment %></td>		
 			</tr>			
 		</table>				
 	</div>					
@@ -28,8 +28,8 @@
 				<th class="sub">Description of Control Measures:</th>		
 			</tr>			
 			<tr>			
-				<td><%= f.text_area :access_description_hazard, :size => "42x5" %></td>		
-				<td><%= f.text_area :access_description_control, :size => "42x5" %></td>		
+				<td><%= f.text_area :access_description_hazard %></td>		
+				<td><%= f.text_area :access_description_control %></td>		
 			</tr>			
 		</table>				
 	</div>					
@@ -120,31 +120,31 @@
 				<td><B>Elimination:</B></td>		
 				<td><%= f.radio_button :access_control_eliminate_yes_no, 'Yes' %></td>		
 				<td><%= f.radio_button :access_control_eliminate_yes_no, 'No' %></td>		
-				<td><%= f.text_area :access_control_eliminate_comment, :size => "60x1" %></td>		
+				<td><%= f.text_area :access_control_eliminate_comment %></td>		
 			</tr>			
 			<tr>			
 				<td><B>Substitution:</B></td>		
 				<td><%= f.radio_button :access_control_substitute_yes_no, 'Yes' %></td>		
 				<td><%= f.radio_button :access_control_substitute_yes_no, 'No' %></td>		
-				<td><%= f.text_area :access_control_substitute_comment, :size => "60x1" %></td>		
+				<td><%= f.text_area :access_control_substitute_comment %></td>		
 			</tr>			
 			<tr>			
 				<td><B>Engineering:</B></td>		
 				<td><%= f.radio_button :access_control_engineer_yes_no, 'Yes' %></td>		
 				<td><%= f.radio_button :access_control_engineer_yes_no, 'No' %></td>		
-				<td><%= f.text_area :access_control_engineer_comment, :size => "60x1" %></td>		
+				<td><%= f.text_area :access_control_engineer_comment %></td>		
 			</tr>			
 			<tr>			
 				<td><B>Administrative:</B></td>		
 				<td><%= f.radio_button :access_control_admin_yes_no, 'Yes' %></td>		
 				<td><%= f.radio_button :access_control_admin_yes_no, 'No' %></td>		
-				<td><%= f.text_area :access_control_admin_comment, :size => "60x1" %></td>		
+				<td><%= f.text_area :access_control_admin_comment %></td>		
 			</tr>			
 			<tr>			
 				<td><B>PPE:</B></td>		
 				<td><%= f.radio_button :access_control_ppe_yes_no, 'Yes' %></td>		
 				<td><%= f.radio_button :access_control_ppe_yes_no, 'No' %></td>		
-				<td><%= f.text_area :access_control_ppe_comment, :size => "60x1" %></td>		
+				<td><%= f.text_area :access_control_ppe_comment %></td>		
 			</tr>			
 		</table>				
 	</div>
@@ -188,7 +188,7 @@
 					['No Control - No personal protection and preventive measures (10)',10]
 					] %></td>				
 				<td><span id= "access_new_risk_total" ></span></td>		
-				<td><%= f.text_area :access_new_risk_comment, :size => "35x1" %></td>		
+				<td><%= f.text_area :access_new_risk_comment %></td>		
 			</tr>			
 		</table>				
 	</div>									
