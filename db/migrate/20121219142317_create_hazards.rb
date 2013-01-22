@@ -1051,6 +1051,7 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :tool_new_risk_mastery
       t.integer :tool_new_risk_total
       t.text  :tool_new_risk_comment
+      t.references :task
   
 
 
