@@ -964,7 +964,7 @@ class Hazard < ActiveRecord::Base
 before_save :calculate_risk
 before_save :calculate_risk_new
 before_save :calculate_frequency
-before_save :calculate_new_frequency
+#before_save :calculate_new_frequency
   def calculate_risk
     self.access_risk_total = [self.access_risk_severity,self.access_risk_frequency,self.access_risk_mastery].compact.inject(:*)
 	self.biohaz_risk_total = [self.biohaz_risk_severity,self.biohaz_risk_frequency,self.biohaz_risk_mastery].compact.inject(:*)
@@ -1012,281 +1012,301 @@ before_save :calculate_new_frequency
   #calculate frequency for initial rating
   def calculate_frequency
   	#Access Frequency Calculations
-    if self.access_frequency_often * self.access_frequency_time == 0
+  	haz1 = [self.access_frequency_often,self.access_frequency_time].compact.inject(:*)
+  	haz2 = [self.biohaz_frequency_often,self.biohaz_frequency_time].compact.inject(:*)
+  	haz3 = [self.cowrk_frequency_often,self.cowrk_frequency_time].compact.inject(:*)
+  	haz4 = [self.cut_frequency_often,self.cut_frequency_time].compact.inject(:*)
+  	haz5 = [self.ergo_frequency_often,self.ergo_frequency_time].compact.inject(:*)
+  	haz6 = [self.fall_frequency_often,self.fall_frequency_time].compact.inject(:*)
+  	haz7 = [self.fire_frequency_often,self.fire_frequency_time].compact.inject(:*)
+  	haz8 = [self.hazatm_frequency_often,self.hazatm_frequency_time].compact.inject(:*)
+  	haz9 = [self.hazengy_frequency_often,self.hazengy_frequency_time].compact.inject(:*)
+  	haz10 = [self.hazmat_frequency_often,self.hazmat_frequency_time].compact.inject(:*)
+  	haz11 = [self.laz_frequency_often,self.laz_frequency_time].compact.inject(:*)
+  	haz12 = [self.lonewrk_frequency_often,self.lonewrk_frequency_time].compact.inject(:*)
+  	haz13 = [self.mag_frequency_often,self.mag_frequency_time].compact.inject(:*)
+  	haz14 = [self.mechand_frequency_often,self.mechand_frequency_time].compact.inject(:*)
+  	haz15 = [self.noise_frequency_often,self.noise_frequency_time].compact.inject(:*)
+  	haz16 = [self.ovrhead_frequency_often,self.ovrhead_frequency_time].compact.inject(:*)
+  	haz17 = [self.rad_frequency_often,self.rad_frequency_time].compact.inject(:*)
+  	haz18 = [self.road_frequency_often,self.road_frequency_time].compact.inject(:*)
+  	haz19 = [self.temp_frequency_often,self.temp_frequency_time].compact.inject(:*)
+  	haz20 = [self.tool_frequency_often,self.tool_frequency_time].compact.inject(:*)
+    if haz1 == 0
       self.access_risk_frequency = 0
-    elsif self.access_frequency_often * self.access_frequency_time <= 2
+    elsif haz1 <= 2
       self.access_risk_frequency = 1
-    elsif self.access_frequency_often * self.access_frequency_time <= 4
+    elsif haz1 <= 4
       self.access_risk_frequency = 3
-    elsif self.access_frequency_often * self.access_frequency_time <= 9
+    elsif haz1 <= 9
       self.access_risk_frequency = 6
-    elsif self.access_frequency_often * self.access_frequency_time <= 16 
+    elsif haz1 <= 16 
       self.access_risk_frequency = 10
     else
       self.access_risk_frequency = 1001
     end
     #Biohaz Frequency Calculation
-    if self.biohaz_frequency_often * self.biohaz_frequency_time == 0
+    if haz2 == 0
       self.biohaz_risk_frequency = 0
-    elsif self.biohaz_frequency_often * self.biohaz_frequency_time <= 2
+    elsif haz2 <= 2
       self.biohaz_risk_frequency = 1
-    elsif self.biohaz_frequency_often * self.biohaz_frequency_time <= 4
+    elsif haz2 <= 4
       self.biohaz_risk_frequency = 3
-    elsif self.biohaz_frequency_often * self.biohaz_frequency_time <= 9
+    elsif haz2 <= 9
       self.biohaz_risk_frequency = 6
-    elsif self.biohaz_frequency_often * self.biohaz_frequency_time <= 16 
+    elsif haz2 <= 16 
       self.biohaz_risk_frequency = 10
     else
       self.biohaz_risk_frequency = 1001
     end
     #Cowrk Frequency Calculation
-    if self.cowkr_frequency_often * self.cowkr_frequency_time == 0
+    if haz3 == 0
       self.cowkr_risk_frequency = 0
-    elsif self.cowkr_frequency_often * self.cowkr_frequency_time <= 2
+    elsif haz3 <= 2
       self.cowkr_risk_frequency = 1
-    elsif self.cowkr_frequency_often * self.cowkr_frequency_time <= 4
+    elsif haz3 <= 4
       self.cowkr_risk_frequency = 3
-    elsif self.cowkr_frequency_often * self.cowkr_frequency_time <= 9
+    elsif haz3 <= 9
       self.cowkr_risk_frequency = 6
-    elsif self.cowkr_frequency_often * self.cowkr_frequency_time <= 16 
+    elsif haz3 <= 16 
       self.cowkr_risk_frequency = 10
     else
       self.cowkr_risk_frequency = 1001
     end
     #Cut Frequency Calculation
-    if self.cut_frequency_often * self.cut_frequency_time == 0
+    if haz4 == 0
       self.cut_risk_frequency = 0
-    elsif self.cut_frequency_often * self.cut_frequency_time <= 2
+    elsif haz4 <= 2
       self.cut_risk_frequency = 1
-    elsif self.cut_frequency_often * self.cut_frequency_time <= 4
+    elsif haz4 <= 4
       self.cut_risk_frequency = 3
-    elsif self.cut_frequency_often * self.cut_frequency_time <= 9
+    elsif haz4 <= 9
       self.cut_risk_frequency = 6
-    elsif self.cut_frequency_often * self.cut_frequency_time <= 16 
+    elsif haz4 <= 16 
       self.cut_risk_frequency = 10
     else
       self.cut_risk_frequency = 1001
     end
     #Ergo Frequency Calculation
-    if self.ergo_frequency_often * self.ergo_frequency_time == 0
+    if haz5 == 0
       self.ergo_risk_frequency = 0
-    elsif self.ergo_frequency_often * self.ergo_frequency_time <= 2
+    elsif haz5 <= 2
       self.ergo_risk_frequency = 1
-    elsif self.ergo_frequency_often * self.ergo_frequency_time <= 4
+    elsif haz5 <= 4
       self.ergo_risk_frequency = 3
-    elsif self.ergo_frequency_often * self.ergo_frequency_time <= 9
+    elsif haz5 <= 9
       self.ergo_risk_frequency = 6
-    elsif self.ergo_frequency_often * self.ergo_frequency_time <= 16 
+    elsif haz5 <= 16 
       self.ergo_risk_frequency = 10
     else
       self.ergo_risk_frequency = 1001
     end
     #Fall Frequency Calculation
-    if self.fall_frequency_often * self.fall_frequency_time == 0
+    if haz6 == 0
       self.fall_risk_frequency = 0
-    elsif self.fall_frequency_often * self.fall_frequency_time <= 2
+    elsif haz6 <= 2
       self.fall_risk_frequency = 1
-    elsif self.fall_frequency_often * self.fall_frequency_time <= 4
+    elsif haz6 <= 4
       self.fall_risk_frequency = 3
-    elsif self.fall_frequency_often * self.fall_frequency_time <= 9
+    elsif haz6 <= 9
       self.fall_risk_frequency = 6
-    elsif self.fall_frequency_often * self.fall_frequency_time <= 16 
+    elsif haz6 <= 16 
       self.fall_risk_frequency = 10
     else
       self.fall_risk_frequency = 1001
     end
     #Fire Frequency Calculation
-    if self.fire_frequency_often * self.fire_frequency_time == 0
+    if haz7 == 0
       self.fire_risk_frequency = 0
-    elsif self.fire_frequency_often * self.fire_frequency_time <= 2
+    elsif haz7 <= 2
       self.fire_risk_frequency = 1
-    elsif self.fire_frequency_often * self.fire_frequency_time <= 4
+    elsif haz7 <= 4
       self.fire_risk_frequency = 3
-    elsif self.fire_frequency_often * self.fire_frequency_time <= 9
+    elsif haz7 <= 9
       self.fire_risk_frequency = 6
-    elsif self.fire_frequency_often * self.fire_frequency_time <= 16 
+    elsif haz7 <= 16 
       self.fire_risk_frequency = 10
     else
       self.fire_risk_frequency = 1001
     end
     #hazatm frequency calculation
-    if self.hazatm_frequency_often * self.hazatm_frequency_time == 0
+    if haz8 == 0
       self.hazatm_risk_frequency = 0
-    elsif self.hazatm_frequency_often * self.hazatm_frequency_time <= 2
+    elsif haz8 <= 2
       self.hazatm_risk_frequency = 1
-    elsif self.hazatm_frequency_often * self.hazatm_frequency_time <= 4
+    elsif haz8 <= 4
       self.hazatm_risk_frequency = 3
-    elsif self.hazatm_frequency_often * self.hazatm_frequency_time <= 9
+    elsif haz8 <= 9
       self.hazatm_risk_frequency = 6
-    elsif self.hazatm_frequency_often * self.hazatm_frequency_time <= 16 
+    elsif haz8 <= 16 
       self.hazatm_risk_frequency = 10
     else
       self.hazatm_risk_frequency = 1001
     end
     #hazengy frequency calculation
-    if self.hazengy_frequency_often * self.hazengy_frequency_time == 0
+    if haz9 == 0
       self.hazengy_risk_frequency = 0
-    elsif self.hazengy_frequency_often * self.hazengy_frequency_time <= 2
+    elsif haz9 <= 2
       self.hazengy_risk_frequency = 1
-    elsif self.hazengy_frequency_often * self.hazengy_frequency_time <= 4
+    elsif haz9 <= 4
       self.hazengy_risk_frequency = 3
-    elsif self.hazengy_frequency_often * self.hazengy_frequency_time <= 9
+    elsif haz9 <= 9
       self.hazengy_risk_frequency = 6
-    elsif self.hazengy_frequency_often * self.hazengy_frequency_time <= 16 
+    elsif haz9 <= 16 
       self.hazengy_risk_frequency = 10
     else
       self.hazengy_risk_frequency = 1001
     end
     #hazmat frequency calculation
-    if self.hazmat_frequency_often * self.hazmat_frequency_time == 0
+    if haz10 == 0
       self.hazmat_risk_frequency = 0
-    elsif self.hazmat_frequency_often * self.hazmat_frequency_time <= 2
+    elsif haz10 <= 2
       self.hazmat_risk_frequency = 1
-    elsif self.hazmat_frequency_often * self.hazmat_frequency_time <= 4
+    elsif haz10 <= 4
       self.hazmat_risk_frequency = 3
-    elsif self.hazmat_frequency_often * self.hazmat_frequency_time <= 9
+    elsif haz10 <= 9
       self.hazmat_risk_frequency = 6
-    elsif self.hazmat_frequency_often * self.hazmat_frequency_time <= 16 
+    elsif haz10 <= 16 
       self.hazmat_risk_frequency = 10
     else
       self.hazmat_risk_frequency = 1001
     end
     #laz frequency calculation
-    if self.laz_frequency_often * self.laz_frequency_time == 0
+    if haz11 == 0
       self.laz_risk_frequency = 0
-    elsif self.laz_frequency_often * self.laz_frequency_time <= 2
+    elsif haz11 <= 2
       self.laz_risk_frequency = 1
-    elsif self.laz_frequency_often * self.laz_frequency_time <= 4
+    elsif haz11 <= 4
       self.laz_risk_frequency = 3
-    elsif self.laz_frequency_often * self.laz_frequency_time <= 9
+    elsif haz11 <= 9
       self.laz_risk_frequency = 6
-    elsif self.laz_frequency_often * self.laz_frequency_time <= 16 
+    elsif haz11 <= 16 
       self.laz_risk_frequency = 10
     else
       self.laz_risk_frequency = 1001
     end
     #lonewrk frequency calculation
-    if self.lonewrk_frequency_often * self.lonewrk_frequency_time == 0
+    if haz12 == 0
       self.lonewrk_risk_frequency = 0
-    elsif self.lonewrk_frequency_often * self.lonewrk_frequency_time <= 2
+    elsif haz12 <= 2
       self.lonewrk_risk_frequency = 1
-    elsif self.lonewrk_frequency_often * self.lonewrk_frequency_time <= 4
+    elsif haz12 <= 4
       self.lonewrk_risk_frequency = 3
-    elsif self.lonewrk_frequency_often * self.lonewrk_frequency_time <= 9
+    elsif haz12 <= 9
       self.lonewrk_risk_frequency = 6
-    elsif self.lonewrk_frequency_often * self.lonewrk_frequency_time <= 16 
+    elsif haz12 <= 16 
       self.lonewrk_risk_frequency = 10
     else
       self.lonewrk_risk_frequency = 1001
     end
     #mag frequency calculation
-    if self.mag_frequency_often * self.mag_frequency_time == 0
+    if haz13 == 0
       self.mag_risk_frequency = 0
-    elsif self.mag_frequency_often * self.mag_frequency_time <= 2
+    elsif haz13 <= 2
       self.mag_risk_frequency = 1
-    elsif self.mag_frequency_often * self.mag_frequency_time <= 4
+    elsif haz13 <= 4
       self.mag_risk_frequency = 3
-    elsif self.mag_frequency_often * self.mag_frequency_time <= 9
+    elsif haz13 <= 9
       self.mag_risk_frequency = 6
-    elsif self.mag_frequency_often * self.mag_frequency_time <= 16 
+    elsif haz13 <= 16 
       self.mag_risk_frequency = 10
     else
       self.mag_risk_frequency = 1001
     end
     #mechand frequency calculation
-    if self.mechand_frequency_often * self.mechand_frequency_time == 0
+    if haz14 == 0
       self.mechand_risk_frequency = 0
-    elsif self.mechand_frequency_often * self.mechand_frequency_time <= 2
+    elsif haz14 <= 2
       self.mechand_risk_frequency = 1
-    elsif self.mechand_frequency_often * self.mechand_frequency_time <= 4
+    elsif haz14 <= 4
       self.mechand_risk_frequency = 3
-    elsif self.mechand_frequency_often * self.mechand_frequency_time <= 9
+    elsif haz14 <= 9
       self.mechand_risk_frequency = 6
-    elsif self.mechand_frequency_often * self.mechand_frequency_time <= 16 
+    elsif haz14 <= 16 
       self.mechand_risk_frequency = 10
     else
       self.mechand_risk_frequency = 1001
     end
     #noise frequency calculation
-    if self.noise_frequency_often * self.noise_frequency_time == 0
+    if haz15 == 0
       self.noise_risk_frequency = 0
-    elsif self.noise_frequency_often * self.noise_frequency_time <= 2
+    elsif haz15 <= 2
       self.noise_risk_frequency = 1
-    elsif self.noise_frequency_often * self.noise_frequency_time <= 4
+    elsif haz15 <= 4
       self.noise_risk_frequency = 3
-    elsif self.noise_frequency_often * self.noise_frequency_time <= 9
+    elsif haz15 <= 9
       self.noise_risk_frequency = 6
-    elsif self.noise_frequency_often * self.noise_frequency_time <= 16 
+    elsif haz15 <= 16 
       self.noise_risk_frequency = 10
     else
       self.noise_risk_frequency = 1001
     end
     #ovrhead frequency calculation
-    if self.ovrhead_frequency_often * self.ovrhead_frequency_time == 0
+    if haz16 == 0
       self.ovrhead_risk_frequency = 0
-    elsif self.ovrhead_frequency_often * self.ovrhead_frequency_time <= 2
+    elsif haz16 <= 2
       self.ovrhead_risk_frequency = 1
-    elsif self.ovrhead_frequency_often * self.ovrhead_frequency_time <= 4
+    elsif haz16 <= 4
       self.ovrhead_risk_frequency = 3
-    elsif self.ovrhead_frequency_often * self.ovrhead_frequency_time <= 9
+    elsif haz16 <= 9
       self.ovrhead_risk_frequency = 6
-    elsif self.ovrhead_frequency_often * self.ovrhead_frequency_time <= 16 
+    elsif haz16 <= 16 
       self.ovrhead_risk_frequency = 10
     else
       self.ovrhead_risk_frequency = 1001
     end
     #rad frequency calculation
-    if self.rad_frequency_often * self.rad_frequency_time == 0
+    if haz17 == 0
       self.rad_risk_frequency = 0
-    elsif self.rad_frequency_often * self.rad_frequency_time <= 2
+    elsif haz17 <= 2
       self.rad_risk_frequency = 1
-    elsif self.rad_frequency_often * self.rad_frequency_time <= 4
+    elsif haz17 <= 4
       self.rad_risk_frequency = 3
-    elsif self.rad_frequency_often * self.rad_frequency_time <= 9
+    elsif haz17 <= 9
       self.rad_risk_frequency = 6
-    elsif self.rad_frequency_often * self.rad_frequency_time <= 16 
+    elsif haz17 <= 16 
       self.rad_risk_frequency = 10
     else
       self.rad_risk_frequency = 1001
     end
     #road frequency calculation
-    if self.road_frequency_often * self.road_frequency_time == 0
+    if haz18 == 0
       self.road_risk_frequency = 0
-    elsif self.road_frequency_often * self.road_frequency_time <= 2
+    elsif haz18 <= 2
       self.road_risk_frequency = 1
-    elsif self.road_frequency_often * self.road_frequency_time <= 4
+    elsif haz18 <= 4
       self.road_risk_frequency = 3
-    elsif self.road_frequency_often * self.road_frequency_time <= 9
+    elsif haz18 <= 9
       self.road_risk_frequency = 6
-    elsif self.road_frequency_often * self.road_frequency_time <= 16 
+    elsif haz18 <= 16 
       self.road_risk_frequency = 10
     else
       self.road_risk_frequency = 1001
     end
     #temp frequency calculation
-    if self.temp_frequency_often * self.temp_frequency_time == 0
+    if haz19 == 0
       self.temp_risk_frequency = 0
-    elsif self.temp_frequency_often * self.temp_frequency_time <= 2
+    elsif haz19 <= 2
       self.temp_risk_frequency = 1
-    elsif self.temp_frequency_often * self.temp_frequency_time <= 4
+    elsif haz19 <= 4
       self.temp_risk_frequency = 3
-    elsif self.temp_frequency_often * self.temp_frequency_time <= 9
+    elsif haz19 <= 9
       self.temp_risk_frequency = 6
-    elsif self.temp_frequency_often * self.temp_frequency_time <= 16 
+    elsif haz19 <= 16 
       self.temp_risk_frequency = 10
     else
       self.temp_risk_frequency = 1001
     end
     #TOOL FREQUENCY CALCULATION
-    if self.tool_frequency_often * self.tool_frequency_time == 0
+    if haz20 == 0
       self.tool_risk_frequency = 0
-    elsif self.tool_frequency_often * self.tool_frequency_time <= 2
+    elsif haz20 <= 2
       self.tool_risk_frequency = 1
-    elsif self.tool_frequency_often * self.tool_frequency_time <= 4
+    elsif haz20 <= 4
       self.tool_risk_frequency = 3
-    elsif self.tool_frequency_often * self.tool_frequency_time <= 9
+    elsif haz20 <= 9
       self.tool_risk_frequency = 6
-    elsif self.tool_frequency_often * self.tool_frequency_time <= 16 
+    elsif haz20 <= 16 
       self.tool_risk_frequency = 10
     else
       self.tool_risk_frequency = 1001
