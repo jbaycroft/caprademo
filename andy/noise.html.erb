@@ -1,0 +1,395 @@
+<!--------------------------------------->
+<!-- ACCESS / EGRESS HAZARD FORM START -->
+<div class="hidden haz1">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Access / Egress Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Access / Egress Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :noise_change_yes_no, 'No' %>
+				<%= f.label :noise_change_yes_no_No, 'No' %>
+				<%= f.radio_button :noise_change_yes_no, 'Yes' %>
+				<%= f.label :noise_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :noise_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :noise_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are the hallways free and clear of clutter/crowding?
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :noise_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Do personnel have free and clear access to the doors and stairs?
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :noise_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are Emergency Exit signs directing personnel to the nearest exit visible?
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :noise_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :noise_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :noise_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_new_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :noise_new_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :noise_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- ACCESS / EGRESS HAZARD FORM END ---->
+<!--------------------------------------->
