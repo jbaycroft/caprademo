@@ -1,41 +1,96 @@
-<!-- Access Hazard Form -->
+<!-- Access / Egress Hazard Form -->
+<div class="hidden haz1">
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Access / Egress Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Access / Egress Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :access_change_yes_no, 'No' %>
+				<%= f.label :access_change_yes_no_No, 'No' %>
+				<%= f.radio_button :access_change_yes_no, 'Yes' %>
+				<%= f.label :access_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :access_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :access_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :access_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Are the hallways free and clear of clutter/crowding?
+			</td>
+			<td>
+				<%= f.radio_button :access_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :access_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :access_question_1_severity, [['-',0], ['Minor (1)',1], ['Serious (3)',3], ['Major (6)',6], ['Grave (10)',10]] %>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 	<div class="hidden haz1">					
-		<table class="w100">				
-			<tr>			
-				<th class="sub" colspan="2">Risk Assessment Change:</th>		
-			</tr>			
-			<tr>			
-				<td class="w50">
-					Did Access and Egress Risk Change Since Last Assessment was Performed?
-				</td>		
-				<td>
-					<%= f.radio_button :access_change_yes_no, 'No' %>
-					<%= f.label :access_change_yes_no_No, 'No' %>
-					<%= f.radio_button :access_change_yes_no, 'Yes' %>
-					<%= f.label :access_change_yes_no_Yes, 'Yes' %>
-				</td>		
-			</tr>			
-		</table>									
-		<table class="w100">				
-			<tr>			
-				<th class="w25">
-					Description of Change:
-				</th>					
-				<td>
-					<%= f.text_area :access_change_comment, :class=>"area w99" %>
-				</td>		
-			</tr>			
-		</table>									
-		<table class="w100">							
-			<tr>			
-				<th class="sub">Description of Hazards:</th>		
-				<th class="sub">Description of Control Measures:</th>		
-			</tr>			
-			<tr>			
-				<td><%= f.text_area :access_description_hazard, :class=>"area w99" %></td>		
-				<td><%= f.text_area :access_description_control, :class=>"area w99" %></td>		
-			</tr>			
-		</table>									
+							
 		<table class="w100">							
 			<tr>			
 				<th colspan="4">Risk Questionnaire:</th>		
@@ -184,3 +239,4 @@
 			</tr>			
 		</table>				
 	</div>									
+	-->
