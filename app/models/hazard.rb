@@ -1066,17 +1066,17 @@ before_save :calculate_new_frequency
     #Cowrk Frequency Calculation
     unless haz3.nil?
 	    if haz3 == 0
-	      self.cowkr_risk_frequency = 0
+	      self.cowrk_risk_frequency = 0
 	    elsif haz3 <= 2
-	      self.cowkr_risk_frequency = 1
+	      self.cowrk_risk_frequency = 1
 	    elsif haz3 <= 4
-	      self.cowkr_risk_frequency = 3
+	      self.cowrk_risk_frequency = 3
 	    elsif haz3 <= 9
-	      self.cowkr_risk_frequency = 6
+	      self.cowrk_risk_frequency = 6
 	    elsif haz3 <= 16 
-	      self.cowkr_risk_frequency = 10
+	      self.cowrk_risk_frequency = 10
 	    else
-	      self.cowkr_risk_frequency = 1001
+	      self.cowrk_risk_frequency = 1001
 	    end
 	end
     #Cut Frequency Calculation
