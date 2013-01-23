@@ -25,6 +25,23 @@ class Task < ActiveRecord::Base
   				  :hazard19,
   				  :hazard20,
   				  :location,
+            :team,
+            :shifttime,
+            :shiftday,
+            :shiftnight,
+            :shiftweekend,
+            :shiftwrker,
+            :equipmachine,
+            :machine
+            :equiptool,
+            :tool,
+            :equipdevice,
+            :device,
+            :restricted,
+            :restrictmethod1,
+            :restrictmethod2,
+            :restrictmethod3,
+            :history,
   				  :name
   accepts_nested_attributes_for :hazards
   attr_accessible :hazards_attributes

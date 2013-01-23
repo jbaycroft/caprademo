@@ -26,6 +26,23 @@ class CreateTasks < ActiveRecord::Migration
       t.string :location
       t.boolean :complete
       t.date :date_completed
+      t.text :team
+      t.string :shifttime
+      t.boolean :shiftday
+      t.boolean :shiftnight
+      t.boolean :shiftweekend
+      t.string :shiftwrker
+      t.boolean :equipmachine
+      t.text :machine
+      t.boolean :equiptool
+      t.text :tool
+      t.boolean :equipdevice
+      t.text :device
+      t.string :restricted
+      t.boolean :restrictmethod1
+      t.boolean :restrictmethod2
+      t.boolean :restrictmethod3
+      t.text :history
       t.references :department
 
       t.timestamps
