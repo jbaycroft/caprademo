@@ -32,7 +32,7 @@ class Task < ActiveRecord::Base
             :shiftweekend,
             :shiftwrker,
             :equipmachine,
-            :machine
+            :machine,
             :equiptool,
             :tool,
             :equipdevice,
