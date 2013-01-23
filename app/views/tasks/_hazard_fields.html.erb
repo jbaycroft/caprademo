@@ -313,7 +313,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :access_new_frequency_often, [
+				<%= f.select :access_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -323,7 +323,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :access_new_frequency_time, [
+				<%= f.select :access_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -768,7 +768,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :biohaz_new_frequency_often, [
+				<%= f.select :biohaz_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -778,7 +778,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :biohaz_new_frequency_time, [
+				<%= f.select :biohaz_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -1143,7 +1143,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :cowrk_new_frequency_often, [
+				<%= f.select :cowrk_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -1153,7 +1153,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :cowrk_new_frequency_time, [
+				<%= f.select :cowrk_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -1461,7 +1461,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :cut_new_frequency_often, [
+				<%= f.select :cut_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -1471,7 +1471,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :cut_new_frequency_time, [
+				<%= f.select :cut_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -1868,7 +1868,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :ergo_new_frequency_often, [
+				<%= f.select :ergo_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -1878,7 +1878,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :ergo_new_frequency_time, [
+				<%= f.select :ergo_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -2303,7 +2303,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :fall_new_frequency_often, [
+				<%= f.select :fall_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -2313,7 +2313,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :fall_new_frequency_time, [
+				<%= f.select :fall_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -2784,7 +2784,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :fire_new_frequency_often, [
+				<%= f.select :fire_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -2794,7 +2794,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :fire_new_frequency_time, [
+				<%= f.select :fire_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -3102,7 +3102,7 @@
 		</tr>
 		<tr>
 			<td>
-				<%= f.select :hazatm_new_frequency_often, [
+				<%= f.select :hazatm_new_risk_frequency_often, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Rare (1) - once per month or less',1],
@@ -3112,7 +3112,7 @@
 				], {}, { :class=>"w100" } %>
 			</td>
 			<td>
-				<%= f.select :hazatm_new_frequency_time, [
+				<%= f.select :hazatm_new_risk_frequency_time, [
 					['-',1001],
 					['Never - Cannot be Exposed(0)',0],
 					['Short (1) - Less than fifteen minutes per occurrence',1],
@@ -3181,4 +3181,4785 @@
 	</table>
 </div>
 <!-- HAZATMOSPHERE HAZARD FORM END ------>
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- HAZENERGY HAZARD FORM START -------->
+<div class="hidden haz9">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Hazardous Energy Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Hazardous Energy Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :hazengy_change_yes_no, 'No' %>
+				<%= f.label :hazengy_change_yes_no_No, 'No' %>
+				<%= f.radio_button :hazengy_change_yes_no, 'Yes' %>
+				<%= f.label :hazengy_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :hazengy_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :hazengy_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are there electric conductors accessible to staff (e.g. cables, plugs)?
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :hazengy_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are gas cylinders properly stored?
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :hazengy_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are gas cylinders disconnected from regulators and capped when not in use?
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :hazengy_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazengy_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :hazengy_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazengy_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazengy_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :hazengy_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazengy_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazengy_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazengy_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :hazengy_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazengy_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazengy_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :hazengy_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazengy_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazengy_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- HAZENERGY HAZARD FORM END ---------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- HAZMAT HAZARD FORM START ----------->
+<div class="hidden haz10">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Hazardous Materials Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Hazardous Materials Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :hazmat_change_yes_no, 'No' %>
+				<%= f.label :hazmat_change_yes_no_No, 'No' %>
+				<%= f.radio_button :hazmat_change_yes_no, 'Yes' %>
+				<%= f.label :hazmat_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :hazmat_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :hazmat_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table>
+		<tr>
+			<th class="sub tleft w40">
+				Hazardous Material Type:
+			</th>
+			<th class="sub tcenter w10">
+				Powder
+			</th>
+			<th class="sub tcenter w10">
+				Liquid
+			</th>
+			<th class="sub tcenter w10">
+				Gas
+			</th>
+			<th class="sub tleft">
+				Amount:
+			</th>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo1, :class=>"box" %><%= f.label :hazmat_boo1, 'Flammable?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo2, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo3, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo4, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text1, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo5, :class=>"box" %><%= f.label :hazmat_boo5, 'Toxic?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo6, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo7, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo8, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text2, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo9, :class=>"box" %><%= f.label :hazmat_boo9, 'Corrosive?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo10, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo11, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo12, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text3, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo13, :class=>"box" %><%= f.label :hazmat_boo13, 'Irritant?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo14, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo15, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo16, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text4, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo17, :class=>"box" %><%= f.label :hazmat_boo17, 'Reactive?', :class=>"label" %></li>
+					<li class="checkbox1"><%= f.check_box :hazmat_boo18, :class=>"box" %><%= f.label :hazmat_boo18, 'Dangerous when wet?', :class=>"label" %></li>
+					<li class="checkbox1"><%= f.check_box :hazmat_boo19, :class=>"box" %><%= f.label :hazmat_boo19, 'Inhalation hazard?', :class=>"label" %></li>
+					<li class="checkbox1"><%= f.check_box :hazmat_boo20, :class=>"box" %><%= f.label :hazmat_boo20, 'Peroxide forming?', :class=>"label" %></li>
+					<li class="checkbox1"><%= f.check_box :hazmat_boo21, :class=>"box" %><%= f.label :hazmat_boo21, 'Spontaneously combustible?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo22, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo23, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo24, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text5, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo25, :class=>"box" %><%= f.label :hazmat_boo25, 'Controlled Substances?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo26, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo27, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo28, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text6, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo29, :class=>"box" %><%= f.label :hazmat_boo29, 'Potent Compounds (OEB 3&4)?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo30, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo31, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo32, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text7, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo33, :class=>"box" %><%= f.label :hazmat_boo33, 'Carcinogenic/Mutagen/Reproductive?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo34, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo35, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo36, :class=>"box" %>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text8, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.check_box :hazmat_boo37, :class=>"box" %><%= f.label :hazmat_boo37, 'Other?', :class=>"label" %></li>
+					<li class="checkbox1"><%= f.check_box :hazmat_boo38, :class=>"box" %><%= f.label :hazmat_boo38, 'Asphyxiant?', :class=>"label" %></li>
+					<li class="checkbox1"><%= f.check_box :hazmat_boo39, :class=>"box" %><%= f.label :hazmat_boo39, 'Cryogenic liquid?', :class=>"label" %></li>
+					<li class="checkbox1"><%= f.check_box :hazmat_boo40, :class=>"box" %><%= f.label :hazmat_boo40, 'Combustible dust/powder?', :class=>"label" %></li>
+				</ul>
+			</td>
+			<td class="tcenter">
+				N/A
+			</td>
+			<td class="tcenter">
+				N/A
+			</td>
+			<td class="tcenter">
+				N/A
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_text9, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazmat_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :hazmat_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazmat_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazmat_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :hazmat_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazmat_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :hazmat_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazmat_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :hazmat_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :hazmat_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazmat_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :hazmat_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="hazmat_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :hazmat_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- HAZMAT HAZARD FORM END ------------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- LASER HAZARD FORM START ------------>
+<div class="hidden haz11">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Laser Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Laser Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :laz_change_yes_no, 'No' %>
+				<%= f.label :laz_change_yes_no_No, 'No' %>
+				<%= f.radio_button :laz_change_yes_no, 'Yes' %>
+				<%= f.label :laz_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :laz_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :laz_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is an inventory of equipment utilizing lasers available and up-to-date?
+			</td>
+			<td>
+				<%= f.radio_button :laz_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :laz_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is the laser hazard symbol placed on the device and/or entry doors?
+			</td>
+			<td>
+				<%= f.radio_button :laz_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :laz_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is the equipment placed at the entrance of the room?
+			</td>
+			<td>
+				<%= f.radio_button :laz_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :laz_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :laz_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :laz_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :laz_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="laz_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :laz_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="laz_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :laz_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :laz_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :laz_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :laz_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="laz_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :laz_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="laz_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :laz_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- LASER HAZARD FORM END -------------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- LONE WORKER HAZARD FORM START ------>
+<div class="hidden haz12">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Lone Worker Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Lone Worker Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :lonewrk_change_yes_no, 'No' %>
+				<%= f.label :lonewrk_change_yes_no_No, 'No' %>
+				<%= f.radio_button :lonewrk_change_yes_no, 'Yes' %>
+				<%= f.label :lonewrk_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :lonewrk_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :lonewrk_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :lonewrk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :lonewrk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :lonewrk_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="lonewrk_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :lonewrk_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="lonewrk_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :lonewrk_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :lonewrk_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :lonewrk_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :lonewrk_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="lonewrk_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :lonewrk_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="lonewrk_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :lonewrk_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- LONE WORKER HAZARD FORM END -------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- MAGNETIC FIELD HAZARD FORM START --->
+<div class="hidden haz13">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Magnetic Field Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Magnetic Field Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :mag_change_yes_no, 'No' %>
+				<%= f.label :mag_change_yes_no_No, 'No' %>
+				<%= f.radio_button :mag_change_yes_no, 'Yes' %>
+				<%= f.label :mag_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :mag_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :mag_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is an inventory of equipment utilizing a stong magnetic field available and up-to-date?
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :mag_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is the magnetic field hazard symbol placed on the device and/or entry doors?
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :mag_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is the euqipment placed at the entrance of the room?
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :mag_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Has a 5-Gauss line been designated around the magnetic equipment?
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_4_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_4_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :mag_question_4_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Does the equipment require a cryogenic liquid quench?
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_5_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_question_5_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :mag_question_5_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mag_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :mag_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mag_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mag_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :mag_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mag_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mag_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mag_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :mag_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mag_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mag_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :mag_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mag_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mag_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- MAGNETIC FIELD HAZARD FORM END ----->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- MECHANICAL HANDLING HAZARD FORM START -->
+<div class="hidden haz14">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Mechanical Handling Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Mechanical Handling Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :mechand_change_yes_no, 'No' %>
+				<%= f.label :mechand_change_yes_no_No, 'No' %>
+				<%= f.radio_button :mechand_change_yes_no, 'Yes' %>
+				<%= f.label :mechand_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :mechand_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :mechand_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mechand_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :mechand_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mechand_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mechand_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :mechand_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mechand_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :mechand_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mechand_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :mechand_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :mechand_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mechand_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :mechand_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="mechand_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :mechand_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- MECHANICAL HANDLING HAZARD FORM END ---->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- NOISE / LIGHT HAZARD FORM START ---->
+<div class="hidden haz15">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Noise, Vibration and Light Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Noise, Vibration and Light Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :noise_change_yes_no, 'No' %>
+				<%= f.label :noise_change_yes_no_No, 'No' %>
+				<%= f.radio_button :noise_change_yes_no, 'Yes' %>
+				<%= f.label :noise_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :noise_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :noise_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is a conversation within arm's reach possible?
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :noise_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is there vibration present?
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :noise_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is there sufficient lighting?
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :noise_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :noise_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :noise_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :noise_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :noise_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :noise_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :noise_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="noise_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :noise_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- NOISE / LIGHTING HAZARD FORM END --->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- OVERHEAD HAZARD FORM START --------->
+<div class="hidden haz16">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Overhead Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Overhead Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :ovrhead_change_yes_no, 'No' %>
+				<%= f.label :ovrhead_change_yes_no_No, 'No' %>
+				<%= f.radio_button :ovrhead_change_yes_no, 'Yes' %>
+				<%= f.label :ovrhead_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :ovrhead_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :ovrhead_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :ovrhead_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :ovrhead_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :ovrhead_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="ovrhead_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :ovrhead_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="ovrhead_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :ovrhead_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :ovrhead_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :ovrhead_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :ovrhead_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="ovrhead_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :ovrhead_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="ovrhead_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :ovrhead_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- OVERHEAD HAZARD FORM END ----------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- RADIOACTIVE HAZARD FORM START ------>
+<div class="hidden haz17">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Radiation Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Radiation Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :rad_change_yes_no, 'No' %>
+				<%= f.label :rad_change_yes_no_No, 'No' %>
+				<%= f.radio_button :rad_change_yes_no, 'Yes' %>
+				<%= f.label :rad_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :rad_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :rad_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Do only authorized personnel have access to the radioactive material storage room?
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :rad_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Do only authorized and trained personnel utilize radioactive materials?
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :rad_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are radioactive materials only used in designated areas?
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :rad_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is radioactive waste collected and stored in designated areas at the end of every day/shift?
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_4_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_4_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :rad_question_4_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are radioactive material use areas surveyed and wipe tested at established frequencies?
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_5_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_question_5_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :rad_question_5_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :rad_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :rad_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :rad_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="rad_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :rad_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="rad_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :rad_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :rad_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :rad_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :rad_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="rad_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :rad_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="rad_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :rad_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- RADIOACTIVE HAZARD FORM END -------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- ROADWAY HAZARD FORM START ---------->
+<div class="hidden haz18">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Roadway Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Roadway Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :road_change_yes_no, 'No' %>
+				<%= f.label :road_change_yes_no_No, 'No' %>
+				<%= f.radio_button :road_change_yes_no, 'Yes' %>
+				<%= f.label :road_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :road_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :road_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :road_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :road_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :road_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="road_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :road_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="road_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :road_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :road_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :road_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :road_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="road_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :road_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="road_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :road_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- ROADWAY HAZARD FORM END ------------>
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- TEMPERATURE HAZARD FORM START ------>
+<div class="hidden haz19">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Temperature Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Temperature Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :temp_change_yes_no, 'No' %>
+				<%= f.label :temp_change_yes_no_No, 'No' %>
+				<%= f.radio_button :temp_change_yes_no, 'Yes' %>
+				<%= f.label :temp_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :temp_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :temp_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are ovens, hot plates, autoclaves, or other devices that could cause a burn or fire in use?
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :temp_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is there uninsulated piping carrying steam or other hot materials in the work area?
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :temp_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Does the work require access to a cold room?
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :temp_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Do personnel access freezers during their work?
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_4_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_question_4_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :temp_question_4_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :temp_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :temp_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :temp_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="temp_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :temp_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="temp_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :temp_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :temp_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :temp_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :temp_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="temp_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :temp_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="temp_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :temp_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- TEMPERATURE HAZARD FORM END -------->
+<!--------------------------------------->
+<!--------------------------------------->
+<!-- TOOL / MACHINE HAZARD FORM START --->
+<div class="hidden haz20">
+	<!-- RISK CHANGE TABLE -->
+	<table class="w100">
+		<th class="sub" colspan="2">
+			Hazard Evaluation Form - Tool / Machinery Hazard
+		</th>
+		<tr>
+			<td class="tleft w75">
+				Did Tool / Machinery Risk Change Since Last Assessment was Performed?:
+			</td>
+			<td class="tleft">
+				<%= f.radio_button :tool_change_yes_no, 'No' %>
+				<%= f.label :tool_change_yes_no_No, 'No' %>
+				<%= f.radio_button :tool_change_yes_no, 'Yes' %>
+				<%= f.label :tool_change_yes_no_Yes, 'Yes' %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF CHANGE TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Description of Change:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_change_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- DESCRIPTION OF HAZARDS AND CONTROLS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub w50">
+				Description of Hazards:
+			</th>
+			<th class="sub">
+				Description of Control Measures:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.text_area :tool_description_hazard, :class=>"area w99" %>
+			</td>
+			<td>
+				<%= f.text_area :tool_description_control, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK QUESTIONNAIRE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w60">
+				Risk Questionnaire:
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub">
+				Severity
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are sharp objects in use (e.g. syringes, razors blades, etc.)?
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_1_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_1_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :tool_question_1_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is it possible to come in contact with hot parts or liquids with this machine/tool?
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_2_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_2_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :tool_question_2_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Do personnel have access to moving parts on the machine/tool (e.g. gears, wheels, belts)?
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_3_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_3_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :tool_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Does the machine produce projectiles (e.g. sparks, dust)?
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_4_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_4_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :tool_question_4_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are the guards and machine housings in good condition?
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_5_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_5_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :tool_question_5_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are the manufacturer's name and address on the machine?
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_6_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_6_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :tool_question_6_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is the equipment UL listed and stamped as such?
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_7_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_question_7_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :tool_question_7_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :tool_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :tool_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				Severity
+			</th>
+			<th class="sub w25">
+				Frequency
+			</th>
+			<th class="sub w25">
+				Mastery
+			</th>
+			<th class="sub">
+				Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :tool_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="tool_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :tool_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="tool_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- CONTROL MEASURE TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w30">
+				New Control Type:
+			</th>
+			<th class="sub w10">
+				Yes
+			</th>
+			<th class="sub w10">
+				No
+			</th>
+			<th class="sub">
+				Comments:
+			</th>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Elimination:</B>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_eliminate_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_eliminate_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_control_eliminate_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Substitution:</B>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_substitute_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_substitute_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_control_substitute_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Engineering:</B>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_engineer_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_engineer_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_control_engineer_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>Administrative:</B>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_admin_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_admin_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_control_admin_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				<B>PPE:</B>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_ppe_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.radio_button :tool_control_ppe_yes_no, 'No' %>	
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_control_ppe_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK FREQUENCY / DURATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w50">
+				How Often Does New Risk Exist?:
+			</th>
+			<th class="sub">
+				How Long Does New Risk Exist?:
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :tool_new_risk_frequency_often, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Rare (1) - once per month or less',1],
+					['Seldom (2) - Once a week to several times a month',2],
+					['Regular (3) - Every week to several times a week',3],
+					['Common (4) - Every day to several times a day',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<%= f.select :tool_new_risk_frequency_time, [
+					['-',1001],
+					['Never - Cannot be Exposed(0)',0],
+					['Short (1) - Less than fifteen minutes per occurrence',1],
+					['Medium (2) - Fifteen minutes to two hours per occurrence',2],
+					['Long (3) - Two hours to four hours per occurrence',3],
+					['Extended (4) - Greater than four hours per occurrence',4]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION TABLE -->
+	<table class="w100">
+		<tr>
+			<th class="sub w25">
+				New Severity
+			</th>
+			<th class="sub w25">
+				New Frequency
+			</th>
+			<th class="sub w25">
+				New Mastery
+			</th>
+			<th class="sub">
+				New Total Risk
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<%= f.select :tool_new_risk_severity, [
+					['-',1001],
+					['None (0) - No injury or environmental impact is possible',0], 
+					['Minor (1) - Little to no effect on people, property, or the environment',1], 
+					['Serious (3) - Incident does not require work stoppage (ex: bruising, 1st degree burns, abrasion, deep cuts), no regulatory legal action or fine',3], 
+					['Major (6) - An ailment or injury requiring work stoppage (ex: loss of consciousness, bone break, head injury, 2nd degree burn), or results in regulatory legal action without a fine',6], 
+					['Grave (10) - Illness or injury resulting in irreversible health consequences, fatal accidents, fire, explosion, or results in regulatory fines, penalties and legal action)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="tool_new_risk_frequency"></span>
+			</td>
+			<td>
+				<%= f.select :tool_new_risk_mastery, [
+					['-',1001],
+					['Removed (0) - Hazard has been eliminated or substituted and no longer exists',0], 
+					['Controlled (1) - Controls are in place and cannot be bypassed and all other preventive measures implemented',1], 
+					['Partially Controlled (3) - Individual controls are in place but some controls require additional training and/or enforcement',3], 
+					['Slightly Controlled (6) - Individual controls in place but some controls can be easily bypassed',6], 
+					['No Control (10) - No personal protection and preventive measures',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+			<td>
+				<span id="tool_new_risk_total"></span>
+			</td>
+		</tr>
+	</table>
+	<!-- NEW RISK CALCULATION COMMENTS TABLE -->
+	<table class="w100">
+		<tr>
+			<td class="tleft w25">
+				Comments:
+			</td>
+			<td class="tleft">
+				<%= f.text_area :tool_new_risk_comment, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
+</div>
+<!-- TOOL / MACHINE HAZARD FORM END ----->
 <!--------------------------------------->
