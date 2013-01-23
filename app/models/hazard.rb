@@ -1353,7 +1353,7 @@ before_save :calculate_new_frequency
 	end
   end
   #Calculation frequency for new ratings
-  def calculate_frequency
+  def calculate_new_frequency
     #Access Frequency Calculations
     haz1 = [self.access_new_frequency_often,self.access_new_frequency_time].compact.inject(:*)
     haz2 = [self.biohaz_new_frequency_often,self.biohaz_new_frequency_time].compact.inject(:*)
