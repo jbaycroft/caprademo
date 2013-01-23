@@ -963,7 +963,7 @@ class Hazard < ActiveRecord::Base
 					:tool_new_risk_comment
 before_save :calculate_risk
 before_save :calculate_risk_new
-before_save :calculate_frequency
+#before_save :calculate_frequency
 #before_save :calculate_new_frequency
   def calculate_risk
     self.access_risk_total = [self.access_risk_severity,self.access_risk_frequency,self.access_risk_mastery].compact.inject(:*)

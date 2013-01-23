@@ -573,3 +573,4 @@ jQuery(function ($) {
         $('input#task_complete').prop("checked", true);
     });
 });
+
