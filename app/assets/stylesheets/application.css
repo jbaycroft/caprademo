@@ -105,6 +105,9 @@ Set style rules for element width classes
 .w40{
 	width: 40%;
 }
+.w33{
+	width: 33.3333%;
+}
 .w30{
 	width: 30%;
 }

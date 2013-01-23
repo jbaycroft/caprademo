@@ -1,14 +1,14 @@
 <!--------------------------------------->
-<!-- ACCESS / EGRESS HAZARD FORM START -->
-<div class="hidden haz1">
+<!-- FIRE HAZARD FORM START ------------->
+<div class="hidden haz7">
 	<!-- RISK CHANGE TABLE -->
 	<table class="w100">
 		<th class="sub" colspan="2">
-			Hazard Evaluation Form - Access / Egress Hazard
+			Hazard Evaluation Form - Fire Hazard
 		</th>
 		<tr>
 			<td class="tleft w75">
-				Did Access / Egress Risk Change Since Last Assessment was Performed?:
+				Did Fire Risk Change Since Last Assessment was Performed?:
 			</td>
 			<td class="tleft">
 				<%= f.radio_button :fire_change_yes_no, 'No' %>
@@ -48,6 +48,72 @@
 			</td>
 		</tr>
 	</table>
+	<!-- DESCRIPTION OF FLAMMABLE MATERIALS TABLE -->
+  <table class="w100">
+		<tr>
+			<th class="sub tleft w20">
+				Material Type:
+			</th>
+			<th class="sub tleft w40">
+				Products and Uses:
+			</th>
+			<th class="sub tleft">
+				Amounts:
+			</th>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.label :fire_highflamm, 'Highly Flammable', :class=>"label" %></br><%= f.check_box :fire_highflamm, :class=>"box" %></li>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_produse1, :class=>"area w99" %>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_amt1, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.label :fire_flamm, 'Flammable', :class=>"label" %></br><%= f.check_box :fire_flamm, :class=>"box" %></li>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_produse2, :class=>"area w99" %>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_amt2, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.label :fire_explosive, 'Explosive', :class=>"label" %></br><%= f.check_box :fire_explosive, :class=>"box" %></li>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_produse3, :class=>"area w99" %>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_amt3, :class=>"area w99" %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tcenter">
+				<ul class="menu w100">
+					<li class="checkbox1"><%= f.label :fire_combustible, 'Explosive', :class=>"label" %></br><%= f.check_box :fire_combustible, :class=>"box" %></li>
+				</ul>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_produse4, :class=>"area w99" %>
+			</td>
+			<td class="tleft">
+				<%= f.text_area :fire_amt4, :class=>"area w99" %>
+			</td>
+		</tr>
+	</table>
 	<!-- RISK QUESTIONNAIRE TABLE -->
 	<table class="w100">
 		<tr>
@@ -66,7 +132,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Are the hallways free and clear of clutter/crowding?
+				Is there a source of flame or spark in the area?
 			</td>
 			<td>
 				<%= f.radio_button :fire_question_1_yes_no, 'No' %>
@@ -86,7 +152,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Do personnel have free and clear access to the doors and stairs?
+				Can an explosive atmosphere be created?
 			</td>
 			<td>
 				<%= f.radio_button :fire_question_2_yes_no, 'No' %>
@@ -106,7 +172,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Are Emergency Exit signs directing personnel to the nearest exit visible?
+				Is there a fire detection and/or sprinkler system in the area?
 			</td>
 			<td>
 				<%= f.radio_button :fire_question_3_yes_no, 'No' %>
@@ -116,6 +182,26 @@
 			</td>
 			<td>
 				<%= f.select :fire_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are the fire extinguishers and pull stations clearly visible and easily accessible?
+			</td>
+			<td>
+				<%= f.radio_button :fire_question_4_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :fire_question_4_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :fire_question_4_severity, [
 					['-',0],
 					['Minor (1)',1],
 					['Serious (3)',3],
@@ -391,5 +477,5 @@
 		</tr>
 	</table>
 </div>
-<!-- ACCESS / EGRESS HAZARD FORM END ---->
+<!-- FIRE HAZARD FORM END --------------->
 <!--------------------------------------->

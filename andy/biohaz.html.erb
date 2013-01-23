@@ -1,14 +1,14 @@
 <!--------------------------------------->
-<!-- ACCESS / EGRESS HAZARD FORM START -->
+<!-- BIOLOGICAL HAZARD FORM START -->
 <div class="hidden haz1">
 	<!-- RISK CHANGE TABLE -->
 	<table class="w100">
 		<th class="sub" colspan="2">
-			Hazard Evaluation Form - Access / Egress Hazard
+			Hazard Evaluation Form - Biological Hazard
 		</th>
 		<tr>
 			<td class="tleft w75">
-				Did Access / Egress Risk Change Since Last Assessment was Performed?:
+				Did Biological Risk Change Since Last Assessment was Performed?:
 			</td>
 			<td class="tleft">
 				<%= f.radio_button :biohaz_change_yes_no, 'No' %>
@@ -66,7 +66,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Are the hallways free and clear of clutter/crowding?
+				Are BSL-1 materials in use?
 			</td>
 			<td>
 				<%= f.radio_button :biohaz_question_1_yes_no, 'No' %>
@@ -86,7 +86,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Do personnel have free and clear access to the doors and stairs?
+				Are BSL-2 materials in use?
 			</td>
 			<td>
 				<%= f.radio_button :biohaz_question_2_yes_no, 'No' %>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Are Emergency Exit signs directing personnel to the nearest exit visible?
+				Are the words "Biohazard" and the universal biohazard symbol displayed on all stock and waste materials?
 			</td>
 			<td>
 				<%= f.radio_button :biohaz_question_3_yes_no, 'No' %>
@@ -116,6 +116,66 @@
 			</td>
 			<td>
 				<%= f.select :biohaz_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are all BSL-2 material manipulations conducted in a biosafety cabinet?
+			</td>
+			<td>
+				<%= f.radio_button :biohaz_question_4_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :biohaz_question_4_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :biohaz_question_4_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Are personnel trained in bloodborne pathogens & biosafety?
+			</td>
+			<td>
+				<%= f.radio_button :biohaz_question_5_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :biohaz_question_5_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :biohaz_question_5_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				If No, is training provided?
+			</td>
+			<td>
+				<%= f.radio_button :biohaz_question_6_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :biohaz_question_6_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :biohaz_question_6_severity, [
 					['-',0],
 					['Minor (1)',1],
 					['Serious (3)',3],
@@ -391,5 +451,5 @@
 		</tr>
 	</table>
 </div>
-<!-- ACCESS / EGRESS HAZARD FORM END ---->
+<!-- BIOLOGICAL HAZARD FORM END ---->
 <!--------------------------------------->

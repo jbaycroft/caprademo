@@ -1,14 +1,14 @@
 <!--------------------------------------->
-<!-- ACCESS / EGRESS HAZARD FORM START -->
+<!-- FALL / SLIP HAZARD FORM START ------>
 <div class="hidden haz1">
 	<!-- RISK CHANGE TABLE -->
 	<table class="w100">
 		<th class="sub" colspan="2">
-			Hazard Evaluation Form - Access / Egress Hazard
+			Hazard Evaluation Form - Fall / Slip Hazard
 		</th>
 		<tr>
 			<td class="tleft w75">
-				Did Access / Egress Risk Change Since Last Assessment was Performed?:
+				Did Fall / Slip Risk Change Since Last Assessment was Performed?:
 			</td>
 			<td class="tleft">
 				<%= f.radio_button :fall_change_yes_no, 'No' %>
@@ -66,7 +66,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Are the hallways free and clear of clutter/crowding?
+				Are floors clean, dry and without trip hazards?
 			</td>
 			<td>
 				<%= f.radio_button :fall_question_1_yes_no, 'No' %>
@@ -86,7 +86,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Do personnel have free and clear access to the doors and stairs?
+				Are the floors level (any tiles coming up or holes in concrete walkways)?
 			</td>
 			<td>
 				<%= f.radio_button :fall_question_2_yes_no, 'No' %>
@@ -106,7 +106,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Are Emergency Exit signs directing personnel to the nearest exit visible?
+				Are stairs in use?
 			</td>
 			<td>
 				<%= f.radio_button :fall_question_3_yes_no, 'No' %>
@@ -116,6 +116,46 @@
 			</td>
 			<td>
 				<%= f.select :fall_question_3_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Does work require a ladder / stepladder?
+			</td>
+			<td>
+				<%= f.radio_button :fall_question_4_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :fall_question_4_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :fall_question_4_severity, [
+					['-',0],
+					['Minor (1)',1],
+					['Serious (3)',3],
+					['Major (6)',6],
+					['Grave (10)',10]
+				], {}, { :class=>"w100" } %>
+			</td>
+		</tr>
+		<tr>
+			<td class="tleft">
+				Is work conducted where a fall of greater than 4 feet could occur?
+			</td>
+			<td>
+				<%= f.radio_button :fall_question_5_yes_no, 'No' %>
+			</td>
+			<td>
+				<%= f.radio_button :fall_question_5_yes_no, 'Yes' %>
+			</td>
+			<td>
+				<%= f.select :fall_question_5_severity, [
 					['-',0],
 					['Minor (1)',1],
 					['Serious (3)',3],
@@ -391,5 +431,5 @@
 		</tr>
 	</table>
 </div>
-<!-- ACCESS / EGRESS HAZARD FORM END ---->
+<!-- FALL / SLIP HAZARD FORM END -------->
 <!--------------------------------------->

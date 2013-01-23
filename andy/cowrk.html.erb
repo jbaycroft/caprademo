@@ -1,14 +1,14 @@
 <!--------------------------------------->
-<!-- ACCESS / EGRESS HAZARD FORM START -->
+<!-- CO-WORKER HAZARD FORM START -------->
 <div class="hidden haz1">
 	<!-- RISK CHANGE TABLE -->
 	<table class="w100">
 		<th class="sub" colspan="2">
-			Hazard Evaluation Form - Access / Egress Hazard
+			Hazard Evaluation Form - Co-Worker Hazard
 		</th>
 		<tr>
 			<td class="tleft w75">
-				Did Access / Egress Risk Change Since Last Assessment was Performed?:
+				Did Co-Worker Risk Change Since Last Assessment was Performed?:
 			</td>
 			<td class="tleft">
 				<%= f.radio_button :cowrk_change_yes_no, 'No' %>
@@ -66,7 +66,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Are the hallways free and clear of clutter/crowding?
+				Are multiple tasks frequently performed at the same time in different areas?
 			</td>
 			<td>
 				<%= f.radio_button :cowrk_question_1_yes_no, 'No' %>
@@ -86,7 +86,7 @@
 		</tr>
 		<tr>
 			<td class="tleft">
-				Do personnel have free and clear access to the doors and stairs?
+				Do co-workers perform job functions in close proximity that may be hazardous or concern other personnel?
 			</td>
 			<td>
 				<%= f.radio_button :cowrk_question_2_yes_no, 'No' %>
@@ -96,26 +96,6 @@
 			</td>
 			<td>
 				<%= f.select :cowrk_question_2_severity, [
-					['-',0],
-					['Minor (1)',1],
-					['Serious (3)',3],
-					['Major (6)',6],
-					['Grave (10)',10]
-				], {}, { :class=>"w100" } %>
-			</td>
-		</tr>
-		<tr>
-			<td class="tleft">
-				Are Emergency Exit signs directing personnel to the nearest exit visible?
-			</td>
-			<td>
-				<%= f.radio_button :cowrk_question_3_yes_no, 'No' %>
-			</td>
-			<td>
-				<%= f.radio_button :cowrk_question_3_yes_no, 'Yes' %>
-			</td>
-			<td>
-				<%= f.select :cowrk_question_3_severity, [
 					['-',0],
 					['Minor (1)',1],
 					['Serious (3)',3],
@@ -391,5 +371,5 @@
 		</tr>
 	</table>
 </div>
-<!-- ACCESS / EGRESS HAZARD FORM END ---->
+<!-- CO-WORKER HAZARD FORM END ---------->
 <!--------------------------------------->

@@ -1,14 +1,14 @@
 <!--------------------------------------->
-<!-- ACCESS / EGRESS HAZARD FORM START -->
+<!-- CUT / PUNCTURE HAZARD FORM START --->
 <div class="hidden haz1">
 	<!-- RISK CHANGE TABLE -->
 	<table class="w100">
 		<th class="sub" colspan="2">
-			Hazard Evaluation Form - Access / Egress Hazard
+			Hazard Evaluation Form - Cut / Puncture Hazard
 		</th>
 		<tr>
 			<td class="tleft w75">
-				Did Access / Egress Risk Change Since Last Assessment was Performed?:
+				Did Cut / Puncture Risk Change Since Last Assessment was Performed?:
 			</td>
 			<td class="tleft">
 				<%= f.radio_button :cut_change_yes_no, 'No' %>
@@ -45,83 +45,6 @@
 			</td>
 			<td>
 				<%= f.text_area :cut_description_control, :class=>"area w99" %>
-			</td>
-		</tr>
-	</table>
-	<!-- RISK QUESTIONNAIRE TABLE -->
-	<table class="w100">
-		<tr>
-			<th class="sub w60">
-				Risk Questionnaire:
-			</th>
-			<th class="sub w10">
-				No
-			</th>
-			<th class="sub w10">
-				Yes
-			</th>
-			<th class="sub">
-				Severity
-			</th>
-		</tr>
-		<tr>
-			<td class="tleft">
-				Are the hallways free and clear of clutter/crowding?
-			</td>
-			<td>
-				<%= f.radio_button :cut_question_1_yes_no, 'No' %>
-			</td>
-			<td>
-				<%= f.radio_button :cut_question_1_yes_no, 'Yes' %>
-			</td>
-			<td>
-				<%= f.select :cut_question_1_severity, [
-					['-',0],
-					['Minor (1)',1],
-					['Serious (3)',3],
-					['Major (6)',6],
-					['Grave (10)',10]
-				], {}, { :class=>"w100" } %>
-			</td>
-		</tr>
-		<tr>
-			<td class="tleft">
-				Do personnel have free and clear access to the doors and stairs?
-			</td>
-			<td>
-				<%= f.radio_button :cut_question_2_yes_no, 'No' %>
-			</td>
-			<td>
-				<%= f.radio_button :cut_question_2_yes_no, 'Yes' %>
-			</td>
-			<td>
-				<%= f.select :cut_question_2_severity, [
-					['-',0],
-					['Minor (1)',1],
-					['Serious (3)',3],
-					['Major (6)',6],
-					['Grave (10)',10]
-				], {}, { :class=>"w100" } %>
-			</td>
-		</tr>
-		<tr>
-			<td class="tleft">
-				Are Emergency Exit signs directing personnel to the nearest exit visible?
-			</td>
-			<td>
-				<%= f.radio_button :cut_question_3_yes_no, 'No' %>
-			</td>
-			<td>
-				<%= f.radio_button :cut_question_3_yes_no, 'Yes' %>
-			</td>
-			<td>
-				<%= f.select :cut_question_3_severity, [
-					['-',0],
-					['Minor (1)',1],
-					['Serious (3)',3],
-					['Major (6)',6],
-					['Grave (10)',10]
-				], {}, { :class=>"w100" } %>
 			</td>
 		</tr>
 	</table>
@@ -391,5 +314,5 @@
 		</tr>
 	</table>
 </div>
-<!-- ACCESS / EGRESS HAZARD FORM END ---->
+<!-- CUT / PUNCTURE HAZARD FORM END ----->
 <!--------------------------------------->
