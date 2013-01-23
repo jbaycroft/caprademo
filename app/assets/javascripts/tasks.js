@@ -566,7 +566,7 @@ jQuery(function ($) {
         $$.ha19.hide('slow');
         $$.ha20.hide('slow');
     }
-});
+}
 $("li.yes_no div").click(changeTab);
 $('li.complete').bind('click', function () {
     $('input#task_complete').prop("checked", true);
