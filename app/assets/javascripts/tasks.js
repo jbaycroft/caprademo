@@ -545,29 +545,31 @@ jQuery(function ($) {
             $$.ha18.hide('slow');
             $$.ha19.hide('slow');
             $$.ha20.show('slow');
-        } else $$.ha1.hide('slow');
-        $$.ha2.hide('slow');
-        $$.ha3.hide('slow');
-        $$.ha4.hide('slow');
-        $$.ha5.hide('slow');
-        $$.ha6.hide('slow');
-        $$.ha7.hide('slow');
-        $$.ha8.hide('slow');
-        $$.ha9.hide('slow');
-        $$.ha10.hide('slow');
-        $$.ha11.hide('slow');
-        $$.ha12.hide('slow');
-        $$.ha13.hide('slow');
-        $$.ha14.hide('slow');
-        $$.ha15.hide('slow');
-        $$.ha16.hide('slow');
-        $$.ha17.hide('slow');
-        $$.ha18.hide('slow');
-        $$.ha19.hide('slow');
-        $$.ha20.hide('slow');
+        } else {
+            $$.ha1.hide('slow');
+            $$.ha2.hide('slow');
+            $$.ha3.hide('slow');
+            $$.ha4.hide('slow');
+            $$.ha5.hide('slow');
+            $$.ha6.hide('slow');
+            $$.ha7.hide('slow');
+            $$.ha8.hide('slow');
+            $$.ha9.hide('slow');
+            $$.ha10.hide('slow');
+            $$.ha11.hide('slow');
+            $$.ha12.hide('slow');
+            $$.ha13.hide('slow');
+            $$.ha14.hide('slow');
+            $$.ha15.hide('slow');
+            $$.ha16.hide('slow');
+            $$.ha17.hide('slow');
+            $$.ha18.hide('slow');
+            $$.ha19.hide('slow');
+            $$.ha20.hide('slow');
+        }
     }
-});
-$("li.yes_no div").click(changeTab);
-$('li.complete').bind('click', function () {
-    $('input#task_complete').prop("checked", true);
+    $("li.yes_no div").click(changeTab);
+    $('li.complete').bind('click', function () {
+        $('input#task_complete').prop("checked", true);
+    });
 });
