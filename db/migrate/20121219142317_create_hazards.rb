@@ -561,6 +561,55 @@ class CreateHazards < ActiveRecord::Migration
       t.integer :hazmat_new_risk_mastery
       t.integer :hazmat_new_risk_total
       t.text  :hazmat_new_risk_comment
+      t.boolean :hazmat_boo1
+      t.boolean :hazmat_boo2
+      t.boolean :hazmat_boo3
+      t.boolean :hazmat_boo4
+      t.boolean :hazmat_boo5
+      t.boolean :hazmat_boo6
+      t.boolean :hazmat_boo7
+      t.boolean :hazmat_boo8
+      t.boolean :hazmat_boo9
+      t.boolean :hazmat_boo10
+      t.boolean :hazmat_boo11
+      t.boolean :hazmat_boo12
+      t.boolean :hazmat_boo13
+      t.boolean :hazmat_boo14
+      t.boolean :hazmat_boo15
+      t.boolean :hazmat_boo16
+      t.boolean :hazmat_boo17
+      t.boolean :hazmat_boo18
+      t.boolean :hazmat_boo19
+      t.boolean :hazmat_boo20
+      t.boolean :hazmat_boo21
+      t.boolean :hazmat_boo22
+      t.boolean :hazmat_boo23
+      t.boolean :hazmat_boo24
+      t.boolean :hazmat_boo25
+      t.boolean :hazmat_boo26
+      t.boolean :hazmat_boo27
+      t.boolean :hazmat_boo28
+      t.boolean :hazmat_boo29
+      t.boolean :hazmat_boo30
+      t.boolean :hazmat_boo31
+      t.boolean :hazmat_boo32
+      t.boolean :hazmat_boo33
+      t.boolean :hazmat_boo34
+      t.boolean :hazmat_boo35
+      t.boolean :hazmat_boo36
+      t.boolean :hazmat_boo37
+      t.boolean :hazmat_boo38
+      t.boolean :hazmat_boo39
+      t.boolean :hazmat_boo40
+      t.text :hazmat_text1
+      t.text :hazmat_text2
+      t.text :hazmat_text3
+      t.text :hazmat_text4
+      t.text :hazmat_text5
+      t.text :hazmat_text6
+      t.text :hazmat_text7
+      t.text :hazmat_text8
+      t.text :hazmat_text9
 #Lasers fields        
       t.text  :laz_change_yes_no
       t.text  :laz_change_comment
