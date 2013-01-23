@@ -51,6 +51,145 @@
 			</tr>
 			<tr>
 				<td class="tleft">
+					Review Team:
+				</td>
+				<td class="tleft">
+					<%= f.text_area :team, :class=>"field w99" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Work Shift:
+				</td>
+				<td>
+					<table class="w100">
+						<tr>
+							<td class="tleft w30">
+								Shift Length (select one):
+							</td>
+							<td class="tcenter">
+								<ul class="menu w100">
+									<li class="checkbox2"><%= f.radio_button :shifttime, 'Full-Time' %><%=f.label :shifttime, 'Part-Time' %></li>
+									<li class="checkbox2"><%= f.radio_button :shifttime, 'Full-Time' %><%=f.label :shifttime, 'Part-Time' %></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="tleft w30">
+								Shift Time (select all that apply):
+							</td>
+							<td class="tcenter">
+								<ul class="menu w100">
+									<li class="checkbox3"><%= f.check_box :shiftday, :class=>"box" %><%= f.label :shiftday, '  Daytime', :class=>"label" %></li>
+									<li class="checkbox3"><%= f.check_box :shiftnight, :class=>"box" %><%= f.label :shiftnight, '  Nighttime', :class=>"label" %></li>
+									<li class="checkbox3"><%= f.check_box :shiftweekend, :class=>"box" %><%= f.label :shiftweekend, '  Weekend', :class=>"label" %></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="tleft w30">
+								Type of Work (select one):
+							</td>
+							<td class="tcenter">
+								<ul class="menu w100">
+									<li class="checkbox2"><%= f.radio_button :shiftwrker, 'Lone-Worker' %><%=f.label :shiftwrker, 'Lone-Worker' %></li>
+									<li class="checkbox2"><%= f.radio_button :shiftwrker, 'Group/Team' %><%=f.label :shiftwrker, 'Group/Team' %></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Equipment Used:
+				</td>
+				<td>
+					<table class="w100">
+						<tr>
+							<td class="tleft w30">
+								<ul class="menu w100">
+									<li class="checkbox1"><%= f.check_box :equipmachine, :class=>"box" %><%= f.label :equipmachine, '  Machine(s)', :class=>"label" %></li>
+								</ul>
+							</td>
+							<td class="tleft w10">
+								Description:
+							</td>
+							<td>
+								<%= f.text_area :machine, :class=>"field w99" %>
+							</td>
+						</tr>
+						<tr>
+							<td class="tleft w30">
+								<ul class="menu w100">
+									<li class="checkbox1"><%= f.check_box :equiptool, :class=>"box" %><%= f.label :equiptool, '  Tool(s)', :class=>"label" %></li>
+								</ul>
+							</td>
+							<td class="tleft w10">
+								Description:
+							</td>
+							<td>
+								<%= f.text_area :tool, :class=>"field w99" %>
+							</td>
+						</tr>
+						<tr>
+							<td class="tleft w30">
+								<ul class="menu w100">
+									<li class="checkbox1"><%= f.check_box :equipdevice, :class=>"box" %><%= f.label :equipdevice, '  Other Device(s)', :class=>"label" %></li>
+								</ul>
+							</td>
+							<td class="tleft w10">
+								Description:
+							</td>
+							<td>
+								<%= f.text_area :device, :class=>"field w99" %>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Restricted Access:
+				</td>
+				<td>
+					<table class="w100">
+						<tr>
+							<td class="tleft w30">
+								Restricted Area (select one):
+							</td>
+							<td class="tcenter">
+								<ul class="menu w100">
+									<li class="checkbox2"><%= f.radio_button :restricted, 'True' %><%=f.label :restricted, 'Yes' %></li>
+									<li class="checkbox2"><%= f.radio_button :restricted, 'False' %><%=f.label :restricted, 'No' %></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="tleft w30">
+								Restriction Method (select all that apply):
+							</td>
+							<td class="tcenter">
+								<ul class="menu w100">
+									<li class="checkbox3"><%= f.check_box :restrictmethod1, :class=>"box" %><%= f.label :restrictmethod1, '  Badge', :class=>"label" %></li>
+									<li class="checkbox3"><%= f.check_box :restrictmethod2, :class=>"box" %><%= f.label :restrictmethod2, '  Key', :class=>"label" %></li>
+									<li class="checkbox3"><%= f.check_box :restrictmethod3, :class=>"box" %><%= f.label :restrictmethod3, '  Other', :class=>"label" %></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
+					Accident History:
+				</td>
+				<td>
+					<%= f.text_area :history, :class=>"field w99" %>
+				</td>
+			</tr>
+			<tr>
+				<td class="tleft">
 					Hazards Associated </br> with this Task:
 				</td>
 				<td class="tcenter">
