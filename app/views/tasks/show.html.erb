@@ -155,7 +155,7 @@
 					</li>
 					<li class="checkbox1 fifteen hidden yes_no">
 						<div class="hidden" id="index">15</div>
-						<div class="label" id="haz15">Noise & Vibration</div>
+						<div class="label" id="haz15">Noise, Vibration & Light</div>
 						<div class="hidden" id="value"><%= @task.hazard15 ? '1' : '0' %></div>
 						<div class="hidden" id="comma">,</div>
 					</li>
@@ -185,7 +185,7 @@
 					</li>
 					<li class="checkbox1 twenty hidden yes_no">
 						<div class="hidden" id="index">20</div>
-						<div class="label" id="haz20">Tool</div>
+						<div class="label" id="haz20">Tool/Machinery</div>
 						<div class="hidden" id="value"><%= @task.hazard20 ? '1' : '0' %></div>
 						<!-- NOTE: no comma div in last checkbox in hazard list -->
 					</li>
@@ -201,7 +201,47 @@
 					<tr>
 						<td class="tcenter">
 							<%= f.fields_for :hazards do |builder| %>
-								<%= render "hazard_fields", :f => builder%>
+								<% if @task.hazard1 == true %>
+									<%= render "access_fields", :f => builder %>
+								<% elsif @task.hazard2 == true %>
+									<%= render "biohaz_fields", :f => builder %>
+								<% elsif @task.hazard3 == true %>
+									<%= render "cowrk_fields", :f => builder %>
+								<% elsif @task.hazard4 == true %>
+									<%= render "cut_fields", :f => builder %>
+								<% elsif @task.hazard5 == true %>
+									<%= render "ergo_fields", :f => builder %>
+								<% elsif @task.hazard6 == true %>
+									<%= render "fall_fields", :f => builder %>
+								<% elsif @task.hazard7 == true %>
+									<%= render "fire_fields", :f => builder %>
+								<% elsif @task.hazard8 == true %>
+									<%= render "hazatm_fields", :f => builder %>
+								<% elsif @task.hazard9 == true %>
+									<%= render "hazengy_fields", :f => builder %>
+								<% elsif @task.hazard10 == true %>
+									<%= render "hazmat_fields", :f => builder %>
+								<% elsif @task.hazard11 == true %>
+									<%= render "laz_fields", :f => builder %>
+								<% elsif @task.hazard12 == true %>
+									<%= render "lonewrk_fields", :f => builder %>
+								<% elsif @task.hazard13 == true %>
+									<%= render "mag_fields", :f => builder %>
+								<% elsif @task.hazard14 == true %>
+									<%= render "mechand_fields", :f => builder %>
+								<% elsif @task.hazard15 == true %>
+									<%= render "noise_fields", :f => builder %>
+								<% elsif @task.hazard16 == true %>
+									<%= render "ovrhead_fields", :f => builder %>
+								<% elsif @task.hazard17 == true %>
+									<%= render "rad_fields", :f => builder %>
+								<% elsif @task.hazard18 == true %>
+									<%= render "road_fields", :f => builder %>
+								<% elsif @task.hazard19 == true %>
+									<%= render "temp_fields", :f => builder %>
+								<% elsif @task.hazard20 == true %>
+									<%= render "tool_fields", :f => builder %>
+								<% end %>
 							<% end %>
 						</td>
 					</tr>
