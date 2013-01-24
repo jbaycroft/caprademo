@@ -203,43 +203,62 @@
 							<%= f.fields_for :hazards do |builder| %>
 								<% if @task.hazard1 == true %>
 									<%= render "access_fields", :f => builder %>
-								<% elsif @task.hazard2 == true %>
+								<% end %>
+								<% if @task.hazard2 == true %>
 									<%= render "biohaz_fields", :f => builder %>
-								<% elsif @task.hazard3 == true %>
+								<% end %>
+								<% if @task.hazard3 == true %>
 									<%= render "cowrk_fields", :f => builder %>
-								<% elsif @task.hazard4 == true %>
+								<% end %>
+								<% if @task.hazard4 == true %>
 									<%= render "cut_fields", :f => builder %>
-								<% elsif @task.hazard5 == true %>
+								<% end %>
+								<% if @task.hazard5 == true %>
 									<%= render "ergo_fields", :f => builder %>
-								<% elsif @task.hazard6 == true %>
+								<% end %>
+								<% if @task.hazard6 == true %>
 									<%= render "fall_fields", :f => builder %>
-								<% elsif @task.hazard7 == true %>
+								<% end %>
+								<% if @task.hazard7 == true %>
 									<%= render "fire_fields", :f => builder %>
-								<% elsif @task.hazard8 == true %>
+								<% end %>
+								<% if @task.hazard8 == true %>
 									<%= render "hazatm_fields", :f => builder %>
-								<% elsif @task.hazard9 == true %>
+								<% end %>
+								<% if @task.hazard9 == true %>
 									<%= render "hazengy_fields", :f => builder %>
-								<% elsif @task.hazard10 == true %>
+								<% end %>
+								<% if @task.hazard10 == true %>
 									<%= render "hazmat_fields", :f => builder %>
-								<% elsif @task.hazard11 == true %>
+								<% end %>
+								<% if @task.hazard11 == true %>
 									<%= render "laz_fields", :f => builder %>
-								<% elsif @task.hazard12 == true %>
+								<% end %>
+								<% if @task.hazard12 == true %>
 									<%= render "lonewrk_fields", :f => builder %>
-								<% elsif @task.hazard13 == true %>
+								<% end %>
+								<% if @task.hazard13 == true %>
 									<%= render "mag_fields", :f => builder %>
-								<% elsif @task.hazard14 == true %>
+								<% end %>
+								<% if @task.hazard14 == true %>
 									<%= render "mechand_fields", :f => builder %>
-								<% elsif @task.hazard15 == true %>
+								<% end %>
+								<% if @task.hazard15 == true %>
 									<%= render "noise_fields", :f => builder %>
-								<% elsif @task.hazard16 == true %>
+								<% end %>
+								<% if @task.hazard16 == true %>
 									<%= render "ovrhead_fields", :f => builder %>
-								<% elsif @task.hazard17 == true %>
+								<% end %>
+								<% if @task.hazard17 == true %>
 									<%= render "rad_fields", :f => builder %>
-								<% elsif @task.hazard18 == true %>
+								<% end %>
+								<% if @task.hazard18 == true %>
 									<%= render "road_fields", :f => builder %>
-								<% elsif @task.hazard19 == true %>
+								<% end %>
+								<% if @task.hazard19 == true %>
 									<%= render "temp_fields", :f => builder %>
-								<% elsif @task.hazard20 == true %>
+								<% end %>
+								<% if @task.hazard20 == true %>
 									<%= render "tool_fields", :f => builder %>
 								<% end %>
 							<% end %>
