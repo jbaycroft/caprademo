@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails'
 gem 'carrierwave'
 
 # Bundle edge Rails instead:
@@ -8,7 +8,6 @@ gem 'carrierwave'
 
 #gem 'sqlite3'
 gem 'pg'
-#gem 'mysql2'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
 # Gems used only for assets and not required
