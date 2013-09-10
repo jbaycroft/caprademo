@@ -42,7 +42,15 @@ class Task < ActiveRecord::Base
             :restrictmethod2,
             :restrictmethod3,
             :history,
-  				  :name
+  				  :name,
+            :envhaz1,
+            :envhaz2,
+            :envhaz3,
+            :envhaz4,
+            :envhaz5,
+            :envhaz6,
+            :envhaz7,
+            :envhaz8
   accepts_nested_attributes_for :hazards
   attr_accessible :hazards_attributes
   #accepts_nested_attributes_for :hazards, :reject_if => lambda { |a| a[:content].blank? }, :allow_destroy => true

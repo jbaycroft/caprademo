@@ -217,6 +217,25 @@
 					</ul>
 				</td>
 			</tr>
+		<!-- Fields for Environmental Hazards that don't have associated forms -->
+			<tr>
+				<td class="tleft">
+					Environmental Hazards Associated </br> with this Task:
+				</td>
+				<td class="tcenter">
+					<ul class="menu w100">
+						<li class="checkbox4"><%= f.label :envhaz1, 'Air Emissions', :class=>"label" %></br><%= f.check_box :hazard1, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz2, 'Water Discharge', :class=>"label" %></br><%= f.check_box :hazard2, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz3, 'Waste Generation', :class=>"label" %></br><%= f.check_box :hazard3, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz4, 'Land Discharge', :class=>"label" %></br><%= f.check_box :hazard4, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz5, 'Raw Material Use', :class=>"label" %></br><%= f.check_box :hazard5, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz6, 'Energy Use', :class=>"label" %></br><%= f.check_box :hazard6, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz7, 'Energy Release', :class=>"label" %></br><%= f.check_box :hazard7, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz8, 'Nuisance', :class=>"label" %></br><%= f.check_box :hazard8, :class=>"box" %></li>
+						<li class="checkbox4"><%= f.label :envhaz9, 'Hazardous Energy', :class=>"label" %></br><%= f.check_box :hazard9, :class=>"box" %></li>
+					</ul>
+				</td>
+			</tr>
 			<tr>
 				<td class="tleft">
 					Assessment Complete:
