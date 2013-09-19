@@ -18,7 +18,7 @@ xml.tag!("rows") do
             xml.tag!("cell", hazard.hazengy_risk_total)
             xml.tag!("cell", hazard.hazmat_risk_total)
             xml.tag!("cell", hazard.laz_risk_total)
-            xml.tag!("cell", hazard.lonwrk_risk_total)
+            xml.tag!("cell", hazard.lonewrk_risk_total)
             xml.tag!("cell", hazard.mag_risk_total)
             xml.tag!("cell", hazard.mechand_risk_total)
             xml.tag!("cell", hazard.noise_risk_total)
