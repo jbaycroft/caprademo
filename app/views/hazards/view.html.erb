@@ -1,0 +1,28 @@
+<html>
+<head>
+  <%= javascript_include_tag 'dhtmlx/dhtmlxcommon.js' %>
+  <%= javascript_include_tag 'dhtmlx/dhtmlxgrid.js' %>
+  <%= javascript_include_tag 'dhtmlx/dhtmlxgridcell.js' %>
+  <%= javascript_include_tag 'dhtmlx/dhtmlxdataprocessor.js' %>
+  <%= javascript_include_tag 'dhtmlx/dhtmlxgrid_filter.js' %>
+  <%= javascript_include_tag 'dhtmlx/ext/dhtmlxgrid_export.js' %>
+  <%= stylesheet_link_tag 'dhtmlx/dhtmlxgrid.css' %>
+  <%= stylesheet_link_tag 'dhtmlx/skins/dhtmlxgrid_dhx_skyblue.css' %>
+</head>
+<div id="grid_here" style="width:1000px; height:600px;">
+</div>
+<script type="text/javascript" charset="utf-8">
+    var grid = new dhtmlXGridObject("grid_here");
+    grid.setImagePath("/vendor/assets/images/dhtmlx/imgs");
+    grid.setHeader("Department Name, Task Name, Access & Egress, Biohazard, Co-Worker, Cut & Puncture, Ergonomics, Slip Trip & Fall, Fire & Explosion, Hazardous Atmosphere, Hazardous Energy, Hazardous Materials, Laser, Lone Worker, Magnetic Field, Mechanical Handling, Noise Vibration & Light, Overhead, Radiation, Road, Temperature, Tool/Machinery, Air Emissions, Water Discharge, Waste Generation, Land Discharge, Raw Material Use, Energy Use, Energy Release, Nuisance");
+    grid.setColSorting("str,str,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int,int");
+    grid.attachHeader("#text_filter,#text_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#numeric_filter,#text_filter,#text_filter,#text_filter,#text_filter,#text_filter,#text_filter,#text_filter,#text_filter")
+    grid.setInitWidths("100,100,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75");
+    grid.setSkin("dhx_skyblue")
+    grid.init();
+    grid.load("<%= data_client_departments_path(@client)%>");
+  
+</script>
+    <input type="button" value="Excel" onclick='grid.toExcel("http://dhtmlxgrid.appspot.com/export/excel");'/>
+    <input type="button" value="PDF" onclick='grid.toPDF("http://dhtmlxgrid.appspot.com/export/pdf");'/>
+</html>
