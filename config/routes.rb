@@ -2,6 +2,11 @@ RiskAssessDemo::Application.routes.draw do
   root :to => "home#index"
 
   resources :departments do
+    collection do
+        get "data"
+        get "view"
+        get "dbaction"
+      end
     resources :tasks do
       resources :hazards 
     end
