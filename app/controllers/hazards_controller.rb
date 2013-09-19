@@ -89,4 +89,10 @@ class HazardsController < ApplicationController
       format.js
     end
   end
+  def view
+    render :layout => false
+  end
+  def data
+    @departments = Department.all
+  end
 end
