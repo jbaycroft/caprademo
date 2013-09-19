@@ -5,7 +5,7 @@ xml.tag!("rows") do
     department.tasks.each do |task|
         task.hazards.each do |hazard|
           xml.tag!("row", {"id" => hazard.id}) do
-            xml.tag!("cell", department.name)
+            xml.tag!("cell", xml.a(department.name,'href'=> department_path(department))
             xml.tag!("cell", task.name)
             xml.tag!("cell", hazard.access_risk_total)
             xml.tag!("cell", hazard.biohaz_risk_total)
