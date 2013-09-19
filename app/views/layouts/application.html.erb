@@ -27,7 +27,7 @@
 		<ul class="menu w90">
 			<li><%= link_to 'Home', root_path, :class=>"link4" %></li>
 			<li><%= link_to 'Departments', departments_path, :class=>"link4" %></li>
-			<li><a class="link4" href="#print">Print</a></li>
+			<li><%= link_to 'Report', view_departments_path, :class=>"link4" %></li>
 			<li><%= link_to "Log out", log_out_path, :class=>"link4" %></li>
 		</ul>
 	</header>
