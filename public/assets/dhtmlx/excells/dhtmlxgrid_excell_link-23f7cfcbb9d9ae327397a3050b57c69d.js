@@ -1,7 +1,0 @@
-//v.3.5 build 120822
-/*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
-You allowed to use this component or parts of it under GPL terms
-To use it on other terms or get Professional edition of the component please contact us at sales@dhtmlx.com
-*/
-function eXcell_link(e){this.cell=e,this.grid=this.cell.parentNode.grid,this.isDisabled=function(){return!0},this.edit=function(){},this.getValue=function(){if(this.cell.firstChild.getAttribute){var e=this.cell.firstChild.getAttribute("target");return this.cell.firstChild.innerHTML+"^"+this.cell.firstChild.getAttribute("href")+(e?"^"+e:"")}return""},this.setValue=function(e){if(typeof e!="number"&&(!e||e.toString()._dhx_trim()==""))return this.setCValue("&nbsp;",t),this.cell._clearCell=!0;var t=e.split("^");t.length==1?t[1]="":t.length>1&&(t[1]="href='"+t[1]+"'",t[1]+=t.length==3?" target='"+t[2]+"'":" target='_blank'"),this.setCValue("<a "+t[1]+" onclick='(_isIE?event:arguments[0]).cancelBubble = true;'>"+t[0]+"</a>",t)}}eXcell_link.prototype=new eXcell,eXcell_link.prototype.getTitle=function(){var e=this.cell.firstChild;return e&&e.tagName?e.getAttribute("href"):""},eXcell_link.prototype.getContent=function(){var e=this.cell.firstChild;return e&&e.tagName?e.innerHTML:""};

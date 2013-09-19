@@ -1,7 +1,0 @@
-//v.3.5 build 120822
-/*
-Copyright DHTMLX LTD. http://www.dhtmlx.com
-You allowed to use this component or parts of it under GPL terms
-To use it on other terms or get Professional edition of the component please contact us at sales@dhtmlx.com
-*/
-function eXcell_stree(e){if(e){this.cell=e,this.grid=this.cell.parentNode.grid;if(!this.grid._sub_trees)return;this._sub=this.grid._sub_trees[e._cellIndex];if(!this._sub)return;this._sub=this._sub[0]}this.getValue=function(){return this.cell._val},this.setValue=function(e){this.cell._val=e,e=this._sub.getItemText(this.cell._val),this.setCValue(e||"&nbsp;",e)},this.edit=function(){this._sub.parentObject.style.display="block";var e=this.grid.getPosition(this.cell);this._sub.parentObject.style.top=e[1]+"px",this._sub.parentObject.style.left=e[0]+"px",this._sub.parentObject.style.position="absolute";var t=this.grid.editStop;this.grid.editStop=function(){},this.grid.editStop=t},this.detach=function(){this._sub.parentObject.style.display="none";if(this.grid._sub_id!=null){var e=this.cell._val;return this.setValue(this._sub.getSelectedItemId()),this.grid._sub_id=null,this.cell._val!=e}}}eXcell_stree.prototype=new eXcell,dhtmlXGridObject.prototype.setSubTree=function(e,t){this._sub_trees||(this._sub_trees=[]),this._sub_trees[t]=[e],e.parentObject.style.display="none";var n=this;e.parentObject.onclick=function(e){return(e||window.event).cancelBubble=!0,!1},e.ev_onDblClick=null,e.attachEvent("onDblClick",function(e){return n._sub_id=e,n.editStop(),!0}),e._chRRS=!0};
