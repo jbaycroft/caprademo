@@ -20,7 +20,7 @@
     grid.setInitWidths("100,100,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75");
     grid.setSkin("dhx_skyblue")
     grid.init();
-    grid.load("<%= data_client_departments_path(@client)%>");
+    grid.load("<%= data_departments_path%>");
   
 </script>
     <input type="button" value="Excel" onclick='grid.toExcel("http://dhtmlxgrid.appspot.com/export/excel");'/>
