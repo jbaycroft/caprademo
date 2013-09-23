@@ -3,9 +3,14 @@
 	form div.hidden {
 		display:inline;
 	}
-	form div.hidden tr {
+	form div.hidden table {
 		page-break-inside: avoid;
 	}
+	form div.hidden table th {
+		page-break-inside: avoid;
+		page-break-after: avoid;
+	}
+
 	td.sidebarprint {
 		vertical-align: top;
 	}
