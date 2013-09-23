@@ -347,9 +347,3 @@ Set general style rules for active class
 	border-radius: 3px;
 }
 	
-/* Print Styles */
-@media print {
-	form div.hidden {
-		display:inline;
-	}
-}
