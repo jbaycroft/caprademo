@@ -3,4 +3,7 @@
 	form div.hidden {
 		display:inline;
 	}
+	td.sidebarprint {
+		vertical-align: top;
+	}
 }

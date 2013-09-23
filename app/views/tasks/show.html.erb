@@ -69,7 +69,7 @@
 		</tr>
 		<!-- hazard list - linked via task javascript to populate based on items checked in task form -->
 		<tr>
-			<td class="tcenter w20">
+			<td class="tcenter w20 sidebarprint">
 				<ul class="menu w100">
 					<li class="checkbox1 one hidden yes_no">
 						<div class="hidden" id="index">1</div>
@@ -197,6 +197,7 @@
 			<td>
 				<%= form_for([@department,@task]) do |f| %>
 				<div class="hidden">
+					<%= f.label :complete, "Risk Assessment Complete"%>
 					<%= f.check_box :complete %>
 				</div>
 				<table class="form">
