@@ -14,4 +14,7 @@
 	td.sidebarprint {
 		vertical-align: top;
 	}
+	form div.hidden table td textarea {
+		height:auto;
+	}
 }
