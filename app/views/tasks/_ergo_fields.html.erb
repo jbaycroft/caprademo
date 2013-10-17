@@ -211,7 +211,7 @@
 					], {}, { :class=>"w100" } %>
 				</td>
 				<td>
-					<span id="ergo_risk_total"></span>
+					<%= f.text_field :ergo_risk_total, :id=>"ergo_risk_total", :readonly=>true %>
 				</td>
 			</tr>
 		</table>
@@ -387,7 +387,7 @@
 					], {}, { :class=>"w100" } %>
 				</td>
 				<td>
-					<span id="ergo_new_risk_total"></span>
+					<%= f.text_field :cut_new_risk_total, :id=>"cut_new_risk_total", :readonly=>true %>
 				</td>
 			</tr>
 		</table>

@@ -239,7 +239,7 @@
 					], {}, { :class=>"w100" } %>
 				</td>
 				<td>
-					<%= f.text_field :fall_risk_total, :id=>"fall_risk_total"%>
+					<%= f.text_field :fall_risk_total, :id=>"fall_risk_total", :readonly=>true %>
 				</td>
 			</tr>
 		</table>
@@ -415,7 +415,7 @@
 					], {}, { :class=>"w100" } %>
 				</td>
 				<td>
-					<span id="fall_new_risk_total"></span>
+					<%= f.text_field :fall_new_risk_total, :id=>"fall_new_risk_total", :readonly=>true %>
 				</td>
 			</tr>
 		</table>

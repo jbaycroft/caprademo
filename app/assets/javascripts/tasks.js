@@ -582,7 +582,7 @@
             'sever':     $('#task_hazards_attributes_0_access_risk_severity'),
             'master':    $('#task_hazards_attributes_0_access_risk_mastery'),
             'frequency': $('#access_risk_frequency'),
-            'total':     $('#access_risk_total')
+            'total':     $('input#access_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -603,7 +603,7 @@
             'sever':     $('#task_hazards_attributes_0_access_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_access_new_risk_mastery'),
             'frequency': $('#access_new_risk_frequency'),
-            'total':     $('#access_new_risk_total')
+            'total':     $('input#access_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -625,7 +625,7 @@
             'sever':     $('#task_hazards_attributes_0_biohaz_risk_severity'),
             'master':    $('#task_hazards_attributes_0_biohaz_risk_mastery'),
             'frequency': $('#biohaz_risk_frequency'),
-            'total':     $('#biohaz_risk_total')
+            'total':     $('input#biohaz_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -646,7 +646,7 @@
             'sever':     $('#task_hazards_attributes_0_biohaz_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_biohaz_new_risk_mastery'),
             'frequency': $('#biohaz_new_risk_frequency'),
-            'total':     $('#biohaz_new_risk_total')
+            'total':     $('input#biohaz_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -668,7 +668,7 @@
             'sever':     $('#task_hazards_attributes_0_cowrk_risk_severity'),
             'master':    $('#task_hazards_attributes_0_cowrk_risk_mastery'),
             'frequency': $('#cowrk_risk_frequency'),
-            'total':     $('#cowrk_risk_total')
+            'total':     $('input#cowrk_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -689,7 +689,7 @@
             'sever':     $('#task_hazards_attributes_0_cowrk_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_cowrk_new_risk_mastery'),
             'frequency': $('#cowrk_new_risk_frequency'),
-            'total':     $('#cowrk_new_risk_total')
+            'total':     $('input#cowrk_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -711,7 +711,7 @@
             'sever':     $('#task_hazards_attributes_0_cut_risk_severity'),
             'master':    $('#task_hazards_attributes_0_cut_risk_mastery'),
             'frequency': $('#cut_risk_frequency'),
-            'total':     $('#cut_risk_total')
+            'total':     $('input#cut_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -732,7 +732,7 @@
             'sever':     $('#task_hazards_attributes_0_cut_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_cut_new_risk_mastery'),
             'frequency': $('#cut_new_risk_frequency'),
-            'total':     $('#cut_new_risk_total')
+            'total':     $('input#cut_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -754,7 +754,7 @@
             'sever':     $('#task_hazards_attributes_0_ergo_risk_severity'),
             'master':    $('#task_hazards_attributes_0_ergo_risk_mastery'),
             'frequency': $('#ergo_risk_frequency'),
-            'total':     $('#ergo_risk_total')
+            'total':     $('input#ergo_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -775,7 +775,7 @@
             'sever':     $('#task_hazards_attributes_0_ergo_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_ergo_new_risk_mastery'),
             'frequency': $('#ergo_new_risk_frequency'),
-            'total':     $('#ergo_new_risk_total')
+            'total':     $('input#ergo_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -818,7 +818,7 @@
             'sever':     $('#task_hazards_attributes_0_fall_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_fall_new_risk_mastery'),
             'frequency': $('#fall_new_risk_frequency'),
-            'total':     $('#fall_new_risk_total')
+            'total':     $('input#fall_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -840,7 +840,7 @@
             'sever':     $('#task_hazards_attributes_0_fire_risk_severity'),
             'master':    $('#task_hazards_attributes_0_fire_risk_mastery'),
             'frequency': $('#fire_risk_frequency'),
-            'total':     $('#fire_risk_total')
+            'total':     $('input#fire_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -861,7 +861,7 @@
             'sever':     $('#task_hazards_attributes_0_fire_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_fire_new_risk_mastery'),
             'frequency': $('#fire_new_risk_frequency'),
-            'total':     $('#fire_new_risk_total')
+            'total':     $('input#fire_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -883,7 +883,7 @@
             'sever':     $('#task_hazards_attributes_0_hazatm_risk_severity'),
             'master':    $('#task_hazards_attributes_0_hazatm_risk_mastery'),
             'frequency': $('#hazatm_risk_frequency'),
-            'total':     $('#hazatm_risk_total')
+            'total':     $('input#hazatm_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -904,7 +904,7 @@
             'sever':     $('#task_hazards_attributes_0_hazatm_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_hazatm_new_risk_mastery'),
             'frequency': $('#hazatm_new_risk_frequency'),
-            'total':     $('#hazatm_new_risk_total')
+            'total':     $('input#hazatm_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -926,7 +926,7 @@
             'sever':     $('#task_hazards_attributes_0_hazengy_risk_severity'),
             'master':    $('#task_hazards_attributes_0_hazengy_risk_mastery'),
             'frequency': $('#hazengy_risk_frequency'),
-            'total':     $('#hazengy_risk_total')
+            'total':     $('input#hazengy_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -947,7 +947,7 @@
             'sever':     $('#task_hazards_attributes_0_hazengy_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_hazengy_new_risk_mastery'),
             'frequency': $('#hazengy_new_risk_frequency'),
-            'total':     $('#hazengy_new_risk_total')
+            'total':     $('input#hazengy_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -969,7 +969,7 @@
             'sever':     $('#task_hazards_attributes_0_hazmat_risk_severity'),
             'master':    $('#task_hazards_attributes_0_hazmat_risk_mastery'),
             'frequency': $('#hazmat_risk_frequency'),
-            'total':     $('#hazmat_risk_total')
+            'total':     $('input#hazmat_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -990,7 +990,7 @@
             'sever':     $('#task_hazards_attributes_0_hazmat_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_hazmat_new_risk_mastery'),
             'frequency': $('#hazmat_new_risk_frequency'),
-            'total':     $('#hazmat_new_risk_total')
+            'total':     $('input#hazmat_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1012,7 +1012,7 @@
             'sever':     $('#task_hazards_attributes_0_laz_risk_severity'),
             'master':    $('#task_hazards_attributes_0_laz_risk_mastery'),
             'frequency': $('#laz_risk_frequency'),
-            'total':     $('#laz_risk_total')
+            'total':     $('input#laz_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1033,7 +1033,7 @@
             'sever':     $('#task_hazards_attributes_0_laz_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_laz_new_risk_mastery'),
             'frequency': $('#laz_new_risk_frequency'),
-            'total':     $('#laz_new_risk_total')
+            'total':     $('input#laz_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1055,7 +1055,7 @@
             'sever':     $('#task_hazards_attributes_0_lonewrk_risk_severity'),
             'master':    $('#task_hazards_attributes_0_lonewrk_risk_mastery'),
             'frequency': $('#lonewrk_risk_frequency'),
-            'total':     $('#lonewrk_risk_total')
+            'total':     $('input#lonewrk_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1076,7 +1076,7 @@
             'sever':     $('#task_hazards_attributes_0_lonewrk_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_lonewrk_new_risk_mastery'),
             'frequency': $('#lonewrk_new_risk_frequency'),
-            'total':     $('#lonewrk_new_risk_total')
+            'total':     $('input#lonewrk_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1098,7 +1098,7 @@
             'sever':     $('#task_hazards_attributes_0_mag_risk_severity'),
             'master':    $('#task_hazards_attributes_0_mag_risk_mastery'),
             'frequency': $('#mag_risk_frequency'),
-            'total':     $('#mag_risk_total')
+            'total':     $('input#mag_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1119,7 +1119,7 @@
             'sever':     $('#task_hazards_attributes_0_mag_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_mag_new_risk_mastery'),
             'frequency': $('#mag_new_risk_frequency'),
-            'total':     $('#mag_new_risk_total')
+            'total':     $('input#mag_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1141,7 +1141,7 @@
             'sever':     $('#task_hazards_attributes_0_mechand_risk_severity'),
             'master':    $('#task_hazards_attributes_0_mechand_risk_mastery'),
             'frequency': $('#mechand_risk_frequency'),
-            'total':     $('#mechand_risk_total')
+            'total':     $('input#mechand_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1162,7 +1162,7 @@
             'sever':     $('#task_hazards_attributes_0_mechand_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_mechand_new_risk_mastery'),
             'frequency': $('#mechand_new_risk_frequency'),
-            'total':     $('#mechand_new_risk_total')
+            'total':     $('input#mechand_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1184,7 +1184,7 @@
             'sever':     $('#task_hazards_attributes_0_noise_risk_severity'),
             'master':    $('#task_hazards_attributes_0_noise_risk_mastery'),
             'frequency': $('#noise_risk_frequency'),
-            'total':     $('#noise_risk_total')
+            'total':     $('input#noise_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1205,7 +1205,7 @@
             'sever':     $('#task_hazards_attributes_0_noise_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_noise_new_risk_mastery'),
             'frequency': $('#noise_new_risk_frequency'),
-            'total':     $('#noise_new_risk_total')
+            'total':     $('input#noise_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1227,7 +1227,7 @@
             'sever':     $('#task_hazards_attributes_0_ovrhead_risk_severity'),
             'master':    $('#task_hazards_attributes_0_ovrhead_risk_mastery'),
             'frequency': $('#ovrhead_risk_frequency'),
-            'total':     $('#ovrhead_risk_total')
+            'total':     $('input#ovrhead_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1248,7 +1248,7 @@
             'sever':     $('#task_hazards_attributes_0_ovrhead_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_ovrhead_new_risk_mastery'),
             'frequency': $('#ovrhead_new_risk_frequency'),
-            'total':     $('#ovrhead_new_risk_total')
+            'total':     $('input#ovrhead_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1270,7 +1270,7 @@
             'sever':     $('#task_hazards_attributes_0_rad_risk_severity'),
             'master':    $('#task_hazards_attributes_0_rad_risk_mastery'),
             'frequency': $('#rad_risk_frequency'),
-            'total':     $('#rad_risk_total')
+            'total':     $('input#rad_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1291,7 +1291,7 @@
             'sever':     $('#task_hazards_attributes_0_rad_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_rad_new_risk_mastery'),
             'frequency': $('#rad_new_risk_frequency'),
-            'total':     $('#rad_new_risk_total')
+            'total':     $('input#rad_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1313,7 +1313,7 @@
             'sever':     $('#task_hazards_attributes_0_road_risk_severity'),
             'master':    $('#task_hazards_attributes_0_road_risk_mastery'),
             'frequency': $('#road_risk_frequency'),
-            'total':     $('#road_risk_total')
+            'total':     $('input#road_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1334,7 +1334,7 @@
             'sever':     $('#task_hazards_attributes_0_road_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_road_new_risk_mastery'),
             'frequency': $('#road_new_risk_frequency'),
-            'total':     $('#road_new_risk_total')
+            'total':     $('input#road_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1356,7 +1356,7 @@
             'sever':     $('#task_hazards_attributes_0_temp_risk_severity'),
             'master':    $('#task_hazards_attributes_0_temp_risk_mastery'),
             'frequency': $('#temp_risk_frequency'),
-            'total':     $('#temp_risk_total')
+            'total':     $('input#temp_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1377,7 +1377,7 @@
             'sever':     $('#task_hazards_attributes_0_temp_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_temp_new_risk_mastery'),
             'frequency': $('#temp_new_risk_frequency'),
-            'total':     $('#temp_new_risk_total')
+            'total':     $('input#temp_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1399,7 +1399,7 @@
             'sever':     $('#task_hazards_attributes_0_tool_risk_severity'),
             'master':    $('#task_hazards_attributes_0_tool_risk_mastery'),
             'frequency': $('#tool_risk_frequency'),
-            'total':     $('#tool_risk_total')
+            'total':     $('input#tool_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -1420,7 +1420,7 @@
             'sever':     $('#task_hazards_attributes_0_tool_new_risk_severity'),
             'master':    $('#task_hazards_attributes_0_tool_new_risk_mastery'),
             'frequency': $('#tool_new_risk_frequency'),
-            'total':     $('#tool_new_risk_total')
+            'total':     $('input#tool_new_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),

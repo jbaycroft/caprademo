@@ -368,7 +368,7 @@
 					], {}, { :class=>"w100" } %>
 				</td>
 				<td>
-					<span id="hazmat_risk_total"></span>
+					<%= f.text_field :hazmat_risk_total, :id=>"hazmat_risk_total", :readonly=>true %>
 				</td>
 			</tr>
 		</table>
@@ -544,7 +544,7 @@
 					], {}, { :class=>"w100" } %>
 				</td>
 				<td>
-					<span id="hazmat_new_risk_total"></span>
+					<%= f.text_field :hazmat_new_risk_total, :id=>"hazmat_new_risk_total", :readonly=>true %>
 				</td>
 			</tr>
 		</table>
