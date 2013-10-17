@@ -592,7 +592,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -613,7 +613,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // biohaz Calculation
@@ -635,7 +635,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -656,7 +656,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // cowrk Calculation
@@ -678,7 +678,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -699,7 +699,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // cut Calculation
@@ -721,7 +721,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -742,7 +742,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // ergo Calculation
@@ -764,7 +764,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -785,7 +785,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // fall Calculation
@@ -828,7 +828,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // fire Calculation
@@ -850,7 +850,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -871,7 +871,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // hazatm Calculation
@@ -893,7 +893,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -914,7 +914,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // hazengy Calculation
@@ -936,7 +936,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -957,7 +957,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // hazmat Calculation
@@ -979,7 +979,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1000,7 +1000,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // laz Calculation
@@ -1022,7 +1022,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1043,7 +1043,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // lonewrk Calculation
@@ -1065,7 +1065,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1086,7 +1086,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // mag Calculation
@@ -1108,7 +1108,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1129,7 +1129,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // mechand Calculation
@@ -1151,7 +1151,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1172,7 +1172,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // noise Calculation
@@ -1194,7 +1194,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1215,7 +1215,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // ovrhead Calculation
@@ -1237,7 +1237,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1258,7 +1258,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // rad Calculation
@@ -1280,7 +1280,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1301,7 +1301,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // road Calculation
@@ -1323,7 +1323,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1344,7 +1344,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // temp Calculation
@@ -1366,7 +1366,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1387,7 +1387,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
 // tool Calculation
@@ -1409,7 +1409,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
@@ -1430,6 +1430,6 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
