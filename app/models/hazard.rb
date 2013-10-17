@@ -1083,26 +1083,26 @@ before_save :calculate_risk_new
   #calculate frequency for initial rating
   def calculate_frequency
   	#Access Frequency Calculations
-  	haz1 = [self.access_frequency_often,self.access_frequency_time].compact.inject(:*)
-  	haz2 = [self.biohaz_frequency_often,self.biohaz_frequency_time].compact.inject(:*)
-  	haz3 = [self.cowrk_frequency_often,self.cowrk_frequency_time].compact.inject(:*)
-  	haz4 = [self.cut_frequency_often,self.cut_frequency_time].compact.inject(:*)
-  	haz5 = [self.ergo_frequency_often,self.ergo_frequency_time].compact.inject(:*)
-  	haz6 = [self.fall_frequency_often,self.fall_frequency_time].compact.inject(:*)
-  	haz7 = [self.fire_frequency_often,self.fire_frequency_time].compact.inject(:*)
-  	haz8 = [self.hazatm_frequency_often,self.hazatm_frequency_time].compact.inject(:*)
-  	haz9 = [self.hazengy_frequency_often,self.hazengy_frequency_time].compact.inject(:*)
-  	haz10 = [self.hazmat_frequency_often,self.hazmat_frequency_time].compact.inject(:*)
-  	haz11 = [self.laz_frequency_often,self.laz_frequency_time].compact.inject(:*)
-  	haz12 = [self.lonewrk_frequency_often,self.lonewrk_frequency_time].compact.inject(:*)
-  	haz13 = [self.mag_frequency_often,self.mag_frequency_time].compact.inject(:*)
-  	haz14 = [self.mechand_frequency_often,self.mechand_frequency_time].compact.inject(:*)
-  	haz15 = [self.noise_frequency_often,self.noise_frequency_time].compact.inject(:*)
-  	haz16 = [self.ovrhead_frequency_often,self.ovrhead_frequency_time].compact.inject(:*)
-  	haz17 = [self.rad_frequency_often,self.rad_frequency_time].compact.inject(:*)
-  	haz18 = [self.road_frequency_often,self.road_frequency_time].compact.inject(:*)
-  	haz19 = [self.temp_frequency_often,self.temp_frequency_time].compact.inject(:*)
-  	haz20 = [self.tool_frequency_often,self.tool_frequency_time].compact.inject(:*)
+  	haz1 = self.access_frequency_often*self.access_frequency_time
+  	haz2 = self.biohaz_frequency_often*self.biohaz_frequency_time
+  	haz3 = self.cowrk_frequency_often*self.cowrk_frequency_time
+  	haz4 = self.cut_frequency_often*self.cut_frequency_time
+  	haz5 = self.ergo_frequency_often*self.ergo_frequency_time
+  	haz6 = self.fall_frequency_often*self.fall_frequency_time
+  	haz7 = self.fire_frequency_often*self.fire_frequency_time
+  	haz8 = self.hazatm_frequency_often*self.hazatm_frequency_time
+  	haz9 = self.hazengy_frequency_often*self.hazengy_frequency_time
+  	haz10 = self.hazmat_frequency_often*self.hazmat_frequency_time
+  	haz11 = self.laz_frequency_often*self.laz_frequency_time
+  	haz12 = self.lonewrk_frequency_often*self.lonewrk_frequency_time
+  	haz13 = self.mag_frequency_often*self.mag_frequency_time
+  	haz14 = self.mechand_frequency_often*self.mechand_frequency_time
+  	haz15 = self.noise_frequency_often*self.noise_frequency_time
+  	haz16 = self.ovrhead_frequency_often*self.ovrhead_frequency_time
+  	haz17 = self.rad_frequency_often*self.rad_frequency_time
+  	haz18 = self.road_frequency_often*self.road_frequency_time
+  	haz19 = self.temp_frequency_often*self.temp_frequency_time
+  	haz20 = self.tool_frequency_often*self.tool_frequency_time
   	unless haz1.nil?
 	    if haz1 == 0
 	      self.access_risk_frequency = 0
