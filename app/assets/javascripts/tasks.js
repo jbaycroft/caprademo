@@ -797,7 +797,7 @@
             'sever':     $('#task_hazards_attributes_0_fall_risk_severity'),
             'master':    $('#task_hazards_attributes_0_fall_risk_mastery'),
             'frequency': $('#fall_risk_frequency'),
-            'total':     $('#fall_risk_total')
+            'total':     $('input#fall_risk_total')
         };
         $('select').on('change', function(){
             var often = parseInt($$.often.val()),
@@ -807,7 +807,7 @@
                 ot = often * time,//keep this member name short, it's about to be used 4 times in the next line
                 freq = (ot == 0) ? 0 : (ot <= 2) ? 1 : (ot <= 4) ? 3 : (ot <= 9) ? 6 : (ot <= 16) ? 10 : "Incomplete" ;
             $$.frequency.html(freq);
-            $$.total.html(freq * sever * master);
+            $$.total.val(freq * sever * master);
         }).trigger('change');//call the handler immediately, with initially selected options
     });
     $(document).ready(function(){
