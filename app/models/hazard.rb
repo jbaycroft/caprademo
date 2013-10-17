@@ -1766,6 +1766,5 @@ class Hazard < ActiveRecord::Base
 #      end
 #  	end
 #  end
-#
-#end
-#
+
+end
