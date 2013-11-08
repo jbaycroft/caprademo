@@ -10,7 +10,7 @@ gem 'carrierwave'
 gem 'pg'
 #gem 'mysql2'
 gem 'bcrypt-ruby', :require => 'bcrypt'
-gem 'newrelic_rpm'
+#gem 'newrelic_rpm'
 
 # Gems used only for assets and not required
 # in production environments by default.
