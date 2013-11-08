@@ -77,7 +77,21 @@
     });
 //Hazard Form Populate Javascript
 //This determines which hazard form is shown when a hazard button is activated
-    jQuery(function ($) {
+$(document).ready(function () {
+    $('li.yes_no div').on('click', function(){
+        var di = $('li.yes_no div.active').attr('id');
+        var si = 'div.'+di;
+        $(si).hide();
+        $('li.yes_no div.active').removeClass("active");
+        $(this).addClass("active");
+        var d = $('li.yes_no div.active').attr('id');
+        var s = 'div.'+d;
+        $(s).show();
+        
+    })});
+
+
+/*    jQuery(function ($) {
         function changeTab(e) {
             e.preventDefault();
             $('li.yes_no div.active').removeClass("active");
@@ -573,6 +587,7 @@
             $('input#task_complete').prop("checked", true);
         });
     });
+    */
 // Accesses Calculation
     $(document).ready(function(){
         //cache of static jQuery objects
