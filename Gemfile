@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails'
 gem 'carrierwave'
@@ -8,6 +8,7 @@ gem 'carrierwave'
 
 #gem 'sqlite3'
 gem 'pg'
+#gem 'mysql2'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'newrelic_rpm'
 
@@ -38,4 +39,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+ gem 'debugger'
