@@ -345,4 +345,6 @@ Set general style rules for active class
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-	
+.hidden {
+	display: none;
+}
