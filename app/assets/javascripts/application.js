@@ -10,8 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
+//= require tasks
+//= require self
 //Button Populate Javascript
 //This determines which hazard buttons are shown in the task show view based on what checkboxes are selected in the task form
 //Button Populate Javascript
