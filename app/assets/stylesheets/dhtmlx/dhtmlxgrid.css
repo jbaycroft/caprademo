@@ -94,7 +94,7 @@ div.gridbox table.obj td.group_row{
     width:100%;
     border:0px;
     padding:0px;
-    padding-right:1px !ie;
+    padding-right:1px;
     margin:0px;
     font:12px arial;
     overflow:hidden;
@@ -157,7 +157,6 @@ div.pagingBlock a.dhx_not_active{
 /*block selection style*/
 .dhtmlxGrid_selection {
    -moz-opacity: 0.5;
-   filter: alpha(opacity = 50);
    background-color:yellow;
    opacity:0.5;
    border: 1px dotted black;
